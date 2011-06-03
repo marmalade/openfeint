@@ -1,0 +1,12 @@
+option strict
+
+files
+{
+	(src)
+	ExamplesMain.cpp
+	ExamplesMain.h
+	Logo.cpp
+	Logo.h
+}
+
+includepath src

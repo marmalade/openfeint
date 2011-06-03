@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Getting Started with OpenFeint SDK for Android 1.6: 2. Build and run the OpenFeint Sample Application</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />	<title>OpenFeint: Build and run the OpenFeint Sample Application</title>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.MultiFile.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/cerb4.common.js"></script>
+
+  <link rel="stylesheet" href="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/css/sc/default.css" />
+
+		<style type='text/css'>
+		@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#fff;
+	width:98%;
+	height:100%;
+padding-left: 2%;
+margin: 0px auto;
+}
+
+li {
+	padding-top:3px;
+	//padding-bottom:3px;
+}
+  
+a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:hover{
+
+	text-decoration:underline;
+}
+
+h1{
+	color:#474747;
+}
+
+h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	color:#474747;
+	font-weight:b
+}
+
+#container{
+	margin:0 auto;
+	width:100%;
+}
+
+#content{
+	width:900px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#474747;
+	
+	padding-left:30px;
+	
+}
+
+#content a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:hover{
+
+	text-decoration:underline;
+}
+
+#home{
+	width:700px;
+	
+
+}
+
+
+.logo{
+	margin-top:25px;
+	padding-bottom:40px;
+}
+
+.homeCol1{
+	width:300px;
+	float:left;
+	padding-right:50px;
+	margin-top:15px;
+	
+}
+
+
+.homeCol2{
+		width:300px;
+		float:left;
+		margin-top:15px;
+
+
+}
+
+TABLE.sidebar { width:220px; border: 1px solid #474747; }
+TABLE.sidebar TH { background-color: #474747; }
+TABLE.sidebar TD A { color: #117711; }
+
+
+td {
+color:#000 !important;
+font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+}
+
+#tagline {
+	display:none;
+padding:5px;
+text-align:right;
+width:98%;
+}
+
+#home li a:link{
+	color:#646464;
+}
+
+#home li a:visited{
+	color:#646464;
+}
+
+
+#home li a:hover{
+	text-decoration:underline;
+	
+	}
+
+.divider {
+padding-top:10px;
+padding-bottom:10px;
+}
+	</style>
+</head>
+<body>
+
+<div id="header">
+	<div id="container">
+	<div class="logo"><a href="../index.htm"><img src="http://openfeint.com/images/of_devSupport.png" style="border:none;" /></a></div></div>
+
+</div>
+
+
+<h3>Platform: OpenFeint Android SDK 1.6</h3>
+
+<h4>Readme.html for OpenFeint Android SDK 1.6 <br/>Release date 12.15.2010 <br/>
+Release Notes Copyright (c) 2009-2010 Aurora Feint Inc. <br/>
+All Rights Reserved. </h4>
+<h4>OpenFeint Android Quick Start Guide</h4>
+<table>
+<tr><td  width="20%" valign="top" style="vertical-align:top"><div id="menu">The steps necessary to start
+developing your first OpenFeint-enabled game on Android are:
+<ol>
+ <li><a href="./OFregistering.htm">Register your game on the OpenFeint developer site</a></li>
+  <li>Build and run the OpenFeint Sample Application
+    <ul>
+	    <li><a href="./OFbuild.htm#Play_with_the_OF_Sample_App_for">In Eclipse</a></li>
+	  <li><a href="./OFbuild.htm#Build_with_Ant">In Ant</a></li>
+  
+  </ul>
+  </li>
+  <li><a href="./OFsample.htm">Get familiar with OpenFeint features in the Sample App</a></li>
+  <li><a  href="./OFinYourGame.htm">Integrate OpenFeint into your game</a></li>
+  <li><a  href="./OFaddFeatures.htm">Add OpenFeint features to your game</a></li>
+  <li><a  href="./OFtestUsers.htm">Work with test users</a></li>
+ 
+  <li><a  href="./OFtestUsers.htm#obfuscate">Obfuscate your code with ProGuard</a></li>
+  <li><a  href="./OFapproval.htm">The approval process</a></li>
+   <li><a  href="./OFapproval.htm">Learn more about OpenFeint</a></li>
+  </ol>
+</div>
+ <hr />
+
+<table>
+<tr>
+<td align="left"><a href="./OFregistering.htm">&lt;&lt;Prev</a></td><td width="50%">&nbsp;</td><td align="right"><a href="./OFsample.htm">Next &gt;&gt;</a></td>
+</tr></table>
+
+</td><td width="5%">&nbsp;</td>
+<td style="width:50em;">
+<h4><a name="sample_app"></a>Build and run the OpenFeint Sample Application</h4><div id="importable">
+ <p  style="width:50em;">The sample app lets you experiment with the features you've configured on the OpenFeint dev dashboard before you've			
+    begun to write your own app. Once you do begin working with your own app, it is frequently helpful to come back to the 	
+    sample app to compare how individual features work and how they are implemented.</p>
+	<br />
+ 	<ul>
+    	<li><a name="Play_with_the_OF_Sample_App_for">Build and run the OpenFeint Sample App for Android in Eclipse</a>
+		<p  style="width:50em;">NOTE: The following instructions assume you are using a standard installation of the Android SDK with the Eclipse 		IDE as described at <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a>. Adjustments may be required if your development environment is set up
+differently. The "Hello World" sample app tutorial at <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a> is recommended as a good way to
+test that your development environment is set up properly.</p>
+		<ol type="a">
+			<li>Save the Contents of the OpenFeint Android SDK package in a convenient location.
+				Everything you need from this package to build the sample app is in the directory called 
+				<b>MyOpenFeintSample</b>. You may copy this directory out of the package and rename it if you want to 
+				use it as a starting point for experimental code.</li>
+			<li>To develop in Eclipse:
+				<ol type="i">
+					<li>Open Eclipse with an empty workspace. This will present an empty "Project Explorer" 
+						pane to which you will add a reference to the sample app project.<br />
+					</li>
+                	<li>Make sure that the path to your Android SDK has been set for this workspace. To set it, go to 
+                    	<b>Eclipse--&gt;Preferences--&gt;Android--&gt;SDK Location</b>.
+                  </li>
+					<li>Add the sample app project to the workspace:
+		      <ul>
+						<li>Right click in the empty <b>Project Explorer</b> pane and select <b>Import.</b></li>
+						<li>Select <b>General --&gt;Existing Projects into Workspace</b> from the import dialog.</li>
+                    	<li>Click the <b>Next </b>button.</li>
+						<li>Click <b>Select root directory</b>. Click <strong>Browse</strong>. Navigate to the <strong>MyOpenFeintSample</strong> directory in the OpenFeint package.</li>
+						<li>Click <strong>Open</strong>. </li><li>Click the <b>Finish</b> button.</li>
+						<li>The <b>MyOpenFeintSample</b> is now listed in the project window.  <br/>
+							Clicking the triangle next to <b>MyOpenFeintSample</b> should reveal an outline like this:
+							<br /><img  alt="Project OK" 
+                        	src="./myOpenFeintSampleProject.png" />
+                            <br />
+						</li>
+                     </ul>
+				  </li>
+                     <li><a name="prodInfo"></a>Add your product information to the sample app:<br />
+					 <ol type="a">
+						<li>Bring up the OpenFeint developer dashboard (
+                        	<a href="https://api.openfeint.com">https://api.openfeint.com/dd</a>) in a browser.  Choose the game you will use with the sample application.  Click the <strong>Application Information</strong> button to show the 	
+                        	properties of the application you defined:<br />
+							<img style="width: 199px; height: 169px;" alt="App Properties" 
+                            	src=	
+                                "./AppSettings.png" />
+                                <br />
+        				</li>
+        				<li>In Eclipse, edit <b>MyOpenFeintSample/src/com.openfeint.example/OpenFeintApplication.java</b>; 
+      						construct your OpenFeint settings object using the game name, game ID, game key, and game secret of your game as 
+                            defined on the OpenFeint developer site: 
+							<ol type="i">
+								<li>The values can be set in the class definition of the source code of your main activity:
+<pre>
+static final String gameName = "<i>Name of your application</i>";
+static final String gameID = "<i>gameID</i>";
+static final String gameKey = "<i>gameKey</i>";
+static final String gameSecret = "<i>gameSecret</i>";
+</pre>
+								For example, in the sample application, you could add these lines in 
+                                	<b>src/com.openfeint.example/OpenFeintApplication.java</b> after:
+<pre>
+public class OpenFeintExample extends ListActivity {
+</pre>
+
+							</li><li>Use the variables you defined to construct your settings object.  This can be done in the 
+                            <b>onCreate()</b> method of your main activity:
+<pre>
+OpenFeintSettings settings = new OpenFeintSettings(gameName, gameKey, gameSecret, gameID);
+</pre>
+							For example, in the sample application, you could add this line into the <b>onCreate()</b> method in 
+                            <b>src/com.openfeint.example/OpenFeintApplication.java</b>.
+							</li></ol>
+							</li><li>Initialize OpenFeint. This is typically done in the <b>onCreate()</b> method of your main activity.<br />
+	 Add the the following line into the <b>onCreate()</b> method in your source code:
+<pre>
+OpenFeint.initialize(this, settings, new OpenFeintDelegate() {});
+</pre>
+For example, in the sample application, you could add this line into the <b>onCreate()</b> method in <b>src/com.openfeint.example/OpenFeintApplication.java</b>.  Make sure you call <b>OpenFeint.initialize()</b> 
+	 after you've set the values in the settings object.
+</li>
+                      </ol>
+                      <br />
+					</li>
+                    <li>Add the OpenFeint SDK project to the workspace:
+		      <ul>
+						<li>Right click in the empty <b>Project Explorer</b> pane and select <b>Import.</b></li>
+						<li>Select <b>General --&gt;Existing Projects into Workspace</b> from the import dialog.</li>
+                    	<li>Click the <b>Next </b>button.</li>
+						<li>Click <b>Select root directory</b>. Click <strong>Browse</strong>. Navigate to the <strong>sdk</strong> directory in the OpenFeint package.</li>
+						<li>Click <strong>Open</strong>. </li><li>Click the <b>Finish</b> button.</li>
+						<li>The <b>OpenFeintAPI</b> is now listed in the project window.  <br/>
+							Clicking the triangle next to <b>MyOpenFeintSample</b> should reveal an outline like this:
+							<br /><img  alt="SDK OK" 
+                        	src="./OpenFeintSDKProject.png" />
+                            <br />
+						</li>
+                     </ul>
+				  </li>
+                  <li>Try building the project to confirm that there are no build errors.<br />
+					<ul>
+  						<li>If <b>Project --&gt;Build Automatically</b> is checked, the project will try to rebuild 
+                        itself whenever its binaries are not up to date with its sources and
+						will likely be ready to run or debug on a connected device.</li>
+  						<li>If <b>Project --&gt;Build Automatically</b> is not checked, you can manually request a build 
+                        with <b>Project--&gt; Build Project</b>.</li>
+  						<li>If there are build errors, a mark appears over the project icon the list of errors appears 
+                        in the <b>Markers</b> pane:<br />
+						<img style="width: 650px; height: 383px;"  alt="Project Error"
+	 					src="./ProjectErr.png" /><br />
+						</li>
+						<li>If you see an error that reads something like <b>Project 'MyOpenFeintSample' is missing required 
+                        source folder: 'gen'"</b> or if Eclipse cannot create R.java, add the <b>gen/</b> 
+						directory to the Project. </li>
+						<li>If you see a similar error for the OpenFeintAPI project,  add the <b>gen/</b> directory to the Project.<br />
+						  <b>Note:</b> Visit <a href="http://www.openfeint.com/ofdeveloper/index.php/kb/article/000090">this list</a> for solutions to some common build errors.</li>
+						
+                    </ul>
+					</li>
+					<li>Run the sample application on an Android device or simulator.<br />
+						<ul>
+  							<li>You may use a USB cable to attach an Anrdoid device if configured for remote debugging or 	
+                            allow the Android simulator to be used if no device is attached.</li>
+  							<li>Click the <b>Run</b> button or select <b>Run</b> from the <b>Run</b> menu.</li>
+  							<li>If the <b>Run As</b> dialog appears, select <b>Android Application</b> and click <b>OK</b>.				
+                            <br />
+							<img style="width: 126px; height: 199px;" alt="Run As"     
+                			src="http://www.openfeint.com/developers/support/images/quick_start_images/RunAs.png" /><br />
+							<br />If successful, the sample app displays a list of OpenFeint features that you can test.
+                            </li>
+                        </ul>
+					</li>
+              </ol>
+           </li></ol>
+       
+		</li>
+				<a name="Build_with_Ant"></a>
+                <li>Build and run the OpenFeint Sample App for Android in Ant
+				<ol type="a">
+					<li>Register an application using the OpenFeint developer dashboard at 
+                    	<a href="https://api.openfeint.com">https://api.openfeint.com</a>. There are step by step 	
+                        instructions  <a href="#devDash">here</a>.</li>
+					<li>Download the latest version of the OpenFeint SDK for Android.</li>
+                    <li>Extract the package.</li><li>
+                    Run <code>android.bat update lib-project –p <OpenFeint Package>/sdk/</li><li>
+Add the line <code>android.library.reference.1=<i>FullPathToOpenFeintPackage</i>/sdk/</code> to the <code>build.properties</code> file of the game
+					</li><li>Copy the entire <b>MyOpenFeintSample</b> directory from the SDK download (It should be in the 
+                    	<b>download/OpenFeint.1.0.1</b> folder) into the new directory you've created.</li>
+					<li>Copy the entire <b>sdk</b> directory from the download/OpenFeint.1.0.1 folder into 
+                    	the root of the new directory.</li>
+					<li>Open the <b>MyOpenFeintSample/com/openfeint/example/OpenFeintApplication.java</b> file and provide 
+                    	your game's name, key, secret, and id to OpenFeintSettings. You can find these in the developer 
+                        dashboard at <a href="https://api.openfeint.com">https://api.openfeint.com</a>.</li>
+					<li>Open a terminal window.</li>
+				  <li>Change your working directory to the location to which you extracted OpenFeint:
+                    <pre>
+cd MyOpenFeintExample
+android update project -p .
+ant debug
+                    </pre>
+				  </li>
+                  </ol>
+				</li>
+
+
+</ul></div> 
+</td></tr></table>
+</body>
+
+</html>
+

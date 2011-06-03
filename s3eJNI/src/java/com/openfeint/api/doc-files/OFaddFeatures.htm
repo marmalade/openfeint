@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Getting Started with OpenFeint SDK for Android 1.6: 4. Integrate OpenFeint into your game</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />	<title>OpenFeint Developer Support Center</title>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.MultiFile.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/cerb4.common.js"></script>
+
+  <link rel="stylesheet" href="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/css/sc/default.css" />
+
+		<style type='text/css'>
+		@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#fff;
+	width:98%;
+	height:100%;
+padding-left: 2%;
+margin: 0px auto;
+}
+
+li {
+	padding-top:3px;
+	//padding-bottom:3px;
+}
+  
+a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:hover{
+
+	text-decoration:underline;
+}
+
+h1{
+	color:#474747;
+}
+
+h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	color:#474747;
+	font-weight:b
+}
+
+#container{
+	margin:0 auto;
+	width:100%;
+}
+
+#content{
+	width:900px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#474747;
+	
+	padding-left:30px;
+	
+}
+
+#content a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:hover{
+
+	text-decoration:underline;
+}
+
+#home{
+	width:700px;
+	
+
+}
+
+
+.logo{
+	margin-top:25px;
+	padding-bottom:40px;
+}
+
+.homeCol1{
+	width:300px;
+	float:left;
+	padding-right:50px;
+	margin-top:15px;
+	
+}
+
+
+.homeCol2{
+		width:300px;
+		float:left;
+		margin-top:15px;
+
+
+}
+
+TABLE.sidebar { width:220px; border: 1px solid #474747; }
+TABLE.sidebar TH { background-color: #474747; }
+TABLE.sidebar TD A { color: #117711; }
+
+
+td {
+color:#000 !important;
+font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+}
+
+#tagline {
+	display:none;
+padding:5px;
+text-align:right;
+width:98%;
+}
+
+#home li a:link{
+	color:#646464;
+}
+
+#home li a:visited{
+	color:#646464;
+}
+
+
+#home li a:hover{
+	text-decoration:underline;
+	
+	}
+
+.divider {
+padding-top:10px;
+padding-bottom:10px;
+}
+	</style>
+</head>
+<body>
+
+<div id="header">
+	<div id="container">
+	<div class="logo"><a href="../index.htm"><img src="http://openfeint.com/images/of_devSupport.png" style="border:none;" /></a></div></div>
+</div>
+
+
+<h3>Platform: OpenFeint Android SDK 1.6</h3>
+
+<h4>Readme.html for OpenFeint Android SDK 1.6 <br/>Release date 12.15.2010 <br/>
+Release Notes Copyright (c) 2009-2010 Aurora Feint Inc. <br/>
+All Rights Reserved. </h4>
+
+<h4>OpenFeint Android Quick Start Guide</h4>
+<table>
+<tr><td  width="20%" valign="top" style="vertical-align:top"><div id="menu">The steps necessary to start
+developing your first OpenFeint-enabled game on Android are:
+<ol>
+ <li><a href="./OFregistering.htm">Register your game on the OpenFeint developer site</a></li>
+  <li><a href="./OFbuild.htm">Build and run the OpenFeint Sample Application</a>
+    <ul>
+	    <li><a href="./OFbuild.htm#Play_with_the_OF_Sample_App_for">In Eclipse</a></li>
+	  <li><a href="./OFbuild.htm#Build_with_Ant">In Ant</a></li>
+  
+  </ul>
+  </li>
+  <li><a href="./OFsample.htm">Get familiar with OpenFeint features in the Sample App</a></li>
+  <li><a  href="./OFinYourGame.htm">Integrate OpenFeint into your game</a></li>
+  <li>Add OpenFeint features to your game</li>
+  <li><a  href="./OFtestUsers.htm">Work with test users</a></li>
+ 
+  <li><a  href="./OFtestUsers.htm#obfuscate">Obfuscate your code with ProGuard</a></li>
+  <li><a  href="./OFapproval.htm">The approval process</a></li>
+   <li><a  href="./OFapproval.htm">Learn more about OpenFeint</a></li>
+  </ol>
+</div>
+<hr />
+
+<table>
+<tr  VALIGN=TOP>
+<td align="left">
+<a href="./OFinYourGame.htm">&lt;&lt;Prev</a>
+</td><td width="50%">&nbsp;</td><td align="right"><a href="./OFtestUsers.htm">Next &gt;&gt;</a></td>
+</tr></table>
+</td><td width="5%">&nbsp;</td>
+<td>
+<h4><a name="Add_OF_features"></a>Add OpenFeint features</h4><div id="importable">
+<p>Once you have integrated and initialized your application with OpenFeint, you can add OpenFeint features.
+<h5>Achievements</h5>
+<p>An OpenFeint achievement is an event in a game for which a player is granted a block of points.  Each game can award a total of 1000 achievement points per player.  The maximum number of points that a player can earn per achievement is 200.  An achievement can be <b>hidden</b>, in which case the player does not know about the achievement until the achievement points have been earned.</p>
+<h5>Leaderboards</h5>
+A leaderboard is a list of players who have gotten the highest scores for a particular accomplishment in a game.  You can give players points and take  points away from a specified leaderboard.
+<br/><br/>
+  In the steps that follow, we show how to add the ability to unlock an achievement and post a score to a leaderboard to an OpenFeint-enabled game.</p>
+<p>
+  <b>NOTE:</b> The following instructions walk through a subset of the capabilities already implemented in the sample app. For
+  insight, trace and experiment with the implementation in the sample application.
+  <br />
+</p>
+<ol>
+  <li>Sign into †he <a href="https://api.openfeint.com/dd" target="_NEW">OpenFeint dev dashboard</a> using the developer account  and game description you created earlier.<br/>
+</li><li>Define a new achievement:<br />
+<ul>
+  <li>Select <b>Achievements</b> under the <b> Features</b> tab.</li>
+  <li>Click the <b>+ Add Achievement</b> button.</li>
+  <li>Provide a <strong>Title</strong> for the achievement such as <b>Caught the Brass Ring</b>.</li>
+  <li>Provide a numeric <strong>Feint Score.</strong> The Feint Score is the number of achievement points the player will receive when the achievement is attained. For purposes of this tutorial, set the Feint Score to a value of <b>10</b>.</li>
+  <li>Provide a description such as <b>Just a test achievement</b>.</li>
+  <li>Ignore all other fields for now.</li>
+  <li>Scroll to the bottom of the page and click the <b>Save Achievement </b> button.</li>
+  <li>A text box confirms that you have successfully created the achievement. </li>
+</ul>
+  </li><li>Define a leaderboard.<br />
+    <ul>
+      <li>Select <b>Leaderboards</b> under the <b> Features</b> tab. </li>
+      <li>Click the <b>+ Add  Leaderboard</b> button. The 
+        <b>Create New Leaderboard</b> page appears. </li>
+      <li>Provide a name for the leaderboard such as <b>Experimental Scores</b>.</li>
+      <li>The <b>Descending Sort Order</b> checkbox should be checked by default.  Keep it checked.</li>
+      <li>Check the <b>Allow Worse Scores</b> checkbox.</li>
+      <li>Ignore all other fields for now.</li>
+      <li>Scroll to the bottom of the page and click the <b>Save Leaderboard</b> button.</li>
+      <li>A text box confirms that you have successfully created the leaderboard. </li>
+    </ul>
+<a name="see_ach"></a></li><li>Use the sample app to see the achievement and leaderboard you just created.<br />
+    
+      <ul>
+        <li>If you build a copy of the sample app using the same product key as your own application, you will be able to use the sample application to view and edit the same scores, achievements, etc. that are stored server side for your application.</li>
+        <li>This allows you to use the sample app to help test how your own app is managing this data.</li>
+      </ul>
+
+</li><li>Add code to unlock an achievement:
+	<ul>
+    	<li>Edit the source file in which you will unlock the achievement:
+        <ol><li>Add the following imports:
+          <pre>
+import com.openfeint.api.resource.Achievement;
+import android.widget.Toast; // Used for presenting diagnostic messages.</pre></li>
+    	<li>Add the following code at the point in the code where a player action will cause an achievement to be unlocked:
+          <pre>
+new Achievement("<em><strong>achievementID</strong></em>&quot;).unlock(new Achievement.UnlockCB () {
+		@Override public void onSuccess() {
+			<em>MyClass</em>.this.setResult(Activity.RESULT_OK);
+			<em>MyClass</em>.this.finish();
+		}
+
+		@Override public void onFailure(String exceptionMessage) {
+			Toast.makeText( <strong><em>MyClass</em></strong>.this,
+				"Error (" + exceptionMessage + ") unlocking achievement.",
+				Toast.LENGTH_SHORT).show();
+
+			<em>MyClass</em>.this.setResult(Activity.RESULT_CANCELED);
+			<em>MyClass</em>.this.finish();
+		}
+});</pre>
+<strong>Notes:</strong> 
+<ul><li>Be sure to replace the string <em><strong>achievementID</strong></em> above with the number of an achievement you created in your application.</li><li>Also replace <em><strong>MyClass</strong></em> with the name of the class containing this code.</li> </ul>
+    	<p>The following code unlocks the achievement specified by the achievement ID "531293":
+        </p><pre>
+new Achievement(&quot;531293&quot;).unlock(new Achievement.UnlockCB () {
+		@Override public void onSuccess() {
+			MyClass.this.setResult(Activity.RESULT_OK);
+			MyClass.this.finish();
+		}
+
+		@Override public void onFailure(String exceptionMessage) {
+			Toast.makeText( <strong><em>MyClass</em></strong>.this,
+				&quot;Error (&quot; + exceptionMessage + &quot;) unlocking achievement.&quot;,
+				Toast.LENGTH_SHORT).show();
+
+			MyClass.this.setResult(Activity.RESULT_CANCELED);
+			MyClass.this.finish();
+		}
+});</pre>
+      </li></ol>
+        <ul>
+      <li>Use the sample application as described <a href="#see_ach">above</a>, to verify that the achievement unlock succeeded.</li></ul></li></ul>
+</li>
+
+<li>Add code to post a score to a leaderboard:
+  </li><ul><li>Edit the source file in which you will unlock the achievement: Add the following imports:
+          <pre>
+import com.openfeint.api.resource.Leaderboard;
+import com.openfeint.api.resource.Score;
+import android.widget.Toast; // Used for presenting diagnostic messages.
+</pre>
+    </li><li>Add the following code at the point in the code where a score is to be saved to the OpenFeint database:
+<pre>
+long scoreValue = <strong><em>longScoreValue</em></strong>;
+Score s = new Score(scoreValue, null); // Second parameter is null to indicate that custom display text is not used.
+Leaderboard l = new Leaderboard("<strong><em>leaderboardID</em></strong>");
+s.submitTo(l, new Score.SubmitToCB() {
+	@Override public void onSuccess(boolean newHighScore) {
+		// sweet, score was posted
+		<strong><em>MyClass</em></strong>.this.setResult(Activity.RESULT_OK);
+		<strong><em>MyClass</em></strong>.this.finish();
+	}
+
+	@Override public void onFailure(String exceptionMessage) {
+		Toast.makeText(MyClass.this,
+		"Error (" + exceptionMessage + ") posting score.",
+		Toast.LENGTH_SHORT).show();
+		<strong><em>MyClass</em></strong>.this.setResult(Activity.RESULT_CANCELED);
+		<strong><em>MyClass</em></strong>.this.finish();
+	}
+});
+</pre>
+<strong>Notes:</strong> 
+<ul><li>Replace the <strong><em>longScoreValue</em></strong> with the number of points the user has received in total in this game. 
+</li><li>Replace the string <em><strong>leaderboardID</strong></em> above with the number of a leaderboard you created in your application.</li><li>Also replace <em><strong>MyClass</strong></em> with the name of the class containing this code.
+</li></ul>
+<p> The following code will submit a score value of 10 for the current user to the leaderboard ID "531293".  Please replace this value with an actual leaderboard ID associated with your product key.  Please replace "MyClass" with the name of the class containing this code.
+</p><pre>
+long scoreValue = <strong><em>10</em></strong>;
+
+Score s = new Score(scoreValue, null); // Second parameter is null to indicate that custom display text is not used.
+	Leaderboard l = new Leaderboard("<strong><em>531293</em></strong>");	
+	s.submitTo(l, new Score.SubmitToCB() {
+		@Override public void onSuccess(boolean newHighScore) {
+			// sweet, score posted
+			<strong><em>MyClass</em></strong>.this.setResult(Activity.RESULT_OK);
+			<strong><em>MyClass</em></strong>.this.finish();
+		}
+
+		@Override public void onFailure(String exceptionMessage) {
+			Toast.makeText(MyClass.this,
+			"Error (" + exceptionMessage + ") posting score.",
+			Toast.LENGTH_SHORT).show();
+			<strong><em>MyClass</em></strong>.this.setResult(Activity.RESULT_CANCELED);
+			<strong><em>MyClass</em></strong>.this.finish();
+		}
+	});
+</pre>
+      <ul>
+      <li>Use the sample app, as described <a href="#see_ach">above</a>, to verify that the score posted successfully.</li></ul>
+    </li></ul>
+<p>You can also use the dev dashboard to view the top few scores posted to a leaderboard and remove scores posted for testing purposes.  Note that this technique is not practical for dealing with scores on an active leaderboard containing thousands of entries.
+</p>
+
+
+</ol></div>
+</td></tr></table>
+
+ </body>
+
+</html>
+

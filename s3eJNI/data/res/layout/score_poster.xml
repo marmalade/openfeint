@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+  <TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score_to_post"/>
+  <EditText android:layout_width="fill_parent" android:maxLength="20" android:layout_height="wrap_content" android:numeric="integer" android:singleLine="true" android:id="@+id/post_score_textview"/>
+</LinearLayout>
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+  <TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score_display_text"/>
+  <EditText android:layout_width="fill_parent" android:maxLength="20" android:layout_height="wrap_content" android:singleLine="true" android:id="@+id/display_text_textview"/>
+</LinearLayout>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_score" android:id="@+id/post_score_button"/>
+</LinearLayout>

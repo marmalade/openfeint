@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />	<title>Getting Started With OpenFeint SDK for Android 1.6</title>
+	
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.MultiFile.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/cerb4.common.js"></script>
+
+  <link rel="stylesheet" href="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/css/sc/default.css" />
+
+		<style type='text/css'>
+		@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#fff;
+	width:98%;
+	height:100%;
+padding-left: 2%;
+margin: 0px auto;
+}
+
+li {
+	padding-top:3px;
+	//padding-bottom:3px;
+}
+  
+a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:hover{
+
+	text-decoration:underline;
+}
+
+h1{
+	color:#474747;
+}
+
+h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	color:#474747;
+	font-weight:b
+}
+
+#container{
+	margin:0 auto;
+	width:100%;
+}
+
+#content{
+	width:900px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#474747;
+	
+	padding-left:30px;
+	
+}
+
+#content a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:hover{
+
+	text-decoration:underline;
+}
+
+#home{
+	width:700px;
+	
+
+}
+
+
+.logo{
+	margin-top:25px;
+	padding-bottom:40px;
+}
+
+.homeCol1{
+	width:300px;
+	float:left;
+	padding-right:50px;
+	margin-top:15px;
+	
+}
+
+
+.homeCol2{
+		width:300px;
+		float:left;
+		margin-top:15px;
+
+
+}
+
+TABLE.sidebar { width:220px; border: 1px solid #474747; }
+TABLE.sidebar TH { background-color: #474747; }
+TABLE.sidebar TD A { color: #117711; }
+
+
+td {
+color:#000 !important;
+font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+}
+
+#tagline {
+	display:none;
+padding:5px;
+text-align:right;
+width:98%;
+}
+
+#home li a:link{
+	color:#646464;
+}
+
+#home li a:visited{
+	color:#646464;
+}
+
+
+#home li a:hover{
+	text-decoration:underline;
+	
+	}
+
+.divider {
+padding-top:10px;
+padding-bottom:10px;
+}
+	</style>
+</head>
+<body>
+<div id="header">
+	<div id="container">
+		<div class="logo"><img src="http://openfeint.com/images/of_devSupport.png" style="border:none;" /></div>
+    </div>
+</div>
+<h3>Platform: OpenFeint Android SDK 1.6</h3>
+
+<h4>Readme.html for OpenFeint Android SDK 1.6 <br/>Release date 12.15.2010 <br/>
+Release Notes Copyright (c) 2009-2010 Aurora Feint Inc. <br/>
+All Rights Reserved. </h4>
+
+<div id="importable">
+<h4>New in OpenFeint Android SDK Version 1.6</h4>
+New Features
+<ul>
+<li>Move browser cache to sdcard</li>
+<li>Allow set screen orientation of all openfeint screens by  <code>OpenFeintSettings.RequestedOrientation</code></li>
+<li>All requests that require login will now try to autologin before proceeding</li>
+<li>Added <code>Dashboard.close()</code></li>
+<li>Fixed crash/race condition when returning from picking a profile picture</li>
+<li>Prevented OF images on sdcard from showing up in user's photo library</li>
+</ul>
+New Integration Strategy as of Version 1.5
+<ul>
+<li>The <b>OpenFeint.jar</b> file is no longer provided.  Please add OpenFeint as an Android Library using the instructions <a href"">here</a>.
+</li><li><code>OpenFeint.initialize()</code> should no longer be called from your starting Activity,
+  it should instead be called from your Application's <b>onCreate()</b> method.  See
+  the OpenFeintExample for details.
+</li><li><code>OpenFeint.setCurrentActivity()</code> should no longer be called.
+</li>
+<li><code>OpenFeintDelegate.showCustomApprovalFlow()</code> now takes a <code>Context</code> instead of
+  an <code>Activity</code>.  If you're overriding this method, make sure to update your
+  method signature, otherwise it won't get called.</li>
+<li>It is no longer necessary to put <code>anyDensity="true"</code> in your AndroidManifest.xml.</li>
+</ul>
+<h4>Prerequisites</h4>
+The following software should be installed and working before you install OpenFeint Android SDK:
+<ul>
+<li>ADT 0.9.9</li><li>Android SDK Tools Revision 7 or greater
+</li><li>A build tool such as Eclipse or Ant</li></ul>
+<h4>OpenFeint Android Quick Start Guide</h4>
+The steps necessary to start
+developing your first OpenFeint-enabled game on Android are:
+<ol>
+ <li><a href="com/openfeint/api/doc-files/OFregistering.htm">Register your game on the OpenFeint developer site</a></li>
+  <li><a href="com/openfeint/api/doc-files/OFbuild.htm">Build and run the OpenFeint Sample Application</a>
+    <ul>
+	    <li><a href="com/openfeint/api/doc-files/OFbuild.htm#Play_with_the_OF_Sample_App_for">In Eclipse</a></li>
+	  <li><a href="com/openfeint/api/doc-files/OFbuild.htm#Build_with_Ant">In Ant</a></li>
+  
+  </ul>
+  </li>
+  <li><a href="com/openfeint/api/doc-files/OFsample.htm">Get familiar with OpenFeint features in the Sample App</a></li>
+  <li><a  href="com/openfeint/api/doc-files/OFinYourGame.htm">Integrate OpenFeint into your game</a></li>
+  <li><a  href="com/openfeint/api/doc-files/OFaddFeatures.htm">Add OpenFeint features to your game</a></li>
+  <li><a  href="com/openfeint/api/doc-files/OFtestUsers.htm">Work with test users</a></li>
+ 
+  <li><a  href="com/openfeint/api/doc-files/OFtestUsers.htm#obfuscate">Obfuscate your code with ProGuard</a></li>
+  <li><a  href="com/openfeint/api/doc-files/OFapproval.htm">The approval process</a></li>
+   <li><a  href="com/openfeint/api/doc-files/OFapproval.htm">Learn more about OpenFeint</a></li>
+  </ol>
+<p>&nbsp;</p>
+<hr />
+<h4>Changelog</h4>
+
+<hr/>
+Version 1.6
+<hr/>
+<ul>
+<li>Move browser cache to sdcard</li>
+<li>Allow set screen orientation of all openfeint screens by  <code>OpenFeintSettings.RequestedOrientation</code>
+</li><li>All requests that require login will now try to autologin before proceeding
+</li><li>Added <code>Dashboard.close()</code>
+</li><li>Fixed crash/race condition when returning from picking a profile picture
+</li><li>Prevented OF images on sdcard from showing up in user's photo library
+</li></ul>
+<hr/>
+Version 1.5.1
+<hr/>
+<ul><li>Hotfix for high score blob data compatibility with iOS client.
+</li></ul>
+<hr/>Version 1.5
+<hr/>
+<ul>
+<li>Partial achievements
+</li><li>High score blobs
+</li><li>Facebook Connect integration (Users can import friends from Facebook)
+</li><li>Move shared content to sdcard
+</li><li>Recover from corruption db or web content
+</li><li>No longer have to set current activity on <code>OnResume()</code>
+</li></ul>
+<hr/>Version 1.0.1
+<hr/><ul><li>Route fix for the <code>Leaderboard.getUserScore()</code> method.
+</li></ul>
+<hr/>Version 1.0
+<hr/><ul><li>First public release!
+</li></ul>
+<table>
+<tr>
+<td align="left" width="25%">&nbsp;</td><td width="50%">&nbsp;</td><td align="right"><a href="com/openfeint/api/doc-files/OFregistering.htm">Next &gt;&gt;</a></td>
+</tr></table>
+</div>
+</div></body>
+
+</html>
+

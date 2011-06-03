@@ -1,0 +1,21 @@
+<div id="menu">The steps necessary to start
+developing your first OpenFeint-enabled game on Android are:
+<ol>
+ <li><a href="./OFregistering.htm">Register your game on the OpenFeint developer site</a></li>
+  <li><a href="./OFbuild.htm">Build and run the OpenFeint Sample Application</a>
+    <ul>
+	    <li><a href="./OFbuild.htm#Play_with_the_OF_Sample_App_for">In Eclipse</a></li>
+	  <li><a href="./OFbuild.htm#Build_with_Ant">In Ant</a></li>
+  
+  </ul>
+  </li>
+  <li><a href="./OFsample.htm">Get familiar with OpenFeint features in the Sample App</a></li>
+  <li><a  href="./OFinYourGame.htm">Integrate OpenFeint into your game</a></li>
+  <li><a  href="./OFaddFeatures.htm">Add OpenFeint features to your game</a></li>
+  <li><a  href="./OFtestUsers.htm">Work with test users</a></li>
+ 
+  <li><a  href="./OFtestUsers.htm#obfuscate">Obfuscate your code with ProGuard</a></li>
+  <li><a  href="./OFapproval.htm">The approval process</a></li>
+   <li><a  href="./OFapproval.htm">Learn more about OpenFeint</a></li>
+  </ol>
+</div>

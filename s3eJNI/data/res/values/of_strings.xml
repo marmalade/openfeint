@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="of_home">Home</string>
+    <string name="of_banned_dialog">This user or application has been banned.  All Feint functionality is disabled.</string>
+    <string name="of_settings">Settings</string>
+    <string name="of_exit_feint">Exit Feint</string>
+    <string name="of_offline_notification">You are offline.</string>
+    <string name="of_offline_notification_line2">Feint requires an active network connection.</string>
+    <string name="of_score_submitted_notification">High Score submitted</string>
+</resources>

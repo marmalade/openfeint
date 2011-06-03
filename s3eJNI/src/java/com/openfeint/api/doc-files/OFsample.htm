@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Getting Started with OpenFeint SDK for Android 1.6:2. Build and run the OpenFeint Sample Application</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />	<title>OpenFeint: Get familiar with the OpenFeint features in the Sample App</title>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.MultiFile.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/cerb4.common.js"></script>
+
+  <link rel="stylesheet" href="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/css/sc/default.css" />
+
+		<style type='text/css'>
+		@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#fff;
+	width:98%;
+	height:100%;
+padding-left: 2%;
+margin: 0px auto;
+}
+
+li {
+	padding-top:3px;
+	//padding-bottom:3px;
+}
+  
+a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:hover{
+
+	text-decoration:underline;
+}
+
+h1{
+	color:#474747;
+}
+
+h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	color:#474747;
+	font-weight:b
+}
+
+#container{
+	margin:0 auto;
+	width:100%;
+}
+
+#content{
+	width:900px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#474747;
+	
+	padding-left:30px;
+	
+}
+
+#content a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:hover{
+
+	text-decoration:underline;
+}
+
+#home{
+	width:700px;
+	
+
+}
+
+
+.logo{
+	margin-top:25px;
+	padding-bottom:40px;
+}
+
+.homeCol1{
+	width:300px;
+	float:left;
+	padding-right:50px;
+	margin-top:15px;
+	
+}
+
+
+.homeCol2{
+		width:300px;
+		float:left;
+		margin-top:15px;
+
+
+}
+
+TABLE.sidebar { width:220px; border: 1px solid #474747; }
+TABLE.sidebar TH { background-color: #474747; }
+TABLE.sidebar TD A { color: #117711; }
+
+
+td {
+color:#000 !important;
+font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+}
+
+#tagline {
+	display:none;
+padding:5px;
+text-align:right;
+width:98%;
+}
+
+#home li a:link{
+	color:#646464;
+}
+
+#home li a:visited{
+	color:#646464;
+}
+
+
+#home li a:hover{
+	text-decoration:underline;
+	
+	}
+
+.divider {
+padding-top:10px;
+padding-bottom:10px;
+}
+	</style>
+</head>
+<body>
+
+<div id="header">
+<div id="container">
+	<div class="logo"><a href="../index.htm"><img src="http://openfeint.com/images/of_devSupport.png" style="border:none;" /></a></div></div>
+
+</div>
+
+
+<h3>Platform: OpenFeint Android SDK 1.6</h3>
+
+<h4>Readme.html for OpenFeint Android SDK 1.6 <br/>Release date 12.15.2010 <br/>
+Release Notes Copyright (c) 2009-2010 Aurora Feint Inc. <br/>
+All Rights Reserved. </h4>
+
+<h4>OpenFeint Android Quick Start Guide</h4>
+<table>
+<tr valign=top><td width="20%" valign="top" style="vertical-align:top">To start
+developing your first OpenFeint-enabled game on Android are:
+<ol>
+  <li><a href="./OFregistering.htm">Register your game on the OpenFeint developer site</a></li>
+  <li><a href="./OFbuild.htm">Build and run the OpenFeint Sample Application</a>
+    <ul>
+	    <li><a href="./OFbuild.htm#Play_with_the_OF_Sample_App_for">In Eclipse</a></li>
+	  <li><a href="./OFbuild.htm#Build_with_Ant">In Ant</a></li>
+  
+  </ul>
+  </li>
+  <li>Get familiar with OpenFeint features in the Sample App</li>
+  <li><a  href="./OFinYourGame.htm">Integrate OpenFeint into your game</a></li>
+  <li><a  href="./OFaddFeatures">Add OpenFeint features to your game</a></li>
+  <li><a  href="./OFtestUsers.htm">Work with test users</a></li> 
+  <li><a  href="#obfuscate">Obfuscate your code with ProGuard</a></li>
+  <li><a  href="#Approval_Process">The approval process</a></li>
+   <li><a  href="#learn_more">Learn more about OpenFeint</a></li>
+</ol>
+ <hr />
+
+<table>
+<tr>
+<td align="left"><a href="./OFbuild.htm">&lt;&lt;Prev</a></td><td width="50%">&nbsp;</td><td align="right"><a href="./OFinYourGame.htm">Next &gt;&gt;</a></td>
+</tr></table>
+</td><td width="5%">&nbsp;</td>
+<td><div id="importable">
+<h4><a name="Use_Example"></a>Get familiar with the OpenFeint features in the Sample App</h4>
+<img style="width: 136px; height: 199px;" alt="Sample Main Screen" src="http://www.openfeint.com/developers/support/images/quick_start_images/SampMainScreen.png" />&nbsp;<img
+	 style="width: 136px; height: 200px;" alt="Sample Explore Scores"
+	 src="http://www.openfeint.com/developers/support/images/quick_start_images/SampExploreScores.png" />&nbsp;<img
+	 style="width: 136px; height: 199px;" alt="Feint User Dashboard"
+	 src="http://www.openfeint.com/developers/support/images/quick_start_images/FeintUserDash.png" /></div>
+</td></tr></table>
+</body>
+
+</html>
+

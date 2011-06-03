@@ -1,0 +1,1 @@
+HAVE_INTTYPES_H this define is used by the example to tell jni.h that we have inttype.h

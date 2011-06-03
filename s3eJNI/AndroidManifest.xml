@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="${PACKAGENAME}"
+      android:versionCode="${VERSIONCODE}"
+      android:versionName="${VERSIONNAME}"
+      android:installLocation="auto"
+      >
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"${EXTRA_ATTRIBS}>
+        <activity android:name=".${CLASSNAME}"
+                  android:label="@string/app_name"
+				  android:configChanges="locale|keyboardHidden|orientation"
+                  android:launchMode="singleInstance"
+				  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+		<activity android:name="com.openfeint.internal.ui.IntroFlow"
+                  android:label="IntroFlow"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity android:name="com.openfeint.api.ui.Dashboard"
+				  android:label="Dashboard"
+				  android:configChanges="orientation|keyboardHidden"
+				  android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity android:name="com.openfeint.internal.ui.Settings"
+				  android:label="Settings"
+				  android:configChanges="orientation|keyboardHidden"
+				  android:theme="@android:style/Theme.NoTitleBar"/> 
+		<activity android:name="com.openfeint.internal.ui.NativeBrowser"
+					  android:label="NativeBrowser"
+				  android:configChanges="orientation|keyboardHidden"
+				  android:theme="@android:style/Theme.NoTitleBar"/> 
+    </application>
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="8"/>
+	<!-- Required by Airplay internally. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SET_ORIENTATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Required to check licensing. -->
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <!-- Required by openfeint. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+</manifest> 

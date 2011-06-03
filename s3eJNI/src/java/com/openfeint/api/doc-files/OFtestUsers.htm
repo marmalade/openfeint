@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Getting Started with OpenFeint SDK for Android 1.6:6. Work with test users</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />	<title>OpenFeint: Work with test users</title>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.MultiFile.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/cerb4.common.js"></script>
+
+  <link rel="stylesheet" href="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/css/sc/default.css" />
+
+		<style type='text/css'>
+		@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#fff;
+	width:98%;
+	height:100%;
+padding-left: 2%;
+margin: 0px auto;
+}
+
+li {
+	padding-top:3px;
+	//padding-bottom:3px;
+}
+  
+a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:hover{
+
+	text-decoration:underline;
+}
+
+h1{
+	color:#474747;
+}
+
+h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	color:#474747;
+	font-weight:b
+}
+
+#container{
+	margin:0 auto;
+	width:100%;
+}
+
+#content{
+	width:900px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#474747;
+	
+	padding-left:30px;
+	
+}
+
+#content a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:hover{
+
+	text-decoration:underline;
+}
+
+#home{
+	width:700px;
+	
+
+}
+
+
+.logo{
+	margin-top:25px;
+	padding-bottom:40px;
+}
+
+.homeCol1{
+	width:300px;
+	float:left;
+	padding-right:50px;
+	margin-top:15px;
+	
+}
+
+
+.homeCol2{
+		width:300px;
+		float:left;
+		margin-top:15px;
+
+
+}
+
+TABLE.sidebar { width:220px; border: 1px solid #474747; }
+TABLE.sidebar TH { background-color: #474747; }
+TABLE.sidebar TD A { color: #117711; }
+
+
+td {
+color:#000 !important;
+font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+}
+
+#tagline {
+	display:none;
+padding:5px;
+text-align:right;
+width:98%;
+}
+
+#home li a:link{
+	color:#646464;
+}
+
+#home li a:visited{
+	color:#646464;
+}
+
+
+#home li a:hover{
+	text-decoration:underline;
+	
+	}
+
+.divider {
+padding-top:10px;
+padding-bottom:10px;
+}
+	</style>
+</head>
+<body>
+
+<div id="header">
+	<div id="container">
+	<div class="logo"><a href="../index.htm"><img src="http://openfeint.com/images/of_devSupport.png" style="border:none;" /></a></div></div></div>
+
+
+<h3>Platform: OpenFeint Android SDK 1.6</h3>
+<h4>Readme.html for OpenFeint Android SDK 1.6 <br/>Release date 12.15.2010 <br/>
+Release Notes Copyright (c) 2009-2010 Aurora Feint Inc. <br/>
+All Rights Reserved. </h4>
+
+<h4>OpenFeint Android Quick Start Guide</h4>
+<table>
+<tr><td  width="20%" valign="top" style="vertical-align:top">To start
+developing your first OpenFeint-enabled game on Android are:
+<ol>
+  <li><a href="./OFregistering.htm">Register your game on the OpenFeint developer site</a></li>
+  <li><a href="./OFbuild.htm">Build and run the OpenFeint Sample Application</a>
+    <ul>
+	    <li><a href="./OFbuild.htm#Play_with_the_OF_Sample_App_for">In Eclipse</a></li>
+	  <li><a href="./OFbuild.htm#Build_with_Ant">In Ant</a></li>
+  
+  </ul>
+  </li>
+  <li><a href="./OFsample.htm">Get familiar with OpenFeint features in the Sample App</a></li>
+  <li><a  href="./OFinYourGame.htm">Integrate OpenFeint into your game</a></li>
+  <li><a href="./OFaddFeatures.htm">Add OpenFeint features to your game</a></li>
+  <li>Work with test users</li>
+ 
+  <li><a  href="./OFtestUsers.htm#obfuscate">Obfuscate your code with ProGuard</a></li>
+  <li><a  href="./OFapproval.htm">The approval process</a></li>
+   <li><a  href="#learn_more">Learn more about OpenFeint</a></li>
+</ol>
+<hr />
+
+<table>
+<tr  VALIGN=TOP>
+<td align="left"><a href="./OFaddFeatures.htm">&lt;&lt;Prev</a></td><td width="50%">&nbsp;</td><td align="right"><a href="./OFapproval.htm">Next &gt;&gt;</a></td>
+</tr></table>
+</td><td width="5%">&nbsp;</td>
+<td>
+
+
+<li><div id="importable"><h4><a name="test_users"></a>Work with test users</h4>
+For information about how to use the OpenFeint test users functionality which enables user data accumulated during development and testing to be purged from the server, see <a href="http://www.openfeint.com/ofdeveloper/index.php/kb/article/000038">http://www.openfeint.com/ofdeveloper/index.php/kb/article/000038</a></li>
+
+
+
+<li><h4><a name="obfuscate"></a>Obfuscate your code with ProGuard</h4>
+
+We recommend that you obfuscate your application code before release. For your convenience 'ProGuard' is integrated with our example. You should download the latest version from: http://proguard.sourceforge.net/ ProGuard integrates easily with Ant but cannot be integrated into the Eclipse build process. Reference http://developer.android.com/guide/developing/other-ide.html for help in setting up an Ant build environment.
+
+<p>Once Ant is up and running you can put your copy of ProGuard in a 'proguard' subdirectory of your Android project. Be sure to copy 'proguard-config.txt' and 'proguard-obfuscation.xml' from our example application and place it in your Android project's root directory.
+</p><p>Download and extract the latest version of proguard. Put it in a subdirectory named 'proguard' in the OpenFeint Android SDK's <b>MyOpenFeintSample</b> folder.
+</p><p>Open <b>build.xml</b> and add the following after the first line , before the tag: ]> Which defines an XML entity and allows us to essentially import the entirety of proguard-obfuscation.xml later in the build.xml document. At some point after the task in <b>build.xml</b> add the following line: &amp;proguard-obfuscation; This imports proguard-obfuscation.xml which will modify the Ant build process. Reference proguard-obfuscation.xml for a description of the modifications. If you experience any issues co-existing with Eclipse you might want to modify your local.properties file to re-direct the <b>out.classes.dir</b> to the same spot as Eclipse by default: <b>out.classes.dir=bin/ </b>.
+</p><p>Building with <b>ant debug</b> or <b>ant release</b> will now obfuscate your code as part of the build process. If you wish to make a build without obfuscation for whatever reason simply set the property <b>noobfuscate</b> to <b>true</b>:
+<b>ant -Dnoobfuscate=true debug ant -Dnoobfuscate=true release</b></p></div></li>
+
+</td></tr></table>
+
+</body>
+
+</html>
+

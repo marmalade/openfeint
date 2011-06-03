@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Getting Started with OpenFeint SDK for Android 1.6:   5. Add OpenFeint features to your game</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />	<title>OpenFeint: Integrate OpenFeint into your game</title>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.MultiFile.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/js/cerb4.common.js"></script>
+
+  <link rel="stylesheet" href="http://www.openfeint.com/ofdeveloper/index.php/resource/usermeet.core/css/sc/default.css" />
+
+		<style type='text/css'>
+		@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#fff;
+	width:98%;
+	height:100%;
+padding-left: 2%;
+margin: 0px auto;
+}
+
+li {
+	padding-top:3px;
+	//padding-bottom:3px;
+}
+  
+a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+a:hover{
+
+	text-decoration:underline;
+}
+
+h1{
+	color:#474747;
+}
+
+h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	color:#474747;
+	font-weight:b
+}
+
+#container{
+	margin:0 auto;
+	width:100%;
+}
+
+#content{
+	width:900px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#474747;
+	
+	padding-left:30px;
+	
+}
+
+#content a:link{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:visited{
+	color:#117711;
+	text-decoration:none;
+}
+
+#content a:hover{
+
+	text-decoration:underline;
+}
+
+#home{
+	width:700px;
+	
+
+}
+
+
+.logo{
+	margin-top:25px;
+	padding-bottom:40px;
+}
+
+.homeCol1{
+	width:300px;
+	float:left;
+	padding-right:50px;
+	margin-top:15px;
+	
+}
+
+
+.homeCol2{
+		width:300px;
+		float:left;
+		margin-top:15px;
+
+
+}
+
+TABLE.sidebar { width:220px; border: 1px solid #474747; }
+TABLE.sidebar TH { background-color: #474747; }
+TABLE.sidebar TD A { color: #117711; }
+
+
+td {
+color:#000 !important;
+font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+}
+
+#tagline {
+	display:none;
+padding:5px;
+text-align:right;
+width:98%;
+}
+
+#home li a:link{
+	color:#646464;
+}
+
+#home li a:visited{
+	color:#646464;
+}
+
+
+#home li a:hover{
+	text-decoration:underline;
+	
+	}
+
+.divider {
+padding-top:10px;
+padding-bottom:10px;
+}
+	</style>
+</head>
+<body>
+
+<div id="header">
+	<div id="container">
+	<div class="logo"><a href="../index.htm"><img src="http://openfeint.com/images/of_devSupport.png" style="border:none;" /></a></div></div>
+
+</div>
+
+
+<h3>Platform: OpenFeint Android SDK 1.6</h3>
+
+<h4>Readme.html for OpenFeint Android SDK 1.6 <br/>Release date 12.15.2010 <br/>
+Release Notes Copyright (c) 2009-2010 Aurora Feint Inc. <br/>
+All Rights Reserved. </h4>
+
+<h4>OpenFeint Android Quick Start Guide</h4>
+<table>
+<tr><td  width="20%" valign="top" style="vertical-align:top"><div id="menu">The steps necessary to start
+developing your first OpenFeint-enabled game on Android are:
+<ol>
+ <li><a href="./OFregistering.htm">Register your game on the OpenFeint developer site</a></li>
+  <li><a href="./OFbuild.htm">Build and run the OpenFeint Sample Application</a>
+    <ul>
+	    <li><a href="./OFbuild.htm#Play_with_the_OF_Sample_App_for">In Eclipse</a></li>
+	  <li><a href="./OFbuild.htm#Build_with_Ant">In Ant</a></li>
+  
+  </ul>
+  </li>
+  <li><a href="./OFsample.htm">Get familiar with OpenFeint features in the Sample App</a></li>
+  <li>Integrate OpenFeint into your game</li>
+  <li><a  href="./OFaddFeatures.htm">Add OpenFeint features to your game</a></li>
+  <li><a  href="./OFtestUsers.htm">Work with test users</a></li>
+ 
+  <li><a  href="./OFtestUsers.htm#obfuscate">Obfuscate your code with ProGuard</a></li>
+  <li><a  href="./OFapproval.htm">The approval process</a></li>
+   <li><a  href="./OFapproval.htm">Learn more about OpenFeint</a></li>
+  </ol>
+</div>
+<hr />
+
+<table>
+<tr>
+<td align="left"><a href="./OFsample.htm">&lt;&lt;Prev</a></td><td width="50%">&nbsp;</td><td align="right"><a href="./OFaddFeatures.htm">Next &gt;&gt;</a></td>
+</tr></table>
+</td><td width="5%">&nbsp;</td>
+<td  style="width:50em;">
+<h4><a name="OF_in_your_game"></a>Integrate OpenFeint into your game</h4><div id="importable">
+OpenFeint can be integrated into an existing Android app or it can be incorporated in your game
+design from the start.  Once you have been through the process of experimenting with OpenFeint features in the sample app using 
+your own product key, many of the steps for adding these features to your own
+app will seem familiar.<br />
+<br />
+<b>NOTE:</b> The following instructions were tested in Eclipse on the <b>Hello World</b>
+sample app from the tutorial at <a href="http://developer.android.com">http://developer.android.com</a>.<br />
+<ol type="a" style="width:50em;">
+<li>If your application is not already registered as an OpenFeint application:<br />
+	<ol  type="i">
+		<li> Go to the OpenFeint Developer Dashboard<br />
+		Find it at <a href="https://api.openfeint.com/">https://api.openfeint.com</a><br />
+		</li>
+
+		<li>Register or Login<br />
+		Use an email address for your identity with your chosen password.
+		</li>
+	
+		<li>Select an existing game description or register a new one.<br />
+		<img src="./AppSettings.png" /><br />
+		</li>
+	</ol>
+</li><li>Make a backup copy of your project before you start integrating with OpenFeint.
+</li><li>Extract a fresh copy of the OpenFeint Android SDK project into a convenient temporary directory.
+</li>
+<li>Run Eclipse.</li>
+<li>Import the OpenFeint Android SDK (the <strong>sdk</strong> directory of the download) into Eclipse.</li>
+<li>Right-click on the project and choose <strong>Properties</strong>.</li>
+<li>Select <strong>Android</strong>.</li>
+<li>Under <strong>Library</strong>, check the <strong>Is Library</strong> box. </li>
+<li>Import your application as a project into Eclipse.</li>
+<li>If they do not already exist, create <b>assets/</b>, <b>gen/</b>, <b>libs/</b>, and <b>res/</b> directories in the root of your 
+project.<br />
+</li>
+<li>Set your project to use the OpenFeint Api as a library: 
+<ol>
+  <li>Right-click on the project and choose <strong>Properties</strong>.</li>
+  <li>Select <strong>Android</strong>.</li>
+  <li>Under <strong>Library</strong>, add the OpenFeintAPI project.</li>
+  <li>Click <strong>OK</strong>. A source link to the OpenFeint API should appear in the project tree:<br/>
+  <img src="sourceLink.png" style="align:left;" alt="source link" /></li>
+</ol>
+</li>
+<li>Edit the <b>AndroidManifest.xml</b> file in your project:
+	<ul>
+	<li>Add the following activities inside your <b>&lt;application&gt;</b> tag:<br/>
+
+<pre>&lt;activity android:name=&quot;com.openfeint.internal.ui.IntroFlow&quot;<br />              android:label=&quot;IntroFlow&quot;<br />              android:configChanges=&quot;orientation|keyboardHidden&quot;<br />              android:theme=&quot;@android:style/Theme.NoTitleBar&quot;/&gt;
+&lt;activity android:name=&quot;com.openfeint.api.ui.Dashboard&quot;<br />              android:label=&quot;Dashboard&quot;<br />              android:configChanges=&quot;orientation|keyboardHidden&quot;<br />              android:theme=&quot;@android:style/Theme.NoTitleBar&quot;/&gt;<br />&lt;activity android:name=&quot;com.openfeint.internal.ui.Settings&quot;<br />              android:label=&quot;Settings&quot;<br />              android:configChanges=&quot;orientation|keyboardHidden&quot;<br />              android:theme=&quot;@android:style/Theme.NoTitleBar&quot;/&gt;<br />&lt;activity android:name=&quot;com.openfeint.internal.ui.NativeBrowser&quot;<br />              android:label=&quot;NativeBrowser&quot;<br />              android:configChanges=&quot;orientation|keyboardHidden&quot;<br />              android:theme=&quot;@android:style/Theme.NoTitleBar&quot;/&gt;</pre>
+
+	</li><li>Add the following permissions to <b>AndroidManifest.xml</b> outside of your <application> tag:
+<pre>
+&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;
+</pre>
+	</li>
+	<li>To grant OpenFeint the ability to save data in the /sdcard/, which is faster and uses less 
+of the user's built-in flash memory, add the following to the <b>AndroidManifest.xml</b>:
+<pre> &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;</pre>
+	</li>
+	<li> To allow OpenFeint to retrieve the logged-in user's email address from Phone SDK version 5 or above so that the user does not have to type the email address in when creating an account, add the  following to the <b>AndroidManifest.xml</b>:
+    <pre>&lt;uses-permission android:name=&quot;android.permission.GET_ACCOUNTS&quot; /&gt;</pre></li>
+	</ul>
+</li>
+    <li>Refresh (<b>File-&gt;Refresh</b>) the project so that the items you added appear.<br />
+	</li>
+<li>Initialize OpenFeint in the <strong>onCreate()</strong> method of your <strong>Application</strong> object: 
+  <ol type = "i">
+  <li> If you haven't overridden the application object:
+  <ol><li>Create a class that extends <strong>android.app.Application</strong></li>
+    <li>In <strong>AndroidManifest.xml</strong>, be sure to set the <strong>android:name</strong> attribute of your <strong>&lt;application&gt;</strong> element to the name of your application class. For example, in the OpenFeintExample project, the <strong>android:name</strong> of the <strong>&lt;application&gt;</strong> element is set to <strong>&quot;.MyApplicationClassName&quot;</strong>.  </li>
+  </ol>
+  </li>
+  <li>Construct your OpenFeint <strong>settings</strong> object using the game name, game ID, game key, and game secret of your game as defined on the OpenFeint developer site:
+<ul>
+      <li>The values can be set in the class definition of the source code of your Application:
+        <pre>
+static final String gameName = "<i>Name of your application</i>";
+static final String gameID = "<i>gameID</i>";
+static final String gameKey = "<i>gameKey</i>";
+static final String gameSecret = "<i>gameSecret</i>";</pre>
+        For example, in the sample application, you could add these lines in <b>src/com.openfeint.example/OpenFeintApplication.java</b> after:
+        <pre>
+public class OpenFeintApplication extends Application {
+</pre>
+        <strong>Note</strong>: You must provide your game's name, key, secret, and id to<br />
+        OpenFeintSettings. You can find these in the developer dashboard at<br />   
+        <a href="https://api.openfeint.com">https://api.openfeint.com</a>. For instructions on retrieving your application settings, click <a href="./build.htm#prodInfo" target="_NEW">here</a>. </li>
+      <li>Use the variables you defined to construct your settings object.  This can be done in the <b>onCreate()</b> method of your main activity:
+        <pre>
+OpenFeintSettings settings = new OpenFeintSettings(gameName, gameKey, gameSecret, gameID);
+</pre>
+        For example, in the sample application, you could add this line into the <b>onCreate()</b> method in <b>src/com.openfeint.example/OpenFeintApplication.java</b>.
+      </li></ul>
+  </li>
+  <li>Initialize OpenFeint in the <b>onCreate()</b> method of your application by adding the the following line into the <b>onCreate()</b> method in your source code:
+    <pre>
+OpenFeint.initialize(this, settings, new OpenFeintDelegate() {});</pre>Make sure you call <b>OpenFeint.initialize()</b><em> 
+    after</em> you've set the values in the settings object.<br/><br/>
+  </pre>
+  </li>
+  </ol>
+</li><li>Run your application.<br />
+On the application's first launch, when it gets to the <b>OpenFeint.initialize()</b> call, it  displays an OpenFeint welcome screen
+over the game screen. This allows the user to log in to OpenFeint or decline OpenFeint.
+After the first launch of the app, the user's choice is remembered and the OpenFeint welcome screen does not appear.<br /><br />
+At this point, OpenFeint has only been initialized; none of its features have yet been incorporated into your application.
+</li></ol></div></td></tr></table>
+
+</body>
+
+</html>
+

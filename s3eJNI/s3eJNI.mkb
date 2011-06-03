@@ -1,0 +1,53 @@
+#!/usr/bin/env mkb
+define
+{
+	HAVE_INTTYPES_H
+}
+
+files
+{
+	s3eJNI.defines.txt
+
+	(src)
+	s3eJNI.cpp
+	JNIHelper.cpp
+	JNIHelper.h
+	LicenseChecker.cpp
+	LicenseChecker.h
+	OpenFeint.cpp
+	OpenFeint.h
+	jni.h
+}
+
+includepaths
+{
+	src
+}
+
+subprojects
+{
+	../ExamplesMain
+	iwutil
+}
+
+commands
+{
+	ant
+}
+
+deployments
+{
+	#Include the jar file when deploying to Android
+	android-external-jars=OpenfeintActivity.jar
+	android-external-res="data/res"
+	android-custom-activity="com.mycompany.s3ejni.MainActivity"
+	android-manifest="AndroidManifest.xml"        	
+	android-pkgname="com.mycompany.s3ejni"
+}
+
+assets
+{
+	(data)
+	logo.raw
+	splash.jpg	
+}

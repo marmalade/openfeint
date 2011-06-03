@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenFeintExample</string>
+    <string name="ofdash">Launch Dashboard</string>
+    <string name="score_to_post">Score to Post</string>
+    <string name="post_score">Post Score</string>
+    <string name="score_display_text">Display Text</string>
+</resources>

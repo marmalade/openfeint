@@ -1,0 +1,24 @@
+<project name="OpenFeintExample" default="run">
+	
+	<property environment="env" />
+	
+	<property name="dir.s3e" value="${env.S3E_DIR}" />
+	<property name="dir.src" value="src/java" />
+	<property name="dir.classes" value="classes" />
+	
+	<target name="run">	
+		<delete dir="${dir.classes}" />
+		<mkdir dir="${dir.classes}" />			
+		
+		<javac destdir="${dir.classes}" srcdir="${dir.src}">
+			<classpath path="${dir.s3e}/deploy/plugins/android/android.jar"/>
+			<classpath path="${dir.s3e}/loader/android/airplay_release.jar"/>
+		</javac>			
+		
+		<jar destfile="OpenfeintActivity.jar">	
+			<fileset dir="${dir.classes}">
+				<include name="**/*.class"/>								
+			</fileset>
+		</jar>
+	</target>
+</project>

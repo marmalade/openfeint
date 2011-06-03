@@ -1,0 +1,8 @@
+[S3E]
+# These lines specify a splash screen to display while the s3e file is loaded
+SplashscreenBkR=255
+SplashscreenBkG=255
+SplashscreenBkB=255
+Splashscreen=splash.jpg
+SplashscreenWidth=160
+SplashscreenHeight=100
