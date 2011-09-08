@@ -1,0 +1,21 @@
+#!/usr/bin/env mkb
+files
+{
+	s3eHelloWorld.cpp
+}
+
+subprojects
+{
+    ExamplesMain
+    s3eNOpenFeint
+    s3eIOSNotifications
+}
+#### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
+deployments
+{
+	["Default"]
+	iphone-appid='com.nerdiacs.funkyracing'
+	iphone-link-opts='-weak_framework Security -weak_framework AddressBook -weak_framework AddressBookUI -weak_framework MapKit -lsqlite3.0'
+	iphone-nosign='1'
+	iphone-signing-identity='iPhone Developer'
+}

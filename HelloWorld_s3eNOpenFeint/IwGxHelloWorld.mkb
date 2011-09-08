@@ -1,0 +1,10 @@
+#!/usr/bin/env mkb
+files
+{
+	IwGxHelloWorld.cpp
+}
+subprojects
+{
+	iwgx
+}
+
