@@ -1,0 +1,489 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac9ac0743b4a7ac1c637dd8d9a2c17f19"><param name="Name" value="attempts"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac9ac0743b4a7ac1c637dd8d9a2c17f19"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac9ac0743b4a7ac1c637dd8d9a2c17f19"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#a64b24a4dcc0a2b7dfffed31429fb7246"><param name="Name" value="challenge"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaec7022a723b75796a1c028d9e1df1034"><param name="Name" value="challengeData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaec7022a723b75796a1c028d9e1df1034"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaec7022a723b75796a1c028d9e1df1034"><param name="Name" value="s3eNOFChallenge"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga47456af3464434e78f5719f7c05e0985"><param name="Name" value="challengeDataUrl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga47456af3464434e78f5719f7c05e0985"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga47456af3464434e78f5719f7c05e0985"><param name="Name" value="s3eNOFChallenge"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html#aa658e67f428c8e785a8c7e6caa8e4949"><param name="Name" value="challengeDefinition"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga26fc42a6ce20db337578eaecf96f0914"><param name="Name" value="challengeDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga26fc42a6ce20db337578eaecf96f0914"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga26fc42a6ce20db337578eaecf96f0914"><param name="Name" value="s3eNOFChallenge"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1c8dbfd19cf4b9f8ec94350247bcdcb7"><param name="Name" value="challenger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1c8dbfd19cf4b9f8ec94350247bcdcb7"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1c8dbfd19cf4b9f8ec94350247bcdcb7"><param name="Name" value="s3eNOFChallenge"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab2775b9f11c8112c1ef88f60258bada4"><param name="Name" value="clientApplicationId"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab2775b9f11c8112c1ef88f60258bada4"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab2775b9f11c8112c1ef88f60258bada4"><param name="Name" value="s3eNOFChallengeDefinition"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa92898686eac33f624185167d5375516"><param name="Name" value="comparedToUserId"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa92898686eac33f624185167d5375516"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa92898686eac33f624185167d5375516"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_data.html#acb27730e16c5f0db8231c2c47307fd16"><param name="Name" value="data"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga235b598efac1fa1ac756a36ba9ba5164"><param name="Name" value="description"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga235b598efac1fa1ac756a36ba9ba5164"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga235b598efac1fa1ac756a36ba9ba5164"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga8ed42d00785e6c909036c72d72a23a98"><param name="Name" value="endVersion"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga8ed42d00785e6c909036c72d72a23a98"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga8ed42d00785e6c909036c72d72a23a98"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad29d8e5324ec998f52efea0d9a576359"><param name="Name" value="formattedResultDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad29d8e5324ec998f52efea0d9a576359"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad29d8e5324ec998f52efea0d9a576359"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga36870064effddc6b2ff169dccd47c107"><param name="Name" value="gamerscore"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga36870064effddc6b2ff169dccd47c107"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga36870064effddc6b2ff169dccd47c107"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacf73e9b83740e06275281e4bb9ba1c47"><param name="Name" value="hasBeenViewed"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacf73e9b83740e06275281e4bb9ba1c47"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacf73e9b83740e06275281e4bb9ba1c47"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa6c50239f80d43f2680fe34af1593ba0"><param name="Name" value="hasDecrementedChallengeCount"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa6c50239f80d43f2680fe34af1593ba0"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa6c50239f80d43f2680fe34af1593ba0"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf63ff301a7be88e3180d1a152c376ac7"><param name="Name" value="hiddenText"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf63ff301a7be88e3180d1a152c376ac7"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf63ff301a7be88e3180d1a152c376ac7"><param name="Name" value="s3eNOFChallenge"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga65bc3169f033538d31a6fb651d06b998"><param name="Name" value="iconUrl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga65bc3169f033538d31a6fb651d06b998"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga3a1eb47a42bd1867f223a1ae7f076b40"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga65bc3169f033538d31a6fb651d06b998"><param name="Name" value="s3eNOFChallengeDefinition"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga76d720f4adf95f7561d42f1147fb5c78"><param name="Name" value="isCompleted"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga76d720f4adf95f7561d42f1147fb5c78"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga76d720f4adf95f7561d42f1147fb5c78"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabcaf8a16c837646fd6f9da16cfcefc84"><param name="Name" value="isSecret"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabcaf8a16c837646fd6f9da16cfcefc84"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabcaf8a16c837646fd6f9da16cfcefc84"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf6820f91c7ca33cae0a1fc72ce166fd2"><param name="Name" value="isUnlocked"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf6820f91c7ca33cae0a1fc72ce166fd2"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf6820f91c7ca33cae0a1fc72ce166fd2"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga71acb5cdd5292a7b5083c326c714dcb4"><param name="Name" value="isUnlockedByComparedToUser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga71acb5cdd5292a7b5083c326c714dcb4"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga71acb5cdd5292a7b5083c326c714dcb4"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga006e0fc3783b27c0dcc38b15c238f857"><param name="Name" value="lastPlayedGameId"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga006e0fc3783b27c0dcc38b15c238f857"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga006e0fc3783b27c0dcc38b15c238f857"><param name="Name" value="s3eNOFUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa2660e7649786483081b1c907a767591"><param name="Name" value="lastPlayedGameName"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa2660e7649786483081b1c907a767591"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa2660e7649786483081b1c907a767591"><param name="Name" value="s3eNOFUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1cb952b9a174f212cdd38915a12c4560"><param name="Name" value="latitude"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1cb952b9a174f212cdd38915a12c4560"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1cb952b9a174f212cdd38915a12c4560"><param name="Name" value="s3eNOFUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga0a8617b1651e0991d5145ac746fadc8a"><param name="Name" value="length"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga0a8617b1651e0991d5145ac746fadc8a"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga0a8617b1651e0991d5145ac746fadc8a"><param name="Name" value="s3eNOFChallengeData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac30e43a59dd4cd87a9c48b2a456367c8"><param name="Name" value="longitude"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac30e43a59dd4cd87a9c48b2a456367c8"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac30e43a59dd4cd87a9c48b2a456367c8"><param name="Name" value="s3eNOFUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa30bf01aa490f0e36cc36c2b390037f0"><param name="Name" value="m_count"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa30bf01aa490f0e36cc36c2b390037f0"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa30bf01aa490f0e36cc36c2b390037f0"><param name="Name" value="s3eNOFArray"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga8a04c29667152dbeadff79152b7dbb24"><param name="Name" value="m_intVal"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga8a04c29667152dbeadff79152b7dbb24"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga8a04c29667152dbeadff79152b7dbb24"><param name="Name" value="s3eNOFSettingVal"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_array.html#ade3e4e3e8e472baf7728664230385c90"><param name="Name" value="m_items"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga6aee3bd956a465ec8553735c8a34f3c2"><param name="Name" value="m_reserved"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga6aee3bd956a465ec8553735c8a34f3c2"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga6aee3bd956a465ec8553735c8a34f3c2"><param name="Name" value="s3eNOFSettingVal"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_settings.html#a49975f78aec4d957857034f8c6132cad"><param name="Name" value="m_settingCount"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga02c14e35d772130e5b77cabb7fa73a9b"><param name="Name" value="m_settings"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga02c14e35d772130e5b77cabb7fa73a9b"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga02c14e35d772130e5b77cabb7fa73a9b"><param name="Name" value="s3eNOFSettings"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9ba119d360def536cc5e03bc76d58cdd"><param name="Name" value="m_stringVal"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9ba119d360def536cc5e03bc76d58cdd"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9ba119d360def536cc5e03bc76d58cdd"><param name="Name" value="s3eNOFSettingVal"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_setting_val.html#afd09031ddf2e86b8faa46b8d3574dcda"><param name="Name" value="m_varName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad637b1a89c05dafbbd74e2cbf36e31d4"><param name="Name" value="multiAttempt"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad637b1a89c05dafbbd74e2cbf36e31d4"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad637b1a89c05dafbbd74e2cbf36e31d4"><param name="Name" value="s3eNOFChallengeDefinition"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#a24033cb0807cd9e8abae3a656de997fd"><param name="Name" value="name"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9fe56797f1569770d50ef36dda978508"><param name="Name" value="nofPersistentId"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9fe56797f1569770d50ef36dda978508"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9fe56797f1569770d50ef36dda978508"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac9ac0743b4a7ac1c637dd8d9a2c17f19"><param name="Name" value="attempts"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaec7022a723b75796a1c028d9e1df1034"><param name="Name" value="challengeData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga47456af3464434e78f5719f7c05e0985"><param name="Name" value="challengeDataUrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga26fc42a6ce20db337578eaecf96f0914"><param name="Name" value="challengeDescription"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1c8dbfd19cf4b9f8ec94350247bcdcb7"><param name="Name" value="challenger"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab2775b9f11c8112c1ef88f60258bada4"><param name="Name" value="clientApplicationId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa92898686eac33f624185167d5375516"><param name="Name" value="comparedToUserId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga235b598efac1fa1ac756a36ba9ba5164"><param name="Name" value="description"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga8ed42d00785e6c909036c72d72a23a98"><param name="Name" value="endVersion"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad29d8e5324ec998f52efea0d9a576359"><param name="Name" value="formattedResultDescription"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga36870064effddc6b2ff169dccd47c107"><param name="Name" value="gamerscore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacf73e9b83740e06275281e4bb9ba1c47"><param name="Name" value="hasBeenViewed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa6c50239f80d43f2680fe34af1593ba0"><param name="Name" value="hasDecrementedChallengeCount"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf63ff301a7be88e3180d1a152c376ac7"><param name="Name" value="hiddenText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga65bc3169f033538d31a6fb651d06b998"><param name="Name" value="iconUrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga76d720f4adf95f7561d42f1147fb5c78"><param name="Name" value="isCompleted"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabcaf8a16c837646fd6f9da16cfcefc84"><param name="Name" value="isSecret"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf6820f91c7ca33cae0a1fc72ce166fd2"><param name="Name" value="isUnlocked"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga71acb5cdd5292a7b5083c326c714dcb4"><param name="Name" value="isUnlockedByComparedToUser"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga006e0fc3783b27c0dcc38b15c238f857"><param name="Name" value="lastPlayedGameId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa2660e7649786483081b1c907a767591"><param name="Name" value="lastPlayedGameName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1cb952b9a174f212cdd38915a12c4560"><param name="Name" value="latitude"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga0a8617b1651e0991d5145ac746fadc8a"><param name="Name" value="length"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac30e43a59dd4cd87a9c48b2a456367c8"><param name="Name" value="longitude"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa30bf01aa490f0e36cc36c2b390037f0"><param name="Name" value="m_count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga8a04c29667152dbeadff79152b7dbb24"><param name="Name" value="m_intVal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga6aee3bd956a465ec8553735c8a34f3c2"><param name="Name" value="m_reserved"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga02c14e35d772130e5b77cabb7fa73a9b"><param name="Name" value="m_settings"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9ba119d360def536cc5e03bc76d58cdd"><param name="Name" value="m_stringVal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad637b1a89c05dafbbd74e2cbf36e31d4"><param name="Name" value="multiAttempt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9fe56797f1569770d50ef36dda978508"><param name="Name" value="nofPersistentId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf2b2516a60a29534aa94fc9f901a629b"><param name="Name" value="online"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad499493f971fe5430d6a06b5c70ba9d4"><param name="Name" value="percentComplete"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabdadc0c884c55313c7fc0ee1067f4b8a"><param name="Name" value="position"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac94b3e2f5b51e04bc998cb0e7fc18fe0"><param name="Name" value="profilePictureUrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gadb660e1877f1ba45608b5543b4a865ff"><param name="Name" value="recipient"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga59642af50d8113fbcf9064285e7df1ea"><param name="Name" value="result"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab4e3934409e9b81f9a248197c2d11abc"><param name="Name" value="resultDescription"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaffdb94bdce260640c1db6cf3adfb5477"><param name="Name" value="S3E_NOPENFEINT_SETTINGS_STRING_MAX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga2a3a66951aa3d2b0cb2eaac82c1ff30c"><param name="Name" value="S3E_NOPENFEINT_STRING_MAX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga714d35726c88b507a262d4164daf54d6"><param name="Name" value="S3E_NOPENFEINT_STRING_MAX_1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafb2f974aafabe744d8384a8ff582cd56"><param name="Name" value="S3E_NOPENFEINT_STRING_SMALL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gga6ef9ed4c26e06a1b4d5b3d0004ea28bda018802c719a4ef52c8336d5c320e5d93"><param name="Name" value="S3E_OPENFEINT_ERR_NONE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gga6ef9ed4c26e06a1b4d5b3d0004ea28bdaacb2649c2babd512a412065e906109c4"><param name="Name" value="S3E_OPENFEINT_INVALID_PARAM"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac4da11b85d70897f15745ecd1c65949d"><param name="Name" value="s3eNewMessageBox"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1e427d279a4d58b06bd45122984a5b00"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga020ea6704c5e2c7449bae9fd13bb7b43"><param name="Name" value="s3eNOFachievement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga00f8721dad47b69383090091a37ed97e"><param name="Name" value="s3eNOFachievements"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga007858ccc16ba9fddaa18af73d68f399"><param name="Name" value="s3eNOFachievementUnlock"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga58e6c378a40420b5dd124a518571d477"><param name="Name" value="s3eNOFachievementUnlockAndDefer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf34d456ca65c4496ff0aca60484a5e50"><param name="Name" value="s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafc79d5fb8f1516cf5b6c61edb910d510"><param name="Name" value="s3eNOFArray"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga025bd1c28b0fb4dfedb98023c92caee8"><param name="Name" value="s3eNOFChallenge"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac0bbac15d2f5955c47e4b1c97de9041d"><param name="Name" value="s3eNOFchallengeCompleteWithResult"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga836b6f1da3311a513c16676c0d6d6107"><param name="Name" value="s3eNOFChallengeData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabc8d488f663fbf90990f7436e14f2161"><param name="Name" value="s3eNOFChallengeDefinition"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga5d1d6b1cc48e419f5b2c70008ebb7a27"><param name="Name" value="s3eNOFchallengeDisplayCompletionWithData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9dd95cd7517008538410a677ab14bd53"><param name="Name" value="s3eNOFchallengeId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga72aba52b0a4382e49b79f18ea4dfebbd"><param name="Name" value="s3eNOFChallengeResult"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga7b4c00e0398b253d54165af119d4ad99"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafd2b02b161f2ebc709b52fd25c13bd85"><param name="Name" value="s3eNOFdismissDashboard"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga396467328a4a70b44493263ceffec609"><param name="Name" value="s3eNOFdisplayAndSendChallenge"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga3b6050107c6b8a85bbc40a99efdc0bbb"><param name="Name" value="s3eNOFdownloadAllChallengeDefinitions"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabf380208ac3cbb38d7b2a6e097ccaac5"><param name="Name" value="s3eNOFdownloadChallengeDefinitionWithId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaffce9d737cb62d66c7cf64873b1c2aee"><param name="Name" value="s3eNOFhasUserApprovedFeint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab565578b04e0056a8ce477a9b848a94c"><param name="Name" value="s3eNOFinitializeWithProductKey"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga90b0d5b1df4a437f8c337a61ae7c4678"><param name="Name" value="s3eNOFisOnline"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad5908d8a536ccc2304a9844bc63f71e6"><param name="Name" value="s3eNOFlaunchDashboard"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga10d29137246b18a6b0aa0f14190eafc8"><param name="Name" value="s3eNOFlaunchDashboardWithAchievementsPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga298064bb113bc28f0f11dfa88f261ffe"><param name="Name" value="s3eNOFlaunchDashboardWithChallengesPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac88efb584c9cbff3820ceb68266bfede"><param name="Name" value="s3eNOFlaunchDashboardWithFindFriendsPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa5e3ca8365d1b0134f24cc6da139549f"><param name="Name" value="s3eNOFlaunchDashboardWithForumsPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga3084c8f351d1545f33bad15e0bfce0d8"><param name="Name" value="s3eNOFlaunchDashboardWithHighscorePage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga48e776364d044acddf01da986f54e10c"><param name="Name" value="s3eNOFlaunchDashboardWithInvitePage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacad353c4535c5a9c31335d8ea9ad97c1"><param name="Name" value="s3eNOFlaunchDashboardWithiPurchasePage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga4ddf5011370c7b48c0916d23f6130c8e"><param name="Name" value="s3eNOFlaunchDashboardWithListGlobalChatRoomsPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gada3870ef5d4c830ba79ba371b5aa660e"><param name="Name" value="s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga2641001b84dec4536780102caae1e196"><param name="Name" value="s3eNOFlaunchDashboardWithSpecificInvite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga5c6a69c27fe03d703274b626b712c68b"><param name="Name" value="s3eNOFlaunchDashboardWithSwitchUserPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga0eb2d1ae58ac7f05315dd0d4166e9793"><param name="Name" value="s3eNOFlaunchDashboardWithWhosPlayingPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga56e4bc2c854fc1fb9918045fea4167ab"><param name="Name" value="s3eNOFPlayerInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga91a4fc5b95812435df330746b1d5ded1"><param name="Name" value="s3eNOFsetDashboardOrientation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga0063f0a593d0853ca3d5ec8a41b3b835"><param name="Name" value="s3eNOFSettings"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga2c2981f021f2a69c8ab32ab6d1a3a4d6"><param name="Name" value="s3eNOFSettingVal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga37c6bdeb3d9684f58aa59ef29b08fb9b"><param name="Name" value="s3eNOFshutdown"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga4186be6c56b04643cb06fcc09f1fede6"><param name="Name" value="s3eNOFsubmitDeferredAchievements"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab867b2aef6d359907508f9db15dc46b1"><param name="Name" value="s3eNOFsubmitHighScore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaae461961f162f751c87f8ca7134f26c9"><param name="Name" value="s3eNOFUIInterfaceOrientation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga08d7542b314ea594515cffa2dd86374d"><param name="Name" value="s3eNOFupdateAcheivementProgressionComplete"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga038694687b332e497536920f13f4b0f3"><param name="Name" value="s3eNOFUser"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga6b912a16b413186f3387e8e9a95bcb21"><param name="Name" value="s3eNOpenFeintAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga7c61dcb9e0d6e02b9b0503407c0c3c80"><param name="Name" value="s3eNOpenFeintCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab401ad62bceb97c2672930ea6326f726"><param name="Name" value="s3eNOpenFeintError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1547aacf4dfcb626c1d5515d91916106"><param name="Name" value="s3eNOpenFeintGetError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabc6fcbf5fbde609504975831ecb9e801"><param name="Name" value="s3eNOpenFeintGetErrorString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga15c3278f021ef1cdbc4f2b522444cc90"><param name="Name" value="s3eNOpenFeintRegister"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga622ceda63aaf8c2c0765ee8a086dfe60"><param name="Name" value="s3eNOpenFeintUnRegister"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga5e75b58191771edc32ebf022277b85cd"><param name="Name" value="startVersion"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacc567fef5f47b21d3b268f9e8146d519"><param name="Name" value="unlockDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafd32f1539eaa5e98839c34cef6e40c4a"><param name="Name" value="userId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga39c79347e6372fce8673936899cfcda1"><param name="Name" value="userMessage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf2b2516a60a29534aa94fc9f901a629b"><param name="Name" value="online"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf2b2516a60a29534aa94fc9f901a629b"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf2b2516a60a29534aa94fc9f901a629b"><param name="Name" value="s3eNOFUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad499493f971fe5430d6a06b5c70ba9d4"><param name="Name" value="percentComplete"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad499493f971fe5430d6a06b5c70ba9d4"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad499493f971fe5430d6a06b5c70ba9d4"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_player_info.html#a30ac2a010171e6ad878cb9cdc0c906ce"><param name="Name" value="playerId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabdadc0c884c55313c7fc0ee1067f4b8a"><param name="Name" value="position"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabdadc0c884c55313c7fc0ee1067f4b8a"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabdadc0c884c55313c7fc0ee1067f4b8a"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac94b3e2f5b51e04bc998cb0e7fc18fe0"><param name="Name" value="profilePictureUrl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac94b3e2f5b51e04bc998cb0e7fc18fe0"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac94b3e2f5b51e04bc998cb0e7fc18fe0"><param name="Name" value="s3eNOFUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gadb660e1877f1ba45608b5543b4a865ff"><param name="Name" value="recipient"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gadb660e1877f1ba45608b5543b4a865ff"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gadb660e1877f1ba45608b5543b4a865ff"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga59642af50d8113fbcf9064285e7df1ea"><param name="Name" value="result"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga59642af50d8113fbcf9064285e7df1ea"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga59642af50d8113fbcf9064285e7df1ea"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab4e3934409e9b81f9a248197c2d11abc"><param name="Name" value="resultDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab4e3934409e9b81f9a248197c2d11abc"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab4e3934409e9b81f9a248197c2d11abc"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html"><param name="Name" value="S3E Nerdiacs OpenFeint Extension API Reference"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaffdb94bdce260640c1db6cf3adfb5477"><param name="Name" value="S3E_NOPENFEINT_SETTINGS_STRING_MAX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga2a3a66951aa3d2b0cb2eaac82c1ff30c"><param name="Name" value="S3E_NOPENFEINT_STRING_MAX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga714d35726c88b507a262d4164daf54d6"><param name="Name" value="S3E_NOPENFEINT_STRING_MAX_1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafb2f974aafabe744d8384a8ff582cd56"><param name="Name" value="S3E_NOPENFEINT_STRING_SMALL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gga6ef9ed4c26e06a1b4d5b3d0004ea28bda018802c719a4ef52c8336d5c320e5d93"><param name="Name" value="S3E_OPENFEINT_ERR_NONE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gga6ef9ed4c26e06a1b4d5b3d0004ea28bdaacb2649c2babd512a412065e906109c4"><param name="Name" value="S3E_OPENFEINT_INVALID_PARAM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__s3e_nerdiacs.html"><param name="Name" value="S3eNerdiacs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac4da11b85d70897f15745ecd1c65949d"><param name="Name" value="s3eNewMessageBox"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#gaa92898686eac33f624185167d5375516"><param name="Name" value="comparedToUserId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#ga235b598efac1fa1ac756a36ba9ba5164"><param name="Name" value="description"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#ga8ed42d00785e6c909036c72d72a23a98"><param name="Name" value="endVersion"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#ga36870064effddc6b2ff169dccd47c107"><param name="Name" value="gamerscore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#ga3a1eb47a42bd1867f223a1ae7f076b40"><param name="Name" value="iconUrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#gabcaf8a16c837646fd6f9da16cfcefc84"><param name="Name" value="isSecret"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#gaf6820f91c7ca33cae0a1fc72ce166fd2"><param name="Name" value="isUnlocked"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#ga71acb5cdd5292a7b5083c326c714dcb4"><param name="Name" value="isUnlockedByComparedToUser"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1e427d279a4d58b06bd45122984a5b00"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga020ea6704c5e2c7449bae9fd13bb7b43"><param name="Name" value="s3eNOFachievement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#gad499493f971fe5430d6a06b5c70ba9d4"><param name="Name" value="percentComplete"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#gabdadc0c884c55313c7fc0ee1067f4b8a"><param name="Name" value="position"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#ga5e75b58191771edc32ebf022277b85cd"><param name="Name" value="startVersion"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#acebe7f3b0ec280affe16115b909aa9b1"><param name="Name" value="title"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#gacc567fef5f47b21d3b268f9e8146d519"><param name="Name" value="unlockDate"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga00f8721dad47b69383090091a37ed97e"><param name="Name" value="s3eNOFachievements"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga007858ccc16ba9fddaa18af73d68f399"><param name="Name" value="s3eNOFachievementUnlock"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga58e6c378a40420b5dd124a518571d477"><param name="Name" value="s3eNOFachievementUnlockAndDefer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaf34d456ca65c4496ff0aca60484a5e50"><param name="Name" value="s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_array.html"><param name="Name" value="s3eNOFArray"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_array.html#gaa30bf01aa490f0e36cc36c2b390037f0"><param name="Name" value="m_count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_array.html#ade3e4e3e8e472baf7728664230385c90"><param name="Name" value="m_items"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafc79d5fb8f1516cf5b6c61edb910d510"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html"><param name="Name" value="s3eNOFChallenge"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html#gaec7022a723b75796a1c028d9e1df1034"><param name="Name" value="challengeData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html#ga47456af3464434e78f5719f7c05e0985"><param name="Name" value="challengeDataUrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html#aa658e67f428c8e785a8c7e6caa8e4949"><param name="Name" value="challengeDefinition"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html#ga26fc42a6ce20db337578eaecf96f0914"><param name="Name" value="challengeDescription"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html#ga1c8dbfd19cf4b9f8ec94350247bcdcb7"><param name="Name" value="challenger"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html#gaf63ff301a7be88e3180d1a152c376ac7"><param name="Name" value="hiddenText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga025bd1c28b0fb4dfedb98023c92caee8"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge.html#ga39c79347e6372fce8673936899cfcda1"><param name="Name" value="userMessage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac0bbac15d2f5955c47e4b1c97de9041d"><param name="Name" value="s3eNOFchallengeCompleteWithResult"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_data.html"><param name="Name" value="s3eNOFChallengeData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_data.html#acb27730e16c5f0db8231c2c47307fd16"><param name="Name" value="data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_data.html#ga0a8617b1651e0991d5145ac746fadc8a"><param name="Name" value="length"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga836b6f1da3311a513c16676c0d6d6107"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_definition.html"><param name="Name" value="s3eNOFChallengeDefinition"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_definition.html#gab2775b9f11c8112c1ef88f60258bada4"><param name="Name" value="clientApplicationId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_definition.html#ga65bc3169f033538d31a6fb651d06b998"><param name="Name" value="iconUrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_definition.html#gad637b1a89c05dafbbd74e2cbf36e31d4"><param name="Name" value="multiAttempt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabc8d488f663fbf90990f7436e14f2161"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_definition.html#ga9dd95cd7517008538410a677ab14bd53"><param name="Name" value="s3eNOFchallengeId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_definition.html#a71a7e378f359ed46f65acc9fb094c419"><param name="Name" value="title"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga5d1d6b1cc48e419f5b2c70008ebb7a27"><param name="Name" value="s3eNOFchallengeDisplayCompletionWithData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9dd95cd7517008538410a677ab14bd53"><param name="Name" value="s3eNOFchallengeId"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9dd95cd7517008538410a677ab14bd53"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga9dd95cd7517008538410a677ab14bd53"><param name="Name" value="s3eNOFChallengeDefinition"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga72aba52b0a4382e49b79f18ea4dfebbd"><param name="Name" value="s3eNOFChallengeResult"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html"><param name="Name" value="s3eNOFChallengeToUser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#gac9ac0743b4a7ac1c637dd8d9a2c17f19"><param name="Name" value="attempts"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#a64b24a4dcc0a2b7dfffed31429fb7246"><param name="Name" value="challenge"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#gad29d8e5324ec998f52efea0d9a576359"><param name="Name" value="formattedResultDescription"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#gacf73e9b83740e06275281e4bb9ba1c47"><param name="Name" value="hasBeenViewed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#gaa6c50239f80d43f2680fe34af1593ba0"><param name="Name" value="hasDecrementedChallengeCount"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#ga76d720f4adf95f7561d42f1147fb5c78"><param name="Name" value="isCompleted"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#ga9fe56797f1569770d50ef36dda978508"><param name="Name" value="nofPersistentId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga7b4c00e0398b253d54165af119d4ad99"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#gadb660e1877f1ba45608b5543b4a865ff"><param name="Name" value="recipient"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#ga59642af50d8113fbcf9064285e7df1ea"><param name="Name" value="result"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_to_user.html#gab4e3934409e9b81f9a248197c2d11abc"><param name="Name" value="resultDescription"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafd2b02b161f2ebc709b52fd25c13bd85"><param name="Name" value="s3eNOFdismissDashboard"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga396467328a4a70b44493263ceffec609"><param name="Name" value="s3eNOFdisplayAndSendChallenge"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga3b6050107c6b8a85bbc40a99efdc0bbb"><param name="Name" value="s3eNOFdownloadAllChallengeDefinitions"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabf380208ac3cbb38d7b2a6e097ccaac5"><param name="Name" value="s3eNOFdownloadChallengeDefinitionWithId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaffce9d737cb62d66c7cf64873b1c2aee"><param name="Name" value="s3eNOFhasUserApprovedFeint"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab565578b04e0056a8ce477a9b848a94c"><param name="Name" value="s3eNOFinitializeWithProductKey"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga90b0d5b1df4a437f8c337a61ae7c4678"><param name="Name" value="s3eNOFisOnline"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gad5908d8a536ccc2304a9844bc63f71e6"><param name="Name" value="s3eNOFlaunchDashboard"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga10d29137246b18a6b0aa0f14190eafc8"><param name="Name" value="s3eNOFlaunchDashboardWithAchievementsPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga298064bb113bc28f0f11dfa88f261ffe"><param name="Name" value="s3eNOFlaunchDashboardWithChallengesPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gac88efb584c9cbff3820ceb68266bfede"><param name="Name" value="s3eNOFlaunchDashboardWithFindFriendsPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaa5e3ca8365d1b0134f24cc6da139549f"><param name="Name" value="s3eNOFlaunchDashboardWithForumsPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga3084c8f351d1545f33bad15e0bfce0d8"><param name="Name" value="s3eNOFlaunchDashboardWithHighscorePage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga48e776364d044acddf01da986f54e10c"><param name="Name" value="s3eNOFlaunchDashboardWithInvitePage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacad353c4535c5a9c31335d8ea9ad97c1"><param name="Name" value="s3eNOFlaunchDashboardWithiPurchasePage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga4ddf5011370c7b48c0916d23f6130c8e"><param name="Name" value="s3eNOFlaunchDashboardWithListGlobalChatRoomsPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gada3870ef5d4c830ba79ba371b5aa660e"><param name="Name" value="s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga2641001b84dec4536780102caae1e196"><param name="Name" value="s3eNOFlaunchDashboardWithSpecificInvite"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga5c6a69c27fe03d703274b626b712c68b"><param name="Name" value="s3eNOFlaunchDashboardWithSwitchUserPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga0eb2d1ae58ac7f05315dd0d4166e9793"><param name="Name" value="s3eNOFlaunchDashboardWithWhosPlayingPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_player_info.html"><param name="Name" value="s3eNOFPlayerInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga56e4bc2c854fc1fb9918045fea4167ab"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_player_info.html#a30ac2a010171e6ad878cb9cdc0c906ce"><param name="Name" value="playerId"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga91a4fc5b95812435df330746b1d5ded1"><param name="Name" value="s3eNOFsetDashboardOrientation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_settings.html"><param name="Name" value="s3eNOFSettings"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_settings.html#a49975f78aec4d957857034f8c6132cad"><param name="Name" value="m_settingCount"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_settings.html#ga02c14e35d772130e5b77cabb7fa73a9b"><param name="Name" value="m_settings"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga0063f0a593d0853ca3d5ec8a41b3b835"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_setting_val.html"><param name="Name" value="s3eNOFSettingVal"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_setting_val.html#ga8a04c29667152dbeadff79152b7dbb24"><param name="Name" value="m_intVal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_setting_val.html#ga6aee3bd956a465ec8553735c8a34f3c2"><param name="Name" value="m_reserved"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_setting_val.html#ga9ba119d360def536cc5e03bc76d58cdd"><param name="Name" value="m_stringVal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_setting_val.html#afd09031ddf2e86b8faa46b8d3574dcda"><param name="Name" value="m_varName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga2c2981f021f2a69c8ab32ab6d1a3a4d6"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga37c6bdeb3d9684f58aa59ef29b08fb9b"><param name="Name" value="s3eNOFshutdown"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga4186be6c56b04643cb06fcc09f1fede6"><param name="Name" value="s3eNOFsubmitDeferredAchievements"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab867b2aef6d359907508f9db15dc46b1"><param name="Name" value="s3eNOFsubmitHighScore"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gaae461961f162f751c87f8ca7134f26c9"><param name="Name" value="s3eNOFUIInterfaceOrientation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga08d7542b314ea594515cffa2dd86374d"><param name="Name" value="s3eNOFupdateAcheivementProgressionComplete"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html"><param name="Name" value="s3eNOFUser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#ga006e0fc3783b27c0dcc38b15c238f857"><param name="Name" value="lastPlayedGameId"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#gaa2660e7649786483081b1c907a767591"><param name="Name" value="lastPlayedGameName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#ga1cb952b9a174f212cdd38915a12c4560"><param name="Name" value="latitude"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#gac30e43a59dd4cd87a9c48b2a456367c8"><param name="Name" value="longitude"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#a24033cb0807cd9e8abae3a656de997fd"><param name="Name" value="name"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga038694687b332e497536920f13f4b0f3"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#gaf2b2516a60a29534aa94fc9f901a629b"><param name="Name" value="online"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#gac94b3e2f5b51e04bc998cb0e7fc18fe0"><param name="Name" value="profilePictureUrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_user.html#gafd32f1539eaa5e98839c34cef6e40c4a"><param name="Name" value="userId"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga6b912a16b413186f3387e8e9a95bcb21"><param name="Name" value="s3eNOpenFeintAvailable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga7c61dcb9e0d6e02b9b0503407c0c3c80"><param name="Name" value="s3eNOpenFeintCallback"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gab401ad62bceb97c2672930ea6326f726"><param name="Name" value="s3eNOpenFeintError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga1547aacf4dfcb626c1d5515d91916106"><param name="Name" value="s3eNOpenFeintGetError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gabc6fcbf5fbde609504975831ecb9e801"><param name="Name" value="s3eNOpenFeintGetErrorString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga15c3278f021ef1cdbc4f2b522444cc90"><param name="Name" value="s3eNOpenFeintRegister"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga622ceda63aaf8c2c0765ee8a086dfe60"><param name="Name" value="s3eNOpenFeintUnRegister"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga5e75b58191771edc32ebf022277b85cd"><param name="Name" value="startVersion"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga5e75b58191771edc32ebf022277b85cd"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga5e75b58191771edc32ebf022277b85cd"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#acebe7f3b0ec280affe16115b909aa9b1"><param name="Name" value="title"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_achievement.html#acebe7f3b0ec280affe16115b909aa9b1"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structs3e_n_o_f_challenge_definition.html#a71a7e378f359ed46f65acc9fb094c419"><param name="Name" value="s3eNOFChallengeDefinition"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacc567fef5f47b21d3b268f9e8146d519"><param name="Name" value="unlockDate"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacc567fef5f47b21d3b268f9e8146d519"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gacc567fef5f47b21d3b268f9e8146d519"><param name="Name" value="s3eNOFAchievement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafd32f1539eaa5e98839c34cef6e40c4a"><param name="Name" value="userId"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafd32f1539eaa5e98839c34cef6e40c4a"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#gafd32f1539eaa5e98839c34cef6e40c4a"><param name="Name" value="s3eNOFUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga39c79347e6372fce8673936899cfcda1"><param name="Name" value="userMessage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga39c79347e6372fce8673936899cfcda1"><param name="Name" value="NOpenFeintApiGroup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___n_open_feint_api_group.html#ga39c79347e6372fce8673936899cfcda1"><param name="Name" value="s3eNOFChallenge"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

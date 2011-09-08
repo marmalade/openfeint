@@ -1,0 +1,152 @@
+The OpenFeint Marmalade Extension project. \begin{DoxyNote}{Note}
+Copyright (C) 2011 Nerdiacs Pte Limited
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 USA
+\end{DoxyNote}
+\hypertarget{main_sec_1}{}\section{Supported Platforms}\label{main_sec_1}
+This extension currently only supports iOS SDK.
+
+\hyperlink{main_sec_2}{Compiling the extension}
+
+\hyperlink{main_sec_3}{Compiling your App with Extension}
+
+\hyperlink{main_sec_4}{Using extension in your code}
+
+\hyperlink{main_sec_5}{Changelog}\hypertarget{main_sec_2}{}\section{Compiling the extension}\label{main_sec_2}
+Run the mkb file to generate the xcode project etc. Open xcode project settings. Add new group(drag and drop) openfeint source code directory as shown in screenshot. \begin{DoxyNote}{Note}
+Use option \char`\"{}Create groups for any added folder\char`\"{}.
+\end{DoxyNote}
+ Open Build Settings and go to Precompile Prefix Header option. Disable precompile header file by selecting NO and then specify OpenFeint's prefix header in the option Prefix Header as shown in diagram.
+
+
+
+Make sure you use same compile architecture as your application. At the time of writing this documentation, the default compile architecture by Marmalade was armv6 so we forced our settings to use armv6 for extension as well.
+
+
+
+The compilation of project should go just fine and Debug library created in lib directory.\hypertarget{main_sec_3}{}\section{Compiling your App with Extension}\label{main_sec_3}
+Include the s3eNOpenFeint as subproject in your mkb file. Put openfeint\_\-offline\_\-config.xml in data folder of project that you download from your OpenFeint developer account. Also include OFResources\_\-Universal.bundle in the data folder. You might want to strip out unnecessary UI from this bundle to reduce binary size.\hypertarget{main_sec_4}{}\section{Using extension in your code}\label{main_sec_4}
+The API functions as close to OpenFeint's own API as possible. It is highly recommended to also keep original OpenFeint documentation open to understand how OpenFeint works.
+
+\hyperlink{main_sec_4_1}{Initialisation}
+
+\hyperlink{main_sec_4_2}{Checking if user is logged in and has approved OpenFeint}
+
+\hyperlink{main_sec_4_3}{Invoking Dashboard(s)}
+
+\hyperlink{main_sec_4_4}{Creating challenges}
+
+\hyperlink{main_sec_4_5}{Playing a challenge}
+
+\hyperlink{main_sec_4_6}{Using Leaderboards}
+
+\hyperlink{main_sec_4_7}{Using Achievements}
+
+\begin{DoxyNote}{Note}
+The API never shares any of its allocated memory with API consumer for the life of Application. The API will deallocate portion of memory allocated by it after callbacks to API Consumer. So, always make a shallow copy of data if you need to refer to it later. Usually this is needed for challenge Definitions.
+\end{DoxyNote}
+\hypertarget{main_sec_4_1}{}\subsection{Initialisation}\label{main_sec_4_1}
+Check for Extension's availability by calling \hyperlink{group___n_open_feint_api_group_ga6b912a16b413186f3387e8e9a95bcb21}{s3eNOpenFeintAvailable}. Then register for callbacks using \hyperlink{group___n_open_feint_api_group_ga15c3278f021ef1cdbc4f2b522444cc90}{s3eNOpenFeintRegister} that your app is interested in. Have a look at enum s3eNOpenFeintCallback and Delegates in original OpenFeint API docs. 
+\begin{DoxyCode}
+ static int32 playerLoggedIn(void *systemData, void *userData) 
+ {
+        if(systemData)
+        {
+                s3eNOFPlayerInfo *info = (s3eNOFPlayerInfo*)systemData;
+                AppendMessage("PlayerId received is %s", info->playerId);
+        }
+        
+        return 0;
+ }
+ 
+ s3eNOpenFeintRegister(S3E_NOPENFEINT_CALLBACK_PLAYER_LOGGEDIN, &playerLoggedIn, 
+      NULL);
+\end{DoxyCode}
+
+
+App should initialize OpenFeint by calling function \hyperlink{group___n_open_feint_api_group_gab565578b04e0056a8ce477a9b848a94c}{s3eNOFinitializeWithProductKey}.\hypertarget{main_sec_4_2}{}\subsection{Checking if user is logged in and has approved OpenFeint}\label{main_sec_4_2}
+\hyperlink{group___n_open_feint_api_group_ga90b0d5b1df4a437f8c337a61ae7c4678}{s3eNOFisOnline} tells if user is online. \hyperlink{group___n_open_feint_api_group_gaffce9d737cb62d66c7cf64873b1c2aee}{s3eNOFhasUserApprovedFeint} tells if user has approved OpenFeint. It is recommended to check for approval before calling other API.\hypertarget{main_sec_4_3}{}\subsection{Invoking Dashboard(s)}\label{main_sec_4_3}
+Calling s3eNOFlaunchDashboard simply invokes the main dashboard of OpenFeint 
+\begin{DoxyCode}
+                s3eNOFlaunchDashboard();
+\end{DoxyCode}
+ if you want to open to a specific page no dashboard then use its respective API call. for example \hyperlink{group___n_open_feint_api_group_ga10d29137246b18a6b0aa0f14190eafc8}{s3eNOFlaunchDashboardWithAchievementsPage} for achievements page \hyperlink{group___n_open_feint_api_group_ga298064bb113bc28f0f11dfa88f261ffe}{s3eNOFlaunchDashboardWithChallengesPage} for challenges
+
+There are a lot more of such API. Refer to documentation of API.\hypertarget{main_sec_4_4}{}\subsection{Creating challenges}\label{main_sec_4_4}
+Challenges is one of the most important features of OpenFeint. To create a challenge first you need to download all challenge definitions from OpenFeint server using the API \hyperlink{group___n_open_feint_api_group_ga3b6050107c6b8a85bbc40a99efdc0bbb}{s3eNOFdownloadAllChallengeDefinitions}. The challenge definitions are stored by s3eNOpenFeint extension in its own array and provided as \hyperlink{structs3e_n_o_f_array}{s3eNOFArray} to callback S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-DOWNLOAD\_\-ALL\_\-CHALLENGE\_\-DEFINITIONS
+
+
+\begin{DoxyCode}
+ static int32 didDownloadAllChallengeDefinitions(void *systemData, void *userData
+      )
+ {
+        if(!systemData)
+        {
+                AppendMessage("Downloaded all challenges with 0 items");
+                return 0;
+        }
+                
+        s3eNOFArray *defArray = (s3eNOFArray*)systemData;
+        AppendMessage("AllChallengeDefinitions Downloaded with count %d" , defArr
+      ay->m_count);
+        for (uint i=0; i < defArray->m_count; i++) {
+                AppendMessage("Challenge %s, appId %s, iconUrl %s, multiAttempt %
+      d",
+                                          ((s3eNOFChallengeDefinition*)defArray->
+      m_items)[i].title,
+                                          ((s3eNOFChallengeDefinition*)defArray->
+      m_items)[i].clientApplicationId,
+                                          ((s3eNOFChallengeDefinition*)defArray->
+      m_items)[i].iconUrl,
+                                          ((s3eNOFChallengeDefinition*)defArray->
+      m_items)[i].multiAttempt);
+        }
+        // Copy all challengedefs to local variable for later use
+        return 0;
+ }
+\end{DoxyCode}
+
+
+Use \hyperlink{group___n_open_feint_api_group_ga396467328a4a70b44493263ceffec609}{s3eNOFdisplayAndSendChallenge} to let user send challenge to the friends using OpenFeint UI.\hypertarget{main_sec_4_5}{}\subsection{Playing a challenge}\label{main_sec_4_5}
+The challenge can be invoked/accepted by user from dashboard UI. The notification that user wants to play a challenge is received as callback S3E\_\-NOPENFEINT\_\-CALLBACK\_\-USER\_\-LAUNCHED\_\-CHALLENGE.
+
+
+\begin{DoxyCode}
+ static int32 userLaunchedChallenge(void *systemData, void *userData)
+ {
+        if (!systemData) {
+                return -1;
+        }
+        s3eNOFChallengeToUser *nofChalToUser = (s3eNOFChallengeToUser*)systemData
+      ;
+        AppendMessage("Challenge %s from %s to %s with id %s", 
+                                  nofChalToUser->challenge->challengeDefinition->
+      title,
+                                  nofChalToUser->challenge->challenger->name,
+                                  nofChalToUser->recipient->name,
+                                  nofChalToUser->nofPersistentId);
+        strncpy(persistentChallengeId,nofChalToUser->nofPersistentId,sizeof(persi
+      stentChallengeId));
+        return 0;
+ }
+\end{DoxyCode}
+
+
+After challenge is complete and you want to post the result of challenge post the challenge result using API \hyperlink{group___n_open_feint_api_group_gac0bbac15d2f5955c47e4b1c97de9041d}{s3eNOFchallengeCompleteWithResult} to OpenFeint. After this call \hyperlink{group___n_open_feint_api_group_ga5d1d6b1cc48e419f5b2c70008ebb7a27}{s3eNOFchallengeDisplayCompletionWithData} to let user submit data for challenge.\hypertarget{main_sec_4_6}{}\subsection{Using Leaderboards}\label{main_sec_4_6}
+Leaderboards or highscore is a simple API to use. Simply use \hyperlink{group___n_open_feint_api_group_gab867b2aef6d359907508f9db15dc46b1}{s3eNOFsubmitHighScore} API to update highscore. The leaderboard id is the unique id on OpenFeint developer account.\hypertarget{main_sec_4_7}{}\subsection{Using Achievements}\label{main_sec_4_7}
+The list of achievements is downloaded by OpenFeint at initialization time and contains the status/progress of current user in percentage for a particular achievement. Use \hyperlink{group___n_open_feint_api_group_ga00f8721dad47b69383090091a37ed97e}{s3eNOFachievements} to get the list of achievements.
+
+If your achievement is a progress based achievement which doesn't simply gets unlocked then use API \hyperlink{group___n_open_feint_api_group_ga08d7542b314ea594515cffa2dd86374d}{s3eNOFupdateAcheivementProgressionComplete}. If you simply want to unlock an achievement then use API \hyperlink{group___n_open_feint_api_group_ga007858ccc16ba9fddaa18af73d68f399}{s3eNOFachievementUnlock}
+
+There are a lot of other functions in this API. Refer to documentation.\hypertarget{main_sec_5}{}\section{Changelog}\label{main_sec_5}
+Date September 08, 2011
+\begin{DoxyItemize}
+\item Challenges API
+\item Achievements API
+\item Leaderboards API
+\item Different types of dashboards 
+\end{DoxyItemize}

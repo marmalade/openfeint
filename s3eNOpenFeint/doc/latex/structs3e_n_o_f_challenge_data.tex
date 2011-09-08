@@ -1,0 +1,43 @@
+\hypertarget{structs3e_n_o_f_challenge_data}{
+\section{s3eNOFChallengeData Struct Reference}
+\label{structs3e_n_o_f_challenge_data}\index{s3eNOFChallengeData@{s3eNOFChallengeData}}
+}
+
+
+{\ttfamily \#include $<$s3eNOpenFeint.h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structs3e_n_o_f_challenge_data_acb27730e16c5f0db8231c2c47307fd16}{
+void $\ast$ {\bfseries data}}
+\label{structs3e_n_o_f_challenge_data_acb27730e16c5f0db8231c2c47307fd16}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga0a8617b1651e0991d5145ac746fadc8a}{
+uint {\bfseries length}}
+\label{group___n_open_feint_api_group_ga0a8617b1651e0991d5145ac746fadc8a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+s3eChallengeData structure to hold challenge data 
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to challenge data that is copied by API internally \\
+\hline
+{\em length} & Length of data in struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the consumer of API is supposed to deallocate this struct. API only keeps its own internal copy. If this struct is received as callback, make a local copy if needed as it will be deallocated after callback finishes. 
+\end{DoxyNote}
+
+
+Definition at line 204 of file s3eNOpenFeint.h.
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Volumes/mac\_\-hd\_\-2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/s3eNOpenFeint/h/s3eNOpenFeint.h\end{DoxyCompactItemize}

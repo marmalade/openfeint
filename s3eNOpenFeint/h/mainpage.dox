@@ -1,0 +1,192 @@
+/** 
+ * @mainpage s3eNOpenFeint - OpenFeint extension for Marmalade by Nerdiacs
+ *
+ *
+ * The OpenFeint Marmalade Extension project.
+ * @note Copyright (C) 2011 Nerdiacs Pte Limited
+ * 
+ * @note This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 3.0 of the License, or (at your option) any later version.
+ * 
+ * @note This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * @note You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ *
+ * @section sec_1 Supported Platforms 
+ * This extension currently only supports iOS SDK.
+ * 
+ * @ref sec_2
+ *
+ * @ref sec_3
+ *
+ * @ref sec_4
+ *
+ * @ref sec_5
+ *
+ * @section sec_2 Compiling the extension
+ * 
+ * Run the mkb file to generate the xcode project etc.
+ * Open xcode project settings. Add new group(drag and drop) openfeint source code directory as shown in screenshot. 
+ * @note Use option "Create groups for any added folder".
+ * 
+ * @image html shot_xcode_openfeint_group.png
+ * Open Build Settings and go to Precompile Prefix Header option. Disable precompile header file by selecting NO and then specify OpenFeint's prefix header in the option Prefix Header as shown in diagram.
+ * 
+ * @image html shot_xcode_s3enopenfeint_buildsettings.png
+ *
+ * Make sure you use same compile architecture as your application. At the time of writing this documentation, the default compile architecture by Marmalade was armv6 so we forced our settings to use armv6 for extension as well. 
+ * 
+ * @image html xcode_shot_compile_armv6.png
+ *
+ * The compilation of project should go just fine and Debug library created in lib directory.
+ * 
+ * @section sec_3 Compiling your App with Extension
+ * 
+ * Include the s3eNOpenFeint as subproject in your mkb file.
+ * Put openfeint_offline_config.xml in data folder of project that you download from your OpenFeint developer account.
+ * Also include OFResources_Universal.bundle in the data folder. You might want to strip out unnecessary UI from this bundle to reduce binary size.
+ * 
+ * @section sec_4 Using extension in your code
+ * 
+ * The API functions as close to OpenFeint's own API as possible. 
+ * It is highly recommended to also keep original OpenFeint documentation open to understand how OpenFeint works.
+ * 
+ * @ref sec_4_1
+ *
+ * @ref sec_4_2
+ *
+ * @ref sec_4_3
+ *
+ * @ref sec_4_4
+ *
+ * @ref sec_4_5
+ *
+ * @ref sec_4_6
+ *
+ * @ref sec_4_7
+ *
+ * @note The API never shares any of its allocated memory with API consumer for the life of Application. The API will deallocate portion of memory allocated by it after callbacks to API Consumer. So, always make a shallow copy of data if you need to refer to it later. Usually this is needed for challenge Definitions.
+ * 
+ * @subsection sec_4_1 Initialisation
+ * Check for Extension's availability by calling @ref s3eNOpenFeintAvailable.
+ * Then register for callbacks using @ref s3eNOpenFeintRegister that your app is interested in.  Have a look at enum @ref s3eNOpenFeintCallback and Delegates in original OpenFeint API docs.
+ * @code 
+ * static int32 playerLoggedIn(void *systemData, void *userData) 
+ * {
+ * 	if(systemData)
+ * 	{
+ * 		s3eNOFPlayerInfo *info = (s3eNOFPlayerInfo*)systemData;
+ * 		AppendMessage("PlayerId received is %s", info->playerId);
+ * 	}
+ * 	
+ * 	return 0;
+ * }
+ * 
+ * s3eNOpenFeintRegister(S3E_NOPENFEINT_CALLBACK_PLAYER_LOGGEDIN, &playerLoggedIn, NULL);
+ * @endcode
+ * 
+ * App should initialize OpenFeint by calling function @ref s3eNOFinitializeWithProductKey.
+ * 
+ * @subsection sec_4_2 Checking if user is logged in and has approved OpenFeint
+ * @ref s3eNOFisOnline tells if user is online.
+ * @ref s3eNOFhasUserApprovedFeint tells if user has approved OpenFeint. It is recommended to check for approval before calling other API.
+ * 
+
+ * @subsection sec_4_3 Invoking Dashboard(s)
+ * Calling 		s3eNOFlaunchDashboard simply invokes the main dashboard of OpenFeint
+ * @code
+ * 		s3eNOFlaunchDashboard();
+ * @endcode
+ * if you want to open to a specific page no dashboard then use its respective API call.
+ * for example
+ * @ref s3eNOFlaunchDashboardWithAchievementsPage for achievements page
+ * @ref s3eNOFlaunchDashboardWithChallengesPage  for challenges
+ * 
+ * There are a lot more of such API. Refer to documentation of API.
+ * 
+ * @subsection sec_4_4 Creating challenges
+ * 
+ * Challenges is one of the most important features of OpenFeint.
+ * To create a challenge first you need to download all challenge definitions from OpenFeint server using the API @ref s3eNOFdownloadAllChallengeDefinitions. The challenge definitions are stored by @ref s3eNOpenFeint extension in its own array and provided as @ref s3eNOFArray to callback @ref S3E_NOPENFEINT_CALLBACK_DID_DOWNLOAD_ALL_CHALLENGE_DEFINITIONS
+ * 
+ * @code
+ * static int32 didDownloadAllChallengeDefinitions(void *systemData, void *userData)
+ * {
+ * 	if(!systemData)
+ * 	{
+ * 		AppendMessage("Downloaded all challenges with 0 items");
+ * 		return 0;
+ * 	}
+ * 		
+ * 	s3eNOFArray *defArray = (s3eNOFArray*)systemData;
+ * 	AppendMessage("AllChallengeDefinitions Downloaded with count %d" , defArray->m_count);
+ * 	for (uint i=0; i < defArray->m_count; i++) {
+ * 		AppendMessage("Challenge %s, appId %s, iconUrl %s, multiAttempt %d",
+ * 					  ((s3eNOFChallengeDefinition*)defArray->m_items)[i].title,
+ * 					  ((s3eNOFChallengeDefinition*)defArray->m_items)[i].clientApplicationId,
+ *   					  ((s3eNOFChallengeDefinition*)defArray->m_items)[i].iconUrl,
+ * 					  ((s3eNOFChallengeDefinition*)defArray->m_items)[i].multiAttempt);
+ * 	}
+ * 	// Copy all challengedefs to local variable for later use
+ * 	return 0;
+ * }
+ * @endcode
+ * 
+ * Use @ref s3eNOFdisplayAndSendChallenge to let user send challenge to the friends using OpenFeint UI.
+ * 
+ *
+ * @subsection sec_4_5  Playing a challenge
+ * 
+ * The challenge can be invoked/accepted by user from dashboard UI. The notification that user wants to play a challenge is received as callback S3E_NOPENFEINT_CALLBACK_USER_LAUNCHED_CHALLENGE. 
+ * 
+ * @code
+ * static int32 userLaunchedChallenge(void *systemData, void *userData)
+ * {
+ * 	if (!systemData) {
+ * 		return -1;
+ * 	}
+ * 	s3eNOFChallengeToUser *nofChalToUser = (s3eNOFChallengeToUser*)systemData;
+ * 	AppendMessage("Challenge %s from %s to %s with id %s", 
+ * 				  nofChalToUser->challenge->challengeDefinition->title,
+ * 				  nofChalToUser->challenge->challenger->name,
+ * 				  nofChalToUser->recipient->name,
+ * 				  nofChalToUser->nofPersistentId);
+ * 	strncpy(persistentChallengeId,nofChalToUser->nofPersistentId,sizeof(persistentChallengeId));
+ * 	return 0;
+ * }
+ * @endcode
+ * 
+ * After challenge is complete and you want to post the result of challenge post the challenge result using API @ref s3eNOFchallengeCompleteWithResult to OpenFeint. After this call @ref s3eNOFchallengeDisplayCompletionWithData to let user submit data for challenge.
+ * 
+ * @subsection sec_4_6 Using Leaderboards
+ * 
+ * Leaderboards or highscore is a simple API to use. 
+ * Simply use @ref s3eNOFsubmitHighScore API to update highscore. The leaderboard id is the unique id on OpenFeint developer account. 
+ * 
+ * 
+ * @subsection sec_4_7 Using Achievements
+ * 
+ * The list of achievements is downloaded by OpenFeint at initialization time and contains the status/progress of current user in percentage for a particular achievement.
+ * Use @ref s3eNOFachievements to get the list of achievements. 
+ * 
+ * If your achievement is a progress based achievement which doesn't simply gets unlocked then use API @ref s3eNOFupdateAcheivementProgressionComplete.
+ * If you simply want to unlock an achievement then use API @ref s3eNOFachievementUnlock
+ * 
+ * 
+ * There are a lot of other functions in this API. Refer to documentation.
+ * 
+ * @section sec_5 Changelog
+ * Date September 08, 2011
+ * - Challenges API
+ * - Achievements API
+ * - Leaderboards API
+ * - Different types of dashboards
+ * 
+ */ 

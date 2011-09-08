@@ -1,0 +1,113 @@
+\hypertarget{structs3e_n_o_f_achievement}{
+\section{s3eNOFAchievement Struct Reference}
+\label{structs3e_n_o_f_achievement}\index{s3eNOFAchievement@{s3eNOFAchievement}}
+}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structs3e_n_o_f_achievement_acebe7f3b0ec280affe16115b909aa9b1}{
+char {\bfseries title} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{structs3e_n_o_f_achievement_acebe7f3b0ec280affe16115b909aa9b1}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga235b598efac1fa1ac756a36ba9ba5164}{
+char {\bfseries description} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga235b598efac1fa1ac756a36ba9ba5164}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga36870064effddc6b2ff169dccd47c107}{
+unsigned int {\bfseries gamerscore}}
+\label{group___n_open_feint_api_group_ga36870064effddc6b2ff169dccd47c107}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gabcaf8a16c837646fd6f9da16cfcefc84}{
+bool {\bfseries isSecret}}
+\label{group___n_open_feint_api_group_gabcaf8a16c837646fd6f9da16cfcefc84}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gacc567fef5f47b21d3b268f9e8146d519}{
+time\_\-t {\bfseries unlockDate}}
+\label{group___n_open_feint_api_group_gacc567fef5f47b21d3b268f9e8146d519}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaf6820f91c7ca33cae0a1fc72ce166fd2}{
+bool {\bfseries isUnlocked}}
+\label{group___n_open_feint_api_group_gaf6820f91c7ca33cae0a1fc72ce166fd2}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gad499493f971fe5430d6a06b5c70ba9d4}{
+char {\bfseries percentComplete} \mbox{[}6\mbox{]}}
+\label{group___n_open_feint_api_group_gad499493f971fe5430d6a06b5c70ba9d4}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga71acb5cdd5292a7b5083c326c714dcb4}{
+bool {\bfseries isUnlockedByComparedToUser}}
+\label{group___n_open_feint_api_group_ga71acb5cdd5292a7b5083c326c714dcb4}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaa92898686eac33f624185167d5375516}{
+char {\bfseries comparedToUserId} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL\mbox{]}}
+\label{group___n_open_feint_api_group_gaa92898686eac33f624185167d5375516}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga8ed42d00785e6c909036c72d72a23a98}{
+char {\bfseries endVersion} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL\mbox{]}}
+\label{group___n_open_feint_api_group_ga8ed42d00785e6c909036c72d72a23a98}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga5e75b58191771edc32ebf022277b85cd}{
+char {\bfseries startVersion} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL\mbox{]}}
+\label{group___n_open_feint_api_group_ga5e75b58191771edc32ebf022277b85cd}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gabdadc0c884c55313c7fc0ee1067f4b8a}{
+unsigned int {\bfseries position}}
+\label{group___n_open_feint_api_group_gabdadc0c884c55313c7fc0ee1067f4b8a}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga3a1eb47a42bd1867f223a1ae7f076b40}{
+char {\bfseries iconUrl} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga3a1eb47a42bd1867f223a1ae7f076b40}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+hold achievement information 
+\begin{DoxyParams}{Parameters}
+{\em title} & Achievement title \\
+\hline
+{\em description} & Achievement description \\
+\hline
+{\em gamerscore} & Gamerscore value for the achievement \\
+\hline
+{\em isSecret} & If YES then this achievement is secret. This means that it's details are hidden from users who have not yet unlocked it. \\
+\hline
+{\em unlockDate} & The date that this achievement was unlocked, if it is unlocked, nil otherwise. \\
+\hline
+{\em isUnlocked} & If YES then this achievement completely unlocked, (i.e. percentComplete is 100\%) \\
+\hline
+{\em percentComplete} & returns the whole percent complete for this achievement. i.e. 60.5 is 60.5\% \\
+\hline
+{\em isUnlockedByComparedToUser} & \\
+\hline
+{\em comparedToUserId} & \\
+\hline
+{\em endVersion} & \\
+\hline
+{\em startVersion} & \\
+\hline
+{\em position} & \\
+\hline
+{\em iconUrl} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 279 of file s3eNOpenFeint.h.
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Volumes/mac\_\-hd\_\-2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/s3eNOpenFeint/h/s3eNOpenFeint.h\end{DoxyCompactItemize}

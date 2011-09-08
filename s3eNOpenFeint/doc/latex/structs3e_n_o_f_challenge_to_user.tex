@@ -1,0 +1,116 @@
+\hypertarget{structs3e_n_o_f_challenge_to_user}{
+\section{s3eNOFChallengeToUser Struct Reference}
+\label{structs3e_n_o_f_challenge_to_user}\index{s3eNOFChallengeToUser@{s3eNOFChallengeToUser}}
+}
+
+
+{\ttfamily \#include $<$s3eNOpenFeint.h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structs3e_n_o_f_challenge_to_user_a64b24a4dcc0a2b7dfffed31429fb7246}{
+\hyperlink{structs3e_n_o_f_challenge}{s3eNOFChallenge} $\ast$ {\bfseries challenge}}
+\label{structs3e_n_o_f_challenge_to_user_a64b24a4dcc0a2b7dfffed31429fb7246}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gadb660e1877f1ba45608b5543b4a865ff}{
+\hyperlink{structs3e_n_o_f_user}{s3eNOFUser} $\ast$ {\bfseries recipient}}
+\label{group___n_open_feint_api_group_gadb660e1877f1ba45608b5543b4a865ff}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga59642af50d8113fbcf9064285e7df1ea}{
+\hyperlink{group___n_open_feint_api_group_ga954444cdbeafa2947e969f78ed1e29f4}{s3eNOFChallengeResult} {\bfseries result}}
+\label{group___n_open_feint_api_group_ga59642af50d8113fbcf9064285e7df1ea}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gab4e3934409e9b81f9a248197c2d11abc}{
+char {\bfseries resultDescription} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gab4e3934409e9b81f9a248197c2d11abc}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gad29d8e5324ec998f52efea0d9a576359}{
+char {\bfseries formattedResultDescription} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gad29d8e5324ec998f52efea0d9a576359}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gacf73e9b83740e06275281e4bb9ba1c47}{
+bool {\bfseries hasBeenViewed}}
+\label{group___n_open_feint_api_group_gacf73e9b83740e06275281e4bb9ba1c47}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gac9ac0743b4a7ac1c637dd8d9a2c17f19}{
+uint {\bfseries attempts}}
+\label{group___n_open_feint_api_group_gac9ac0743b4a7ac1c637dd8d9a2c17f19}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaa6c50239f80d43f2680fe34af1593ba0}{
+bool {\bfseries hasDecrementedChallengeCount}}
+\label{group___n_open_feint_api_group_gaa6c50239f80d43f2680fe34af1593ba0}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga76d720f4adf95f7561d42f1147fb5c78}{
+bool {\bfseries isCompleted}}
+\label{group___n_open_feint_api_group_ga76d720f4adf95f7561d42f1147fb5c78}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga9fe56797f1569770d50ef36dda978508}{
+char {\bfseries nofPersistentId} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1\mbox{]}}
+\label{group___n_open_feint_api_group_ga9fe56797f1569770d50ef36dda978508}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structs3e_n_o_f_challenge_to_user}{s3eNOFChallengeToUser} struct that holds information about a challenge towards our user
+
+
+\begin{DoxyParams}{Parameters}
+{\em challenge} & \hyperlink{structs3e_n_o_f_challenge}{s3eNOFChallenge} struct that holds other elements of challenge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structs3e_n_o_f_challenge}{s3eNOFChallenge} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em recipient} & \hyperlink{structs3e_n_o_f_user}{s3eNOFUser} the user that started this challenge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structs3e_n_o_f_user}{s3eNOFUser} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___n_open_feint_api_group_ga72aba52b0a4382e49b79f18ea4dfebbd}{s3eNOFChallengeResult} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em resultDescription} & Description of the result. This is set when calling sendChallengeComplete The result description will be prefixed by either the recipients name or You if it's the local player whenever displayed. The result description should not state if the recipient won or lost but contain the statistics of his attempt. Example: \char`\"{}beat 30 monsters\char`\"{} will turn into \char`\"{}You beat 30 monsters\char`\"{} and will be display next to a icon for win or lose \\
+\hline
+{\em formattedResultDescription} & The descprtion of the result defined by resultDescription with You or the user name appended to the front. \\
+\hline
+{\em hasBeenViewed} & Whether or not the challenge has be viewed by the challengee \\
+\hline
+{\em attempts} & Number of challenge attempts by this user. \\
+\hline
+{\em hasDecrementedChallengeCount} & \\
+\hline
+{\em isCompleted} & \\
+\hline
+{\em nofPersistentId} & persistentFileName that is used to serialize/deserialize this data as it cannot be stored globally and referenced. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 249 of file s3eNOpenFeint.h.
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Volumes/mac\_\-hd\_\-2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/s3eNOpenFeint/h/s3eNOpenFeint.h\end{DoxyCompactItemize}

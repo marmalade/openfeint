@@ -1,0 +1,633 @@
+#
+# $Id:$
+#
+# The OpenFeint Marmalade Extension project.
+# Copyright (C) 2011 Nerdiacs Pte Limited  http://www.Nerdiacs.com
+# 
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 3.0 of the License, or (at your option) any later version.
+# 
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+#
+
+errors
+callbacks
+include:
+
+#include <s3eTypes.h>
+#include <time.h>
+
+/**
+ * @addtogroup s3eNerdiacs
+ * @{
+ */
+
+/**
+ * @defgroup NOpenFeintApiGroup S3E Nerdiacs OpenFeint Extension API Reference
+ *
+ * S3E Nerdiacs OpenFeint Extension implements the connectivity functionality provided by the
+ * OpenFeint features in the OpenFeint SDK.
+ *
+ * This API wraps OpenFeint functionality as close to original OpenFeint API. 
+ *
+ * It allows users apps to utilize OpenFeint's match/challenges/leaderboards/forums functionality.  
+ * @supported
+ * - ios: On devices with supported hardware/OS combinations
+ * - android: On devices with supported hardware/OS
+ *
+ * For more information on the functionality provided by OpenFeint API,
+ * and which hardware/OS versions are supported,
+ * visit "http://www.openfeint.com/developers"
+ *
+ * Nerdiacs http://www.Nerdiacs.com
+ * @{
+ */
+
+/**
+ * TODO
+ * 1-- Give proper error responses
+ * 2-- Check for compliance with Google Code Style
+ */
+
+/**
+ * @def S3E_NOPENFEINT_STRING_MAX
+ * Max string size
+ */
+#define S3E_NOPENFEINT_STRING_MAX 256
+
+/**
+ * @def S3E_NOPENFEINT_STRING_SMALL
+ * Small string size
+ */
+#define S3E_NOPENFEINT_STRING_SMALL 20
+/**
+ * Max settings string size
+ */
+#define S3E_NOPENFEINT_STRING_MAX_1 50
+#define S3E_NOPENFEINT_SETTINGS_STRING_MAX S3E_NOPENFEINT_STRING_MAX_1
+
+/**
+ * 
+ */
+typedef enum s3eNOpenFeintError
+{
+    /** No Error. */
+    S3E_OPENFEINT_ERR_NONE                        = 0,
+    
+    /** Invalid parameter. */
+    S3E_OPENFEINT_INVALID_PARAM,
+} s3eNOpenFeintError;
+
+
+/**
+ * Challenge Result enum OFChallengeResult
+ */
+typedef enum s3eNOFChallengeResult {
+	kNOFChallengeIncomplete, 	
+	kNOFChallengeResultRecipientWon,	
+	kNOFChallengeResultRecipientLost, 	
+	kNOFChallengeResultTie,
+} s3eNOFChallengeResult;
+
+/**
+ * enum to define UI orientation
+ * Note that UIInterfaceOrientationLandscapeLeft is equal to UIDeviceOrientationLandscapeRight (and vice versa).
+ * This is because rotating the device to the left requires rotating the content to the right.
+ */
+typedef enum s3eNOFUIInterfaceOrientation{
+    s3eNOFUIInterfaceOrientationPortrait           = 1,
+    s3eNOFUIInterfaceOrientationPortraitUpsideDown = 2,
+    s3eNOFUIInterfaceOrientationLandscapeLeft      = 4,
+    s3eNOFUIInterfaceOrientationLandscapeRight     = 3
+} s3eNOFUIInterfaceOrientation;
+
+/**
+ * This struct is common struct to hold OpenFeint settings. 
+ * NOTE: Deallocate the array yourself after calling API.
+ */
+typedef struct s3eNOFSettingVal {
+	char	m_varName[S3E_NOPENFEINT_SETTINGS_STRING_MAX];
+	int	m_intVal;
+	char	m_stringVal[S3E_NOPENFEINT_STRING_MAX];
+	void*	m_reserved; // Reserved until I understand how to pass UIWindow object from Marmalade :)
+} s3eNOFSettingVal;
+
+/**
+ * Struct to hold array of setting vars and values for OpenFeint Settings.
+ * NOTE: Deallocate the array yourself after calling API.
+ */
+typedef struct s3eNOFSettings {
+	int	m_settingCount;
+	s3eNOFSettingVal **m_settings;
+} s3eNOFSettings;
+
+
+/**
+ * Structure to hold playerinfo for callbacks. For now holds only playerId. Keeps things clean this way for extension.
+ * 
+ * @see s3eNOpenFeintCallback
+ */
+typedef struct s3eNOFPlayerInfo {
+	char *playerId;
+} s3eNOFPlayerInfo;
+
+
+typedef enum s3eNOpenFeintCallback
+{
+    S3E_NOPENFEINT_CALLBACK_PLAYER_LOGGEDIN,
+    S3E_NOPENFEINT_CALLBACK_DASHBOARD_WILL_APPEAR,
+    S3E_NOPENFEINT_CALLBACK_DASHBOARD_DID_APPEAR,
+    S3E_NOPENFEINT_CALLBACK_DASHBOARD_WILL_DISAPPEAR,
+    S3E_NOPENFEINT_CALLBACK_DASHBOARD_DID_DISAPPEAR,
+    S3E_NOPENFEINT_CALLBACK_IS_OPENFEINT_NOTIFICATION_ALLOWED,
+    S3E_NOPENFEINT_CALLBACK_HANDLE_DISALLOWED_NOTIFICATION,
+    S3E_NOPENFEINT_CALLBACK_NOTIFICATION_WILL_SHOW,
+    S3E_NOPENFEINT_CALLBACK_DID_DOWNLOAD_ALL_CHALLENGE_DEFINITIONS,
+    S3E_NOPENFEINT_CALLBACK_DID_FAIL_DOWNLOAD_CHALLENGE_DEFINITIONS,
+    S3E_NOPENFEINT_CALLBACK_DID_DOWNLOAD_CHALLENGE_DEFINITION,
+    S3E_NOPENFEINT_CALLBACK_DID_FAIL_DOWNLOAD_CHALLENGE_DEFINITION,
+    S3E_NOPENFEINT_CALLBACK_USER_LAUNCHED_CHALLENGE,
+    S3E_NOPENFEINT_CALLBACK_USER_RESTARTED_CHALLENGE,
+    S3E_NOPENFEINT_CALLBACK_COMPLETED_CHALLENGE_SCREEN_CLOSED,
+    S3E_NOPENFEINT_CALLBACK_USER_BOOTED_WITH_UNVIEWED_CHALLENGES,
+    S3E_NOPENFEINT_CALLBACK_USER_SENT_CHALLENGES,
+    S3E_NOPENFEINT_CALLBACK_MAX
+} s3eNOpenFeintCallback;
+
+/**
+ * General Purpose array to exchange data between API and callbacks
+ * @param m_items Items in array. 
+ * @param m_count number of items in this array
+ * @remark Deallocate yourself, if items are allocated by API consumer. Callback functions deallocate themselves
+ */
+typedef struct s3eNOFArray {
+	void *m_items; // Items in array
+	unsigned int m_count; // number of items
+} s3eNOFArray;
+
+
+/**
+ * OpenFeintChallenge Definition
+ */
+typedef struct s3eNOFChallengeDefinition {
+	char title[S3E_NOPENFEINT_STRING_MAX];
+	char iconUrl[S3E_NOPENFEINT_STRING_MAX];
+	char clientApplicationId[S3E_NOPENFEINT_STRING_MAX];
+	bool multiAttempt;
+	uint s3eNOFchallengeId; // ChallengeId index from extension that is used to 
+} s3eNOFChallengeDefinition;
+
+/**
+ * Structure to hold user information for OFUser object
+ *
+ */
+typedef struct s3eNOFUser {
+	char name[S3E_NOPENFEINT_STRING_MAX];
+	char lastPlayedGameId[S3E_NOPENFEINT_STRING_MAX];
+	char lastPlayedGameName[S3E_NOPENFEINT_STRING_MAX];
+	bool online;
+	char userId[S3E_NOPENFEINT_STRING_MAX];
+	char profilePictureUrl[S3E_NOPENFEINT_STRING_MAX];
+	char latitude[10];
+	char longitude[10];
+} s3eNOFUser;
+
+/**
+ * s3eChallengeData structure to hold challenge data
+ * @param data Pointer to challenge data that is copied by API internally
+ * @param length Length of data in struct
+ * @note the consumer of API is supposed to deallocate this struct. API only keeps its own internal copy.
+ * If this struct is received as callback, make a local copy if needed as it will be deallocated after callback finishes.
+ */
+typedef struct s3eNOFChallengeData {
+	void* data;
+	uint length;
+} s3eNOFChallengeData;
+
+/** 
+ * s3eNOFChallenge holds OFChallenge data
+ *
+ * @param challengeDefinition of type struct s3eNOFChallengeData. @see s3eNOFChallengeData
+ * @param challenger of type struct s3eNOFUser. @see s3eNOFUser
+ * @param challengeDescription The Challenge Description.
+ * @param userMessage The user message for the challenge.
+ * @param hiddenText Hidden text field defined by the developer.
+ * @param challengeData	of type struct s3eNOFChallengeData. @see s3eNOFChallengeData
+ * @param challengeDataUrl
+ * @note: The API will deallocate this struct if it is sent via callback. Keep a copy locally.
+ */
+typedef struct s3eNOFChallenge {
+	s3eNOFChallengeDefinition* challengeDefinition;
+	s3eNOFUser* challenger;
+	char challengeDescription[S3E_NOPENFEINT_STRING_MAX];
+	char userMessage[S3E_NOPENFEINT_STRING_MAX];
+	char hiddenText[S3E_NOPENFEINT_STRING_MAX];
+	s3eNOFChallengeData* challengeData;
+	char challengeDataUrl[S3E_NOPENFEINT_STRING_MAX];
+} s3eNOFChallenge;
+
+/**
+ * s3eNOFChallengeToUser struct that holds information about a challenge towards our user
+ * 
+ * @param challenge s3eNOFChallenge struct that holds other elements of challenge. @see s3eNOFChallenge
+ * @param recipient s3eNOFUser the user that started this challenge. @see s3eNOFUser
+ * @param result @see s3eNOFChallengeResult
+ * @param resultDescription Description of the result. This is set when calling sendChallengeComplete
+ * The result description will be prefixed by either the recipients name or You if it's the local player whenever displayed. 
+ * The result description should not state if the recipient won or lost but contain the statistics of his attempt. 
+ * Example: "beat 30 monsters" will turn into "You beat 30 monsters" and will be display next to a icon for win or lose
+ * @param formattedResultDescription The descprtion of the result defined by resultDescription with You or the user name appended to the front.
+ * @param hasBeenViewed  Whether or not the challenge has be viewed by the challengee
+ * @param attempts Number of challenge attempts by this user.
+ * @param hasDecrementedChallengeCount 
+ * @param isCompleted
+ * @param nofPersistentId persistentFileName that is used to serialize/deserialize this data as it cannot be stored globally and referenced.
+ */
+
+typedef struct s3eNOFChallengeToUser {
+	s3eNOFChallenge* challenge;
+	s3eNOFUser* recipient;
+	s3eNOFChallengeResult result;
+	char resultDescription[S3E_NOPENFEINT_STRING_MAX];
+	char formattedResultDescription[S3E_NOPENFEINT_STRING_MAX];
+	bool hasBeenViewed;
+	uint attempts;
+	bool hasDecrementedChallengeCount;
+	bool isCompleted;
+	char nofPersistentId[S3E_NOPENFEINT_STRING_MAX_1];
+} s3eNOFChallengeToUser;
+
+
+/**
+ * @struct s3eNOFAchievement struct to hold achievement information
+ * @param title Achievement title
+ * @param description Achievement description
+ * @param gamerscore Gamerscore value for the achievement
+ * @param isSecret If YES then this achievement is secret. This means that it's details are hidden from users who have not yet unlocked it.
+ * @param unlockDate The date that this achievement was unlocked, if it is unlocked, nil otherwise.
+ * @param isUnlocked If YES then this achievement completely unlocked, (i.e. percentComplete is 100%)
+ * @param percentComplete returns the whole percent complete for this achievement. i.e. 60.5 is 60.5%
+ * @param isUnlockedByComparedToUser 
+ * @param comparedToUserId
+ * @param endVersion
+ * @param startVersion
+ * @param position 
+ * @param iconUrl
+ */
+typedef struct s3eNOFAchievement {
+	char title[S3E_NOPENFEINT_STRING_MAX];
+	char description[S3E_NOPENFEINT_STRING_MAX];
+	unsigned int gamerscore;
+	bool isSecret;
+	time_t unlockDate; 
+	bool isUnlocked;
+	char percentComplete[6];
+	bool isUnlockedByComparedToUser;
+	char comparedToUserId[S3E_NOPENFEINT_STRING_SMALL];
+	char endVersion[S3E_NOPENFEINT_STRING_SMALL];
+	char startVersion[S3E_NOPENFEINT_STRING_SMALL];
+	unsigned int position;
+	char iconUrl[S3E_NOPENFEINT_STRING_MAX];
+} s3eNOFAchievement;
+
+functions:
+
+/**
+ * Just a test function to display message box
+ * 
+ */
+s3eResult s3eNewMessageBox(const char* title, const char* text) S3E_RESULT_ERROR run_on_os_thread
+
+/**
+ *  s3eNOFinitializeWithProductKey
+ *
+ * @param productKey is copied. This is your unique product key you received when registering your application.
+ * @param secret is copied. This is your unique product secret you received when registering your application.
+ * @param displayName is copied.
+ * @param settings is copied. The available settings are defined as OpenFeintSettingXXXXXXXXXXXX.
+ * @param delegatesContainer	is retained but none of the delegates in the container are retained.
+ * @code
+ * s3eNOFSettingVal *settings = (s3eNOFSettingVal*)s3eMalloc(sizeof(s3eNOFSettingVal) * 6);
+ * // Fill settings
+ * // UIOrientation value
+ * strncpy(settings[0].m_varName,
+ *              "OpenFeintSettingDashboardOrientation",
+ *                      S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ * settings[0].m_intVal = s3eNOFUIInterfaceOrientationPortrait;
+ *              
+ *              
+ * // Shortdisplay name
+ * strncpy(settings[1].m_varName, 
+ *              "OpenFeintSettingShortDisplayName", 
+ *              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ * strncpy(settings[1].m_stringVal, 
+ *              "FunkyRacers",  
+ *              S3E_NOPENFEINT_STRING_MAX);
+ *              
+ * // Push Notification Setting
+ * strncpy(settings[2].m_varName,
+ *              "OpenFeintSettingEnablePushNotifications",
+ *              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ * settings[2].m_intVal = 1; // TRUE/YES
+ *              
+ *              
+ * // Sandbox Notification Mode
+ * strncpy(settings[3].m_varName,
+ *              "OpenFeintSettingUseSandboxPushNotificationServer",
+ *              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ * settings[3].m_intVal = 1;
+ *              
+
+ * // Disable User generated content
+ * strncpy(settings[4].m_varName,
+ *              "OpenFeintSettingDisableUserGeneratedContent",
+ *              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ * settings[4].m_intVal = 0;
+ *              
+ * // Disable ask for approval in debug mode
+ * strncpy(settings[5].m_varName,
+ *              "OpenFeintSettingAlwaysAskForApprovalInDebug",
+ *              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ * settings[5].m_intVal = 0;
+ *              
+ *              
+ *              
+ * s3eNOFArray array;
+ * array.m_count = 6;
+ * array.m_items = settings;
+ * s3eNOFinitializeWithProductKey("produkeyhere",
+ *                                                         "secrethere",
+ *                                                         "GameName",   
+ *                                                         &array);        
+ * s3eFree(settings);
+ * @endcode
+ */
+
+s3eResult s3eNOFinitializeWithProductKey(const char* productKey, const char* secret, const char* displayName, const s3eNOFArray* settings) S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * launchDashboardWithListLeaderboardsPage directly launches to LeaderBoards page
+ */
+s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithHighscorePage directly launches to HighScore page
+ * @param leaderboardId leaderboard id to load page
+ */
+s3eResult s3eNOFlaunchDashboardWithHighscorePage(const char* leaderboardId) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithAchievementsPage directly launches to Achievements page
+ */
+s3eResult s3eNOFlaunchDashboardWithAchievementsPage() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithChallengesPage directly launches to Challenges page
+ */
+s3eResult s3eNOFlaunchDashboardWithChallengesPage() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithFindFriendsPage directly launches to FindFriends page
+ */
+s3eResult s3eNOFlaunchDashboardWithFindFriendsPage() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithWhosPlayingPage directly launches to WhosPlaying page
+ */
+s3eResult s3eNOFlaunchDashboardWithWhosPlayingPage() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithListGlobalChatRoomsPage directly launches to ChatRooms page
+ */
+s3eResult s3eNOFlaunchDashboardWithListGlobalChatRoomsPage() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithiPurchasePage directly launches to PurchasePage page
+ */
+s3eResult s3eNOFlaunchDashboardWithiPurchasePage(const char* clientApplicationId) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithSwitchUserPage directly launches to SwitchUser page
+ */
+s3eResult s3eNOFlaunchDashboardWithSwitchUserPage() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithForumsPage directly launches to Forums page
+ */
+s3eResult s3eNOFlaunchDashboardWithForumsPage() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithInvitePage directly launches to InvitePage page
+ */
+s3eResult s3eNOFlaunchDashboardWithInvitePage() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithSpecificInvite directly launches to SpecificInvite page
+ */
+s3eResult s3eNOFlaunchDashboardWithSpecificInvite(const char* inviteIdentifier) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText directly launches to Socialpost page
+ * @param prepopulatedText text to send to social media/site
+ * @param originalMessage no idea about this one
+ * @param imageName image to embed in post
+ * @param linkedUrl link to embed in post
+ */
+s3eResult s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText(const char* prepopulatedText, const char * originialMessage, const char* imageName, const char* linkedUrl) S3E_RESULT_SUCCESS run_on_os_thread
+# s3eResult s3eNOFlaunchDashboardWithIMToUser:(OFUser*)user initialText:(NSString*)initialText() S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * s3eNOFshutdown Shuts down OpenFeint
+ */
+s3eResult s3eNOFshutdown() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFlaunchDashboard Launches the OpenFeint Dashboard view at the top of your application's keyed window.
+ * @note If the player has not yet authorized your app, they will be prompted to setup an account or authorize your application before accessing the OpenFeint dashboard
+ */
+s3eResult s3eNOFlaunchDashboard() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFdismissDashboard Removes the OpenFeint Dashboard from your application's keyed window.
+ */
+s3eResult s3eNOFdismissDashboard() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFsetDashboardOrientation Sets what orientation the dashboard and notifications will show in.
+ */
+s3eResult s3eNOFsetDashboardOrientation(s3eNOFUIInterfaceOrientation orientation) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFhasUserApprovedFeint Returns whether or not the user has enabled OpenFeint for this game.
+ */
+ushort s3eNOFhasUserApprovedFeint() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFisOnline Returns whether or not the game is connected to the OpenFeint server
+ */
+ushort s3eNOFisOnline() S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * s3eNOFdisplayAndSendChallenge is a bit of modification of original displayAndSendChallenge of OpenFeint. 
+ * The original function takes no parameter but expects the INSTANCE to hold ChallengeDefinition. We will just pass challenge definition to function itself
+ * thus reducing the need to pass around OFChallenge object instance.
+ * @param challengeDefinition One of Challenge Definitions that is earlier retrieved using s3eNOFdownloadAllChallengeDefinitions
+ * @param challengeData the data that is stored on server for this challenge post
+ * @code
+ * s3eNOFdisplayAndSendChallenge(&g_nofChallengeDefinitions[1]);
+ * @endcode
+ */
+s3eResult s3eNOFdisplayAndSendChallenge(s3eNOFChallengeDefinition* challengeDefinition, const char* challengeDescription, const s3eNOFChallengeData* challengeData) S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * s3eNOFdownloadAllChallengeDefinitions Download all challenge definitions.
+ * @see S3E_NOPENFEINT_CALLBACK_DID_DOWNLOAD_ALL_CHALLENGE_DEFINITIONS
+ * @see S3E_NOPENFEINT_CALLBACK_DID_FAIL_DOWNLOAD_CHALLENGE_DEFINITIONS
+ * @remark The challenge definitions are returned in callback. 
+ */
+s3eResult s3eNOFdownloadAllChallengeDefinitions() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * downloadChallengeDefinitionWithId Get a specific challenge definition from the server.
+ * @param challengeDefinitionId the challengeResourceId. This is the number(digits) on challenges section of OpenFeint developer portal
+ * @see	S3E_NOPENFEINT_CALLBACK_DID_DOWNLOAD_CHALLENGE_DEFINITION
+ * @see	S3E_NOPENFEINT_CALLBACK_DID_FAIL_DOWNLOAD_CHALLENGE_DEFINITION
+ * @remark The challenge definition are returned in callback. 
+ */
+s3eResult s3eNOFdownloadChallengeDefinitionWithId(const char* challengeDefinitionId) S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * completeWithResult send when the challenge is complete
+ * @param challengeResult s3eNOFChallengeResult enum with either win, lose or tie
+ * @code
+ * s3eNOFchallengeCompleteWithResult(kNOFChallengeResultRecipientLost, persistentChallengeId);
+ * @endcode
+ */
+s3eResult s3eNOFchallengeCompleteWithResult(s3eNOFChallengeResult challengeResult, const char* challengePeristentId) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * displayCompletionWithData Displays the default OpenFeint View for completing Challenges. 
+ * If the user submits this view the challenger will be sent a message about the challenge result.
+ * 
+ * @param resultData Only used for multiAttempt challenges. The data needed to send the challenge result out as a new challenge
+ * @param reChallengeDescription If the challenge result is sent out as a new challenge (multi attempt only), 
+ * this will be the description for the new challenge. Should be formatted the same way as challengeText in sendChallenge
+ * @Note Call completeWithResult before calling this. It stores nessiary data for this view. 
+ * If the user turns off the game during the challenge you must serialize the OFChallengeToUser as its used to display the completion modal. 
+ * Serialize it to and from disc by calling writeChallengeToUserToFile or readChallengeToUserFromFile. 
+ * @code
+ * s3eNOFChallengeData chalData;
+ * const char *dd = "SCORE=5"; 
+ * chalData.data = (void*)dd;
+ * chalData.length = strlen(dd);
+ * s3eNOFchallengeDisplayCompletionWithData(&chalData, 
+ * 				"Challenge Lost", 
+ *				persistentChallengeId);
+ * @endcode
+ */
+s3eResult s3eNOFchallengeDisplayCompletionWithData(s3eNOFChallengeData* challengeData, const char* reChallengeDescription, const char* challengePeristentId) S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * s3eNOFsubmitHighScore submits high score for current user to leaderboard identified by ID
+ * @param leaderBoardId string based leaderboard ID
+ * @param highScore 64 bit integer provided as string that holds the highscore
+ * @note Looks like if you give description it is used for posting rather than the score.
+ * @code 
+ * s3eNOFsubmitHighScore("123456","10",NULL,NULL);
+ * @endcode
+ */
+s3eResult s3eNOFsubmitHighScore(const char* leaderBoadId, const char* score, const char* displayText, const char* customData) S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * s3eNOFupdateAcheivementProgressionComplete submits to server the progress on achievement.
+ * @param achievementId Achievement ID as shown on developer dashboard
+ * @param updatePercentComplete 0.0f updatePercentComplete. Number between 0.0f and 100.0f for which you would like to update the progression of this achievement.
+ * @param showUpdateNotification whether to show or not show the unlock notification
+ */
+s3eResult s3eNOFupdateAcheivementProgressionComplete(const char* achievementId, double updatePercentComplete, bool showUpdateNotification) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFachievements Retrieves all of the achievements for this application.
+ * @param achievements array of s3eNOFAchievement to be filled by API. The API will not allocate any memory here.  
+ * @note The API consumer has responsibility to provide preallocated achievements array with maximum achievements expected. The API will only insert as many items as the capacity available in array.
+ * @note The API will update m_count member of s3eNOFArray with actual valid elements set/updated by API. It doesn't allocate or deallocate m_items so API consumer should free it. 
+ * @note The returned achievements will contain unlock information for the local user.
+ * @code
+ *   const unsigned int max_achievements = 20; // whatever we think is max we need
+ *   void* data = s3eMalloc(sizeof(s3eNOFAchievement) * max_achievements);
+ *   if (data == NULL) {
+ *     AppendMessageColour(RED, ("Couldn't allocate data"));
+ *     return false;
+ *   }
+ *  
+ *   s3eNOFArray achArray;
+ *   achArray.m_items = data;
+ *   achArray.m_count = max_achievements;
+ *   s3eNOFachievements(&achArray);
+ *   for (uint i=0; i < achArray.m_count && i < max_achievements; i++) {
+ *     AppendMessage("Acheivement title %s", ((s3eNOFAchievement*)achArray.m_items)[i].title);
+ *   }
+ *   s3eFree(data);
+ * @endcode
+ */
+s3eResult s3eNOFachievements(s3eNOFArray* achArray) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFachievement Retrieves the achievement identified by achievementId
+ * @param achievement Reference to preallocated achievement variable. This is allocated by API consumer. 
+ * @param achievementId the achievement id for which info to be retrieved.
+ */
+/**
+ * @code
+ *   s3eNOFAchievement *ach = (s3eNOFAchievement*)s3eMalloc(sizeof(s3eNOFAchievement));
+ *   AppendMessageColour(GREEN,"Calling s3eNOFachievement");
+ *   s3eNOFachievement(ach, "123456");
+ *   AppendMessage("Achievement title %s", ach->title);
+ *   s3eFree(ach);
+ * @endcode
+ */
+s3eResult s3eNOFachievement(s3eNOFAchievement* achievement, const char* achievementId) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFachievementUnlock Unlocks the achievement identified by achievementId
+ * @param achievementId the achievement id to unlock.
+ */
+s3eResult s3eNOFachievementUnlock(const char* achievementId) S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * s3eNOFachievementUnlockAndDefer Retrieves the achievement identified by achievementId
+ * @param achievementId the achievement id to unlock. Unlocks an achievement for the current user, but defers the submission of this information to the server until "submitDeferredAchievements" is called in your app.
+ * @note If you defer achievements, the user will still see the achievement unlock immediately and it will be stored locally that it is unlocked. 
+ * If the user quits the app before you have a chance to submit the deferred achievements, the next time the app is started up online and logged into OpenFeint, 
+ * we will sync to the server automatically all deferred achievements from previous games.
+ */
+s3eResult s3eNOFachievementUnlockAndDefer(const char* achievementId) S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFsubmitDeferredAchievements Submits all deferred achievement unlocks to the server
+ */
+s3eResult s3eNOFsubmitDeferredAchievements() S3E_RESULT_SUCCESS run_on_os_thread
+
+/**
+ * s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke 
+ * If OpenFeintSettingEnablePushNotifications is set to true, these functions MUST be called from the application delegates
+ * @param deviceToken 
+ */
+s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(const char* deviceToken) S3E_RESULT_SUCCESS run_on_os_thread

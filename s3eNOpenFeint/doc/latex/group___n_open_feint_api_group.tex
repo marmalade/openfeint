@@ -1,0 +1,1360 @@
+\hypertarget{group___n_open_feint_api_group}{
+\section{S3E Nerdiacs OpenFeint Extension API Reference}
+\label{group___n_open_feint_api_group}\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs3e_n_o_f_setting_val}{s3eNOFSettingVal}
+\item 
+struct \hyperlink{structs3e_n_o_f_settings}{s3eNOFSettings}
+\item 
+struct \hyperlink{structs3e_n_o_f_player_info}{s3eNOFPlayerInfo}
+\item 
+struct \hyperlink{structs3e_n_o_f_array}{s3eNOFArray}
+\item 
+struct \hyperlink{structs3e_n_o_f_challenge_definition}{s3eNOFChallengeDefinition}
+\item 
+struct \hyperlink{structs3e_n_o_f_user}{s3eNOFUser}
+\item 
+struct \hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData}
+\item 
+struct \hyperlink{structs3e_n_o_f_challenge}{s3eNOFChallenge}
+\item 
+struct \hyperlink{structs3e_n_o_f_challenge_to_user}{s3eNOFChallengeToUser}
+\item 
+struct \hyperlink{structs3e_n_o_f_achievement}{s3eNOFAchievement}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___n_open_feint_api_group_ga2a3a66951aa3d2b0cb2eaac82c1ff30c}{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX}~256
+\item 
+\#define \hyperlink{group___n_open_feint_api_group_gafb2f974aafabe744d8384a8ff582cd56}{S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL}~20
+\item 
+\#define \hyperlink{group___n_open_feint_api_group_ga714d35726c88b507a262d4164daf54d6}{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1}~50
+\item 
+\hypertarget{group___n_open_feint_api_group_gaffdb94bdce260640c1db6cf3adfb5477}{
+\#define {\bfseries S3E\_\-NOPENFEINT\_\-SETTINGS\_\-STRING\_\-MAX}~S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1}
+\label{group___n_open_feint_api_group_gaffdb94bdce260640c1db6cf3adfb5477}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___n_open_feint_api_group_gab401ad62bceb97c2672930ea6326f726}{
+typedef enum \hyperlink{group___n_open_feint_api_group_ga6ef9ed4c26e06a1b4d5b3d0004ea28bd}{s3eNOpenFeintError} {\bfseries s3eNOpenFeintError}}
+\label{group___n_open_feint_api_group_gab401ad62bceb97c2672930ea6326f726}
+
+\item 
+typedef enum \hyperlink{group___n_open_feint_api_group_ga954444cdbeafa2947e969f78ed1e29f4}{s3eNOFChallengeResult} \hyperlink{group___n_open_feint_api_group_ga72aba52b0a4382e49b79f18ea4dfebbd}{s3eNOFChallengeResult}
+\item 
+typedef enum \hyperlink{group___n_open_feint_api_group_gac32b01451990bbfa1b6e2fe38e01262b}{s3eNOFUIInterfaceOrientation} \hyperlink{group___n_open_feint_api_group_gaae461961f162f751c87f8ca7134f26c9}{s3eNOFUIInterfaceOrientation}
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_setting_val}{s3eNOFSettingVal} \hyperlink{group___n_open_feint_api_group_ga2c2981f021f2a69c8ab32ab6d1a3a4d6}{s3eNOFSettingVal}
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_settings}{s3eNOFSettings} \hyperlink{group___n_open_feint_api_group_ga0063f0a593d0853ca3d5ec8a41b3b835}{s3eNOFSettings}
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_player_info}{s3eNOFPlayerInfo} \hyperlink{group___n_open_feint_api_group_ga56e4bc2c854fc1fb9918045fea4167ab}{s3eNOFPlayerInfo}
+\item 
+\hypertarget{group___n_open_feint_api_group_ga7c61dcb9e0d6e02b9b0503407c0c3c80}{
+typedef enum s3eNOpenFeintCallback {\bfseries s3eNOpenFeintCallback}}
+\label{group___n_open_feint_api_group_ga7c61dcb9e0d6e02b9b0503407c0c3c80}
+
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_array}{s3eNOFArray} \hyperlink{group___n_open_feint_api_group_gafc79d5fb8f1516cf5b6c61edb910d510}{s3eNOFArray}
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_challenge_definition}{s3eNOFChallengeDefinition} \hyperlink{group___n_open_feint_api_group_gabc8d488f663fbf90990f7436e14f2161}{s3eNOFChallengeDefinition}
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_user}{s3eNOFUser} \hyperlink{group___n_open_feint_api_group_ga038694687b332e497536920f13f4b0f3}{s3eNOFUser}
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData} \hyperlink{group___n_open_feint_api_group_ga836b6f1da3311a513c16676c0d6d6107}{s3eNOFChallengeData}
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_challenge}{s3eNOFChallenge} \hyperlink{group___n_open_feint_api_group_ga025bd1c28b0fb4dfedb98023c92caee8}{s3eNOFChallenge}
+\item 
+typedef struct \hyperlink{structs3e_n_o_f_challenge_to_user}{s3eNOFChallengeToUser} \hyperlink{group___n_open_feint_api_group_ga7b4c00e0398b253d54165af119d4ad99}{s3eNOFChallengeToUser}
+\item 
+\hypertarget{group___n_open_feint_api_group_ga1e427d279a4d58b06bd45122984a5b00}{
+typedef struct \hyperlink{structs3e_n_o_f_achievement}{s3eNOFAchievement} {\bfseries s3eNOFAchievement}}
+\label{group___n_open_feint_api_group_ga1e427d279a4d58b06bd45122984a5b00}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___n_open_feint_api_group_ga6ef9ed4c26e06a1b4d5b3d0004ea28bd}{s3eNOpenFeintError} \{ \hyperlink{group___n_open_feint_api_group_gga6ef9ed4c26e06a1b4d5b3d0004ea28bda018802c719a4ef52c8336d5c320e5d93}{S3E\_\-OPENFEINT\_\-ERR\_\-NONE} =  0, 
+\hyperlink{group___n_open_feint_api_group_gga6ef9ed4c26e06a1b4d5b3d0004ea28bdaacb2649c2babd512a412065e906109c4}{S3E\_\-OPENFEINT\_\-INVALID\_\-PARAM}
+ \}
+\item 
+enum \hyperlink{group___n_open_feint_api_group_ga954444cdbeafa2947e969f78ed1e29f4}{s3eNOFChallengeResult} \{ {\bfseries kNOFChallengeIncomplete}, 
+{\bfseries kNOFChallengeResultRecipientWon}, 
+{\bfseries kNOFChallengeResultRecipientLost}, 
+{\bfseries kNOFChallengeResultTie}
+ \}
+\item 
+enum \hyperlink{group___n_open_feint_api_group_gac32b01451990bbfa1b6e2fe38e01262b}{s3eNOFUIInterfaceOrientation} \{ {\bfseries s3eNOFUIInterfaceOrientationPortrait} =  1, 
+{\bfseries s3eNOFUIInterfaceOrientationPortraitUpsideDown} =  2, 
+{\bfseries s3eNOFUIInterfaceOrientationLandscapeLeft} =  4, 
+{\bfseries s3eNOFUIInterfaceOrientationLandscapeRight} =  3
+ \}
+\item 
+enum {\bfseries s3eNOpenFeintCallback} \{ {\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-PLAYER\_\-LOGGEDIN}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DASHBOARD\_\-WILL\_\-APPEAR}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DASHBOARD\_\-DID\_\-APPEAR}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DASHBOARD\_\-WILL\_\-DISAPPEAR}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DASHBOARD\_\-DID\_\-DISAPPEAR}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-IS\_\-OPENFEINT\_\-NOTIFICATION\_\-ALLOWED}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-HANDLE\_\-DISALLOWED\_\-NOTIFICATION}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-NOTIFICATION\_\-WILL\_\-SHOW}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-DOWNLOAD\_\-ALL\_\-CHALLENGE\_\-DEFINITIONS}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-FAIL\_\-DOWNLOAD\_\-CHALLENGE\_\-DEFINITIONS}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-DOWNLOAD\_\-CHALLENGE\_\-DEFINITION}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-FAIL\_\-DOWNLOAD\_\-CHALLENGE\_\-DEFINITION}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-USER\_\-LAUNCHED\_\-CHALLENGE}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-USER\_\-RESTARTED\_\-CHALLENGE}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-COMPLETED\_\-CHALLENGE\_\-SCREEN\_\-CLOSED}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-USER\_\-BOOTED\_\-WITH\_\-UNVIEWED\_\-CHALLENGES}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-USER\_\-SENT\_\-CHALLENGES}, 
+{\bfseries S3E\_\-NOPENFEINT\_\-CALLBACK\_\-MAX}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s3eBool \hyperlink{group___n_open_feint_api_group_ga6b912a16b413186f3387e8e9a95bcb21}{s3eNOpenFeintAvailable} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga15c3278f021ef1cdbc4f2b522444cc90}{s3eNOpenFeintRegister} (s3eNOpenFeintCallback cbid, s3eCallback fn, void $\ast$userData)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga622ceda63aaf8c2c0765ee8a086dfe60}{s3eNOpenFeintUnRegister} (s3eNOpenFeintCallback cbid, s3eCallback fn)
+\item 
+const char $\ast$ \hyperlink{group___n_open_feint_api_group_gabc6fcbf5fbde609504975831ecb9e801}{s3eNOpenFeintGetErrorString} ()
+\item 
+\hyperlink{group___n_open_feint_api_group_ga6ef9ed4c26e06a1b4d5b3d0004ea28bd}{s3eNOpenFeintError} \hyperlink{group___n_open_feint_api_group_ga1547aacf4dfcb626c1d5515d91916106}{s3eNOpenFeintGetError} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gac4da11b85d70897f15745ecd1c65949d}{s3eNewMessageBox} (const char $\ast$title, const char $\ast$text)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gab565578b04e0056a8ce477a9b848a94c}{s3eNOFinitializeWithProductKey} (const char $\ast$productKey, const char $\ast$secret, const char $\ast$displayName, const \hyperlink{structs3e_n_o_f_array}{s3eNOFArray} $\ast$settings)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga3084c8f351d1545f33bad15e0bfce0d8}{s3eNOFlaunchDashboardWithHighscorePage} (const char $\ast$leaderboardId)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga10d29137246b18a6b0aa0f14190eafc8}{s3eNOFlaunchDashboardWithAchievementsPage} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga298064bb113bc28f0f11dfa88f261ffe}{s3eNOFlaunchDashboardWithChallengesPage} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gac88efb584c9cbff3820ceb68266bfede}{s3eNOFlaunchDashboardWithFindFriendsPage} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga0eb2d1ae58ac7f05315dd0d4166e9793}{s3eNOFlaunchDashboardWithWhosPlayingPage} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga4ddf5011370c7b48c0916d23f6130c8e}{s3eNOFlaunchDashboardWithListGlobalChatRoomsPage} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gacad353c4535c5a9c31335d8ea9ad97c1}{s3eNOFlaunchDashboardWithiPurchasePage} (const char $\ast$clientApplicationId)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga5c6a69c27fe03d703274b626b712c68b}{s3eNOFlaunchDashboardWithSwitchUserPage} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gaa5e3ca8365d1b0134f24cc6da139549f}{s3eNOFlaunchDashboardWithForumsPage} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga48e776364d044acddf01da986f54e10c}{s3eNOFlaunchDashboardWithInvitePage} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga2641001b84dec4536780102caae1e196}{s3eNOFlaunchDashboardWithSpecificInvite} (const char $\ast$inviteIdentifier)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gada3870ef5d4c830ba79ba371b5aa660e}{s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText} (const char $\ast$prepopulatedText, const char $\ast$originialMessage, const char $\ast$imageName, const char $\ast$linkedUrl)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga37c6bdeb3d9684f58aa59ef29b08fb9b}{s3eNOFshutdown} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gad5908d8a536ccc2304a9844bc63f71e6}{s3eNOFlaunchDashboard} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gafd2b02b161f2ebc709b52fd25c13bd85}{s3eNOFdismissDashboard} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga91a4fc5b95812435df330746b1d5ded1}{s3eNOFsetDashboardOrientation} (\hyperlink{group___n_open_feint_api_group_gac32b01451990bbfa1b6e2fe38e01262b}{s3eNOFUIInterfaceOrientation} orientation)
+\item 
+ushort \hyperlink{group___n_open_feint_api_group_gaffce9d737cb62d66c7cf64873b1c2aee}{s3eNOFhasUserApprovedFeint} ()
+\item 
+ushort \hyperlink{group___n_open_feint_api_group_ga90b0d5b1df4a437f8c337a61ae7c4678}{s3eNOFisOnline} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga396467328a4a70b44493263ceffec609}{s3eNOFdisplayAndSendChallenge} (\hyperlink{structs3e_n_o_f_challenge_definition}{s3eNOFChallengeDefinition} $\ast$challengeDefinition, const char $\ast$challengeDescription, const \hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData} $\ast$challengeData)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga3b6050107c6b8a85bbc40a99efdc0bbb}{s3eNOFdownloadAllChallengeDefinitions} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gabf380208ac3cbb38d7b2a6e097ccaac5}{s3eNOFdownloadChallengeDefinitionWithId} (const char $\ast$challengeDefinitionId)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gac0bbac15d2f5955c47e4b1c97de9041d}{s3eNOFchallengeCompleteWithResult} (\hyperlink{group___n_open_feint_api_group_ga954444cdbeafa2947e969f78ed1e29f4}{s3eNOFChallengeResult} challengeResult, const char $\ast$challengePeristentId)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga5d1d6b1cc48e419f5b2c70008ebb7a27}{s3eNOFchallengeDisplayCompletionWithData} (\hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData} $\ast$challengeData, const char $\ast$reChallengeDescription, const char $\ast$challengePeristentId)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gab867b2aef6d359907508f9db15dc46b1}{s3eNOFsubmitHighScore} (const char $\ast$leaderBoadId, const char $\ast$score, const char $\ast$displayText, const char $\ast$customData)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga08d7542b314ea594515cffa2dd86374d}{s3eNOFupdateAcheivementProgressionComplete} (const char $\ast$achievementId, double updatePercentComplete, bool showUpdateNotification)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga00f8721dad47b69383090091a37ed97e}{s3eNOFachievements} (\hyperlink{structs3e_n_o_f_array}{s3eNOFArray} $\ast$achArray)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga020ea6704c5e2c7449bae9fd13bb7b43}{s3eNOFachievement} (\hyperlink{structs3e_n_o_f_achievement}{s3eNOFAchievement} $\ast$achievement, const char $\ast$achievementId)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga007858ccc16ba9fddaa18af73d68f399}{s3eNOFachievementUnlock} (const char $\ast$achievementId)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga58e6c378a40420b5dd124a518571d477}{s3eNOFachievementUnlockAndDefer} (const char $\ast$achievementId)
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_ga4186be6c56b04643cb06fcc09f1fede6}{s3eNOFsubmitDeferredAchievements} ()
+\item 
+s3eResult \hyperlink{group___n_open_feint_api_group_gaf34d456ca65c4496ff0aca60484a5e50}{s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke} (const char $\ast$deviceToken)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___n_open_feint_api_group_ga8a04c29667152dbeadff79152b7dbb24}{
+int {\bfseries s3eNOFSettingVal::m\_\-intVal}}
+\label{group___n_open_feint_api_group_ga8a04c29667152dbeadff79152b7dbb24}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga9ba119d360def536cc5e03bc76d58cdd}{
+char {\bfseries s3eNOFSettingVal::m\_\-stringVal} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga9ba119d360def536cc5e03bc76d58cdd}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga6aee3bd956a465ec8553735c8a34f3c2}{
+void $\ast$ {\bfseries s3eNOFSettingVal::m\_\-reserved}}
+\label{group___n_open_feint_api_group_ga6aee3bd956a465ec8553735c8a34f3c2}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga02c14e35d772130e5b77cabb7fa73a9b}{
+\hyperlink{structs3e_n_o_f_setting_val}{s3eNOFSettingVal} $\ast$$\ast$ {\bfseries s3eNOFSettings::m\_\-settings}}
+\label{group___n_open_feint_api_group_ga02c14e35d772130e5b77cabb7fa73a9b}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaa30bf01aa490f0e36cc36c2b390037f0}{
+unsigned int {\bfseries s3eNOFArray::m\_\-count}}
+\label{group___n_open_feint_api_group_gaa30bf01aa490f0e36cc36c2b390037f0}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga65bc3169f033538d31a6fb651d06b998}{
+char {\bfseries s3eNOFChallengeDefinition::iconUrl} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga65bc3169f033538d31a6fb651d06b998}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gab2775b9f11c8112c1ef88f60258bada4}{
+char {\bfseries s3eNOFChallengeDefinition::clientApplicationId} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gab2775b9f11c8112c1ef88f60258bada4}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gad637b1a89c05dafbbd74e2cbf36e31d4}{
+bool {\bfseries s3eNOFChallengeDefinition::multiAttempt}}
+\label{group___n_open_feint_api_group_gad637b1a89c05dafbbd74e2cbf36e31d4}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga9dd95cd7517008538410a677ab14bd53}{
+uint {\bfseries s3eNOFChallengeDefinition::s3eNOFchallengeId}}
+\label{group___n_open_feint_api_group_ga9dd95cd7517008538410a677ab14bd53}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga006e0fc3783b27c0dcc38b15c238f857}{
+char {\bfseries s3eNOFUser::lastPlayedGameId} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga006e0fc3783b27c0dcc38b15c238f857}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaa2660e7649786483081b1c907a767591}{
+char {\bfseries s3eNOFUser::lastPlayedGameName} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gaa2660e7649786483081b1c907a767591}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaf2b2516a60a29534aa94fc9f901a629b}{
+bool {\bfseries s3eNOFUser::online}}
+\label{group___n_open_feint_api_group_gaf2b2516a60a29534aa94fc9f901a629b}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gafd32f1539eaa5e98839c34cef6e40c4a}{
+char {\bfseries s3eNOFUser::userId} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gafd32f1539eaa5e98839c34cef6e40c4a}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gac94b3e2f5b51e04bc998cb0e7fc18fe0}{
+char {\bfseries s3eNOFUser::profilePictureUrl} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gac94b3e2f5b51e04bc998cb0e7fc18fe0}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga1cb952b9a174f212cdd38915a12c4560}{
+char {\bfseries s3eNOFUser::latitude} \mbox{[}10\mbox{]}}
+\label{group___n_open_feint_api_group_ga1cb952b9a174f212cdd38915a12c4560}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gac30e43a59dd4cd87a9c48b2a456367c8}{
+char {\bfseries s3eNOFUser::longitude} \mbox{[}10\mbox{]}}
+\label{group___n_open_feint_api_group_gac30e43a59dd4cd87a9c48b2a456367c8}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga0a8617b1651e0991d5145ac746fadc8a}{
+uint {\bfseries s3eNOFChallengeData::length}}
+\label{group___n_open_feint_api_group_ga0a8617b1651e0991d5145ac746fadc8a}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga1c8dbfd19cf4b9f8ec94350247bcdcb7}{
+\hyperlink{structs3e_n_o_f_user}{s3eNOFUser} $\ast$ {\bfseries s3eNOFChallenge::challenger}}
+\label{group___n_open_feint_api_group_ga1c8dbfd19cf4b9f8ec94350247bcdcb7}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga26fc42a6ce20db337578eaecf96f0914}{
+char {\bfseries s3eNOFChallenge::challengeDescription} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga26fc42a6ce20db337578eaecf96f0914}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga39c79347e6372fce8673936899cfcda1}{
+char {\bfseries s3eNOFChallenge::userMessage} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga39c79347e6372fce8673936899cfcda1}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaf63ff301a7be88e3180d1a152c376ac7}{
+char {\bfseries s3eNOFChallenge::hiddenText} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gaf63ff301a7be88e3180d1a152c376ac7}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaec7022a723b75796a1c028d9e1df1034}{
+\hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData} $\ast$ {\bfseries s3eNOFChallenge::challengeData}}
+\label{group___n_open_feint_api_group_gaec7022a723b75796a1c028d9e1df1034}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga47456af3464434e78f5719f7c05e0985}{
+char {\bfseries s3eNOFChallenge::challengeDataUrl} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga47456af3464434e78f5719f7c05e0985}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gadb660e1877f1ba45608b5543b4a865ff}{
+\hyperlink{structs3e_n_o_f_user}{s3eNOFUser} $\ast$ {\bfseries s3eNOFChallengeToUser::recipient}}
+\label{group___n_open_feint_api_group_gadb660e1877f1ba45608b5543b4a865ff}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga59642af50d8113fbcf9064285e7df1ea}{
+\hyperlink{group___n_open_feint_api_group_ga954444cdbeafa2947e969f78ed1e29f4}{s3eNOFChallengeResult} {\bfseries s3eNOFChallengeToUser::result}}
+\label{group___n_open_feint_api_group_ga59642af50d8113fbcf9064285e7df1ea}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gab4e3934409e9b81f9a248197c2d11abc}{
+char {\bfseries s3eNOFChallengeToUser::resultDescription} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gab4e3934409e9b81f9a248197c2d11abc}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gad29d8e5324ec998f52efea0d9a576359}{
+char {\bfseries s3eNOFChallengeToUser::formattedResultDescription} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_gad29d8e5324ec998f52efea0d9a576359}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gacf73e9b83740e06275281e4bb9ba1c47}{
+bool {\bfseries s3eNOFChallengeToUser::hasBeenViewed}}
+\label{group___n_open_feint_api_group_gacf73e9b83740e06275281e4bb9ba1c47}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gac9ac0743b4a7ac1c637dd8d9a2c17f19}{
+uint {\bfseries s3eNOFChallengeToUser::attempts}}
+\label{group___n_open_feint_api_group_gac9ac0743b4a7ac1c637dd8d9a2c17f19}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaa6c50239f80d43f2680fe34af1593ba0}{
+bool {\bfseries s3eNOFChallengeToUser::hasDecrementedChallengeCount}}
+\label{group___n_open_feint_api_group_gaa6c50239f80d43f2680fe34af1593ba0}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga76d720f4adf95f7561d42f1147fb5c78}{
+bool {\bfseries s3eNOFChallengeToUser::isCompleted}}
+\label{group___n_open_feint_api_group_ga76d720f4adf95f7561d42f1147fb5c78}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga9fe56797f1569770d50ef36dda978508}{
+char {\bfseries s3eNOFChallengeToUser::nofPersistentId} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1\mbox{]}}
+\label{group___n_open_feint_api_group_ga9fe56797f1569770d50ef36dda978508}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga235b598efac1fa1ac756a36ba9ba5164}{
+char {\bfseries s3eNOFAchievement::description} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga235b598efac1fa1ac756a36ba9ba5164}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga36870064effddc6b2ff169dccd47c107}{
+unsigned int {\bfseries s3eNOFAchievement::gamerscore}}
+\label{group___n_open_feint_api_group_ga36870064effddc6b2ff169dccd47c107}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gabcaf8a16c837646fd6f9da16cfcefc84}{
+bool {\bfseries s3eNOFAchievement::isSecret}}
+\label{group___n_open_feint_api_group_gabcaf8a16c837646fd6f9da16cfcefc84}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gacc567fef5f47b21d3b268f9e8146d519}{
+time\_\-t {\bfseries s3eNOFAchievement::unlockDate}}
+\label{group___n_open_feint_api_group_gacc567fef5f47b21d3b268f9e8146d519}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaf6820f91c7ca33cae0a1fc72ce166fd2}{
+bool {\bfseries s3eNOFAchievement::isUnlocked}}
+\label{group___n_open_feint_api_group_gaf6820f91c7ca33cae0a1fc72ce166fd2}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gad499493f971fe5430d6a06b5c70ba9d4}{
+char {\bfseries s3eNOFAchievement::percentComplete} \mbox{[}6\mbox{]}}
+\label{group___n_open_feint_api_group_gad499493f971fe5430d6a06b5c70ba9d4}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga71acb5cdd5292a7b5083c326c714dcb4}{
+bool {\bfseries s3eNOFAchievement::isUnlockedByComparedToUser}}
+\label{group___n_open_feint_api_group_ga71acb5cdd5292a7b5083c326c714dcb4}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gaa92898686eac33f624185167d5375516}{
+char {\bfseries s3eNOFAchievement::comparedToUserId} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL\mbox{]}}
+\label{group___n_open_feint_api_group_gaa92898686eac33f624185167d5375516}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga8ed42d00785e6c909036c72d72a23a98}{
+char {\bfseries s3eNOFAchievement::endVersion} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL\mbox{]}}
+\label{group___n_open_feint_api_group_ga8ed42d00785e6c909036c72d72a23a98}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga5e75b58191771edc32ebf022277b85cd}{
+char {\bfseries s3eNOFAchievement::startVersion} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL\mbox{]}}
+\label{group___n_open_feint_api_group_ga5e75b58191771edc32ebf022277b85cd}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_gabdadc0c884c55313c7fc0ee1067f4b8a}{
+unsigned int {\bfseries s3eNOFAchievement::position}}
+\label{group___n_open_feint_api_group_gabdadc0c884c55313c7fc0ee1067f4b8a}
+
+\item 
+\hypertarget{group___n_open_feint_api_group_ga3a1eb47a42bd1867f223a1ae7f076b40}{
+char {\bfseries s3eNOFAchievement::iconUrl} \mbox{[}S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\mbox{]}}
+\label{group___n_open_feint_api_group_ga3a1eb47a42bd1867f223a1ae7f076b40}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S3E Nerdiacs OpenFeint Extension implements the connectivity functionality provided by the OpenFeint features in the OpenFeint SDK.
+
+This API wraps OpenFeint functionality as close to original OpenFeint API.
+
+It allows users apps to utilize OpenFeint's match/challenges/leaderboards/forums functionality. 
+\begin{DoxyItemize}
+\item ios: On devices with supported hardware/OS combinations
+\item android: On devices with supported hardware/OS
+\end{DoxyItemize}
+
+For more information on the functionality provided by OpenFeint API, and which hardware/OS versions are supported, visit \char`\"{}http://www.openfeint.com/developers\char`\"{}
+
+Nerdiacs \href{http://www.Nerdiacs.com}{\tt http://www.Nerdiacs.com} 
+
+\subsection{Define Documentation}
+\hypertarget{group___n_open_feint_api_group_ga2a3a66951aa3d2b0cb2eaac82c1ff30c}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!S3E\_\-NOPENFEINT\_\-STRING\_\-MAX@{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX}}
+\index{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX@{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX}]{\setlength{\rightskip}{0pt plus 5cm}\#define S3E\_\-NOPENFEINT\_\-STRING\_\-MAX~256}}
+\label{group___n_open_feint_api_group_ga2a3a66951aa3d2b0cb2eaac82c1ff30c}
+TODO 1-\/-\/ Give proper error responses 2-\/-\/ Check for compliance with Google Code Style
+
+Max string size 
+
+Definition at line 58 of file s3eNOpenFeint.h.
+
+\hypertarget{group___n_open_feint_api_group_ga714d35726c88b507a262d4164daf54d6}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1@{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1}}
+\index{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1@{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}\#define S3E\_\-NOPENFEINT\_\-STRING\_\-MAX\_\-1~50}}
+\label{group___n_open_feint_api_group_ga714d35726c88b507a262d4164daf54d6}
+Max settings string size 
+
+Definition at line 68 of file s3eNOpenFeint.h.
+
+\hypertarget{group___n_open_feint_api_group_gafb2f974aafabe744d8384a8ff582cd56}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL@{S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL}}
+\index{S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL@{S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL}]{\setlength{\rightskip}{0pt plus 5cm}\#define S3E\_\-NOPENFEINT\_\-STRING\_\-SMALL~20}}
+\label{group___n_open_feint_api_group_gafb2f974aafabe744d8384a8ff582cd56}
+Small string size 
+
+Definition at line 64 of file s3eNOpenFeint.h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{group___n_open_feint_api_group_gafc79d5fb8f1516cf5b6c61edb910d510}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFArray@{s3eNOFArray}}
+\index{s3eNOFArray@{s3eNOFArray}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFArray}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFArray}  {\bf s3eNOFArray}}}
+\label{group___n_open_feint_api_group_gafc79d5fb8f1516cf5b6c61edb910d510}
+General Purpose array to exchange data between API and callbacks 
+\begin{DoxyParams}{Parameters}
+{\em m\_\-items} & Items in array. \\
+\hline
+{\em m\_\-count} & number of items in this array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Deallocate yourself, if items are allocated by API consumer. Callback functions deallocate themselves 
+\end{DoxyRemark}
+\hypertarget{group___n_open_feint_api_group_ga025bd1c28b0fb4dfedb98023c92caee8}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFChallenge@{s3eNOFChallenge}}
+\index{s3eNOFChallenge@{s3eNOFChallenge}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFChallenge}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFChallenge}  {\bf s3eNOFChallenge}}}
+\label{group___n_open_feint_api_group_ga025bd1c28b0fb4dfedb98023c92caee8}
+\hyperlink{structs3e_n_o_f_challenge}{s3eNOFChallenge} holds OFChallenge data
+
+
+\begin{DoxyParams}{Parameters}
+{\em challengeDefinition} & of type struct \hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em challenger} & of type struct \hyperlink{structs3e_n_o_f_user}{s3eNOFUser}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structs3e_n_o_f_user}{s3eNOFUser} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em challengeDescription} & The Challenge Description. \\
+\hline
+{\em userMessage} & The user message for the challenge. \\
+\hline
+{\em hiddenText} & Hidden text field defined by the developer. \\
+\hline
+{\em challengeData} & of type struct \hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structs3e_n_o_f_challenge_data}{s3eNOFChallengeData} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em challengeDataUrl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+: The API will deallocate this struct if it is sent via callback. Keep a copy locally. 
+\end{DoxyNote}
+\hypertarget{group___n_open_feint_api_group_ga836b6f1da3311a513c16676c0d6d6107}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFChallengeData@{s3eNOFChallengeData}}
+\index{s3eNOFChallengeData@{s3eNOFChallengeData}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFChallengeData}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFChallengeData}  {\bf s3eNOFChallengeData}}}
+\label{group___n_open_feint_api_group_ga836b6f1da3311a513c16676c0d6d6107}
+s3eChallengeData structure to hold challenge data 
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to challenge data that is copied by API internally \\
+\hline
+{\em length} & Length of data in struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the consumer of API is supposed to deallocate this struct. API only keeps its own internal copy. If this struct is received as callback, make a local copy if needed as it will be deallocated after callback finishes. 
+\end{DoxyNote}
+\hypertarget{group___n_open_feint_api_group_gabc8d488f663fbf90990f7436e14f2161}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFChallengeDefinition@{s3eNOFChallengeDefinition}}
+\index{s3eNOFChallengeDefinition@{s3eNOFChallengeDefinition}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFChallengeDefinition}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFChallengeDefinition}  {\bf s3eNOFChallengeDefinition}}}
+\label{group___n_open_feint_api_group_gabc8d488f663fbf90990f7436e14f2161}
+OpenFeintChallenge Definition \hypertarget{group___n_open_feint_api_group_ga72aba52b0a4382e49b79f18ea4dfebbd}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFChallengeResult@{s3eNOFChallengeResult}}
+\index{s3eNOFChallengeResult@{s3eNOFChallengeResult}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFChallengeResult}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf s3eNOFChallengeResult}  {\bf s3eNOFChallengeResult}}}
+\label{group___n_open_feint_api_group_ga72aba52b0a4382e49b79f18ea4dfebbd}
+Challenge Result enum OFChallengeResult \hypertarget{group___n_open_feint_api_group_ga7b4c00e0398b253d54165af119d4ad99}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFChallengeToUser@{s3eNOFChallengeToUser}}
+\index{s3eNOFChallengeToUser@{s3eNOFChallengeToUser}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFChallengeToUser}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFChallengeToUser}  {\bf s3eNOFChallengeToUser}}}
+\label{group___n_open_feint_api_group_ga7b4c00e0398b253d54165af119d4ad99}
+\hyperlink{structs3e_n_o_f_challenge_to_user}{s3eNOFChallengeToUser} struct that holds information about a challenge towards our user
+
+
+\begin{DoxyParams}{Parameters}
+{\em challenge} & \hyperlink{structs3e_n_o_f_challenge}{s3eNOFChallenge} struct that holds other elements of challenge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structs3e_n_o_f_challenge}{s3eNOFChallenge} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em recipient} & \hyperlink{structs3e_n_o_f_user}{s3eNOFUser} the user that started this challenge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structs3e_n_o_f_user}{s3eNOFUser} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___n_open_feint_api_group_ga72aba52b0a4382e49b79f18ea4dfebbd}{s3eNOFChallengeResult} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em resultDescription} & Description of the result. This is set when calling sendChallengeComplete The result description will be prefixed by either the recipients name or You if it's the local player whenever displayed. The result description should not state if the recipient won or lost but contain the statistics of his attempt. Example: \char`\"{}beat 30 monsters\char`\"{} will turn into \char`\"{}You beat 30 monsters\char`\"{} and will be display next to a icon for win or lose \\
+\hline
+{\em formattedResultDescription} & The descprtion of the result defined by resultDescription with You or the user name appended to the front. \\
+\hline
+{\em hasBeenViewed} & Whether or not the challenge has be viewed by the challengee \\
+\hline
+{\em attempts} & Number of challenge attempts by this user. \\
+\hline
+{\em hasDecrementedChallengeCount} & \\
+\hline
+{\em isCompleted} & \\
+\hline
+{\em nofPersistentId} & persistentFileName that is used to serialize/deserialize this data as it cannot be stored globally and referenced. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga56e4bc2c854fc1fb9918045fea4167ab}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFPlayerInfo@{s3eNOFPlayerInfo}}
+\index{s3eNOFPlayerInfo@{s3eNOFPlayerInfo}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFPlayerInfo}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFPlayerInfo}  {\bf s3eNOFPlayerInfo}}}
+\label{group___n_open_feint_api_group_ga56e4bc2c854fc1fb9918045fea4167ab}
+Structure to hold playerinfo for callbacks. For now holds only playerId. Keeps things clean this way for extension.
+
+\begin{DoxySeeAlso}{See also}
+s3eNOpenFeintCallback 
+\end{DoxySeeAlso}
+\hypertarget{group___n_open_feint_api_group_ga0063f0a593d0853ca3d5ec8a41b3b835}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFSettings@{s3eNOFSettings}}
+\index{s3eNOFSettings@{s3eNOFSettings}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFSettings}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFSettings}  {\bf s3eNOFSettings}}}
+\label{group___n_open_feint_api_group_ga0063f0a593d0853ca3d5ec8a41b3b835}
+Struct to hold array of setting vars and values for OpenFeint Settings. NOTE: Deallocate the array yourself after calling API. \hypertarget{group___n_open_feint_api_group_ga2c2981f021f2a69c8ab32ab6d1a3a4d6}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFSettingVal@{s3eNOFSettingVal}}
+\index{s3eNOFSettingVal@{s3eNOFSettingVal}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFSettingVal}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFSettingVal}  {\bf s3eNOFSettingVal}}}
+\label{group___n_open_feint_api_group_ga2c2981f021f2a69c8ab32ab6d1a3a4d6}
+This struct is common struct to hold OpenFeint settings. NOTE: Deallocate the array yourself after calling API. \hypertarget{group___n_open_feint_api_group_gaae461961f162f751c87f8ca7134f26c9}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFUIInterfaceOrientation@{s3eNOFUIInterfaceOrientation}}
+\index{s3eNOFUIInterfaceOrientation@{s3eNOFUIInterfaceOrientation}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFUIInterfaceOrientation}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf s3eNOFUIInterfaceOrientation}  {\bf s3eNOFUIInterfaceOrientation}}}
+\label{group___n_open_feint_api_group_gaae461961f162f751c87f8ca7134f26c9}
+enum to define UI orientation Note that UIInterfaceOrientationLandscapeLeft is equal to UIDeviceOrientationLandscapeRight (and vice versa). This is because rotating the device to the left requires rotating the content to the right. \hypertarget{group___n_open_feint_api_group_ga038694687b332e497536920f13f4b0f3}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFUser@{s3eNOFUser}}
+\index{s3eNOFUser@{s3eNOFUser}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFUser}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s3eNOFUser}  {\bf s3eNOFUser}}}
+\label{group___n_open_feint_api_group_ga038694687b332e497536920f13f4b0f3}
+Structure to hold user information for OFUser object 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group___n_open_feint_api_group_ga954444cdbeafa2947e969f78ed1e29f4}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFChallengeResult@{s3eNOFChallengeResult}}
+\index{s3eNOFChallengeResult@{s3eNOFChallengeResult}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFChallengeResult}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf s3eNOFChallengeResult}}}
+\label{group___n_open_feint_api_group_ga954444cdbeafa2947e969f78ed1e29f4}
+Challenge Result enum OFChallengeResult 
+
+Definition at line 87 of file s3eNOpenFeint.h.
+
+\hypertarget{group___n_open_feint_api_group_gac32b01451990bbfa1b6e2fe38e01262b}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFUIInterfaceOrientation@{s3eNOFUIInterfaceOrientation}}
+\index{s3eNOFUIInterfaceOrientation@{s3eNOFUIInterfaceOrientation}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFUIInterfaceOrientation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf s3eNOFUIInterfaceOrientation}}}
+\label{group___n_open_feint_api_group_gac32b01451990bbfa1b6e2fe38e01262b}
+enum to define UI orientation Note that UIInterfaceOrientationLandscapeLeft is equal to UIDeviceOrientationLandscapeRight (and vice versa). This is because rotating the device to the left requires rotating the content to the right. 
+
+Definition at line 99 of file s3eNOpenFeint.h.
+
+\hypertarget{group___n_open_feint_api_group_ga6ef9ed4c26e06a1b4d5b3d0004ea28bd}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOpenFeintError@{s3eNOpenFeintError}}
+\index{s3eNOpenFeintError@{s3eNOpenFeintError}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOpenFeintError}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf s3eNOpenFeintError}}}
+\label{group___n_open_feint_api_group_ga6ef9ed4c26e06a1b4d5b3d0004ea28bd}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{S3E\_\-OPENFEINT\_\-ERR\_\-NONE@{S3E\_\-OPENFEINT\_\-ERR\_\-NONE}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!S3E\_\-OPENFEINT\_\-ERR\_\-NONE@{S3E\_\-OPENFEINT\_\-ERR\_\-NONE}}\item[{\em 
+\hypertarget{group___n_open_feint_api_group_gga6ef9ed4c26e06a1b4d5b3d0004ea28bda018802c719a4ef52c8336d5c320e5d93}{
+S3E\_\-OPENFEINT\_\-ERR\_\-NONE}
+\label{group___n_open_feint_api_group_gga6ef9ed4c26e06a1b4d5b3d0004ea28bda018802c719a4ef52c8336d5c320e5d93}
+}]No Error. \index{S3E\_\-OPENFEINT\_\-INVALID\_\-PARAM@{S3E\_\-OPENFEINT\_\-INVALID\_\-PARAM}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!S3E\_\-OPENFEINT\_\-INVALID\_\-PARAM@{S3E\_\-OPENFEINT\_\-INVALID\_\-PARAM}}\item[{\em 
+\hypertarget{group___n_open_feint_api_group_gga6ef9ed4c26e06a1b4d5b3d0004ea28bdaacb2649c2babd512a412065e906109c4}{
+S3E\_\-OPENFEINT\_\-INVALID\_\-PARAM}
+\label{group___n_open_feint_api_group_gga6ef9ed4c26e06a1b4d5b3d0004ea28bdaacb2649c2babd512a412065e906109c4}
+}]Invalid parameter. \end{description}
+\end{Desc}
+
+
+
+Definition at line 74 of file s3eNOpenFeint.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group___n_open_feint_api_group_gac4da11b85d70897f15745ecd1c65949d}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNewMessageBox@{s3eNewMessageBox}}
+\index{s3eNewMessageBox@{s3eNewMessageBox}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNewMessageBox}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNewMessageBox (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{title, }
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gac4da11b85d70897f15745ecd1c65949d}
+Just a test function to display message box \hypertarget{group___n_open_feint_api_group_ga020ea6704c5e2c7449bae9fd13bb7b43}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFachievement@{s3eNOFachievement}}
+\index{s3eNOFachievement@{s3eNOFachievement}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFachievement}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFachievement (
+\begin{DoxyParamCaption}
+\item[{{\bf s3eNOFAchievement} $\ast$}]{achievement, }
+\item[{const char $\ast$}]{achievementId}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga020ea6704c5e2c7449bae9fd13bb7b43}
+s3eNOFachievement Retrieves the achievement identified by achievementId 
+\begin{DoxyParams}{Parameters}
+{\em achievement} & Reference to preallocated achievement variable. This is allocated by API consumer. \\
+\hline
+{\em achievementId} & the achievement id for which info to be retrieved. 
+\begin{DoxyCode}
+   s3eNOFAchievement *ach = (s3eNOFAchievement*)s3eMalloc(sizeof(
+      s3eNOFAchievement));
+   AppendMessageColour(GREEN,"Calling s3eNOFachievement");
+   s3eNOFachievement(ach, "123456");
+   AppendMessage("Achievement title %s", ach->title);
+   s3eFree(ach);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga00f8721dad47b69383090091a37ed97e}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFachievements@{s3eNOFachievements}}
+\index{s3eNOFachievements@{s3eNOFachievements}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFachievements}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFachievements (
+\begin{DoxyParamCaption}
+\item[{{\bf s3eNOFArray} $\ast$}]{achArray}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga00f8721dad47b69383090091a37ed97e}
+s3eNOFachievements Retrieves all of the achievements for this application. 
+\begin{DoxyParams}{Parameters}
+{\em achievements} & array of \hyperlink{structs3e_n_o_f_achievement}{s3eNOFAchievement} to be filled by API. The API will not allocate any memory here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The API consumer has responsibility to provide preallocated achievements array with maximum achievements expected. The API will only insert as many items as the capacity available in array. 
+
+The API will update m\_\-count member of \hyperlink{structs3e_n_o_f_array}{s3eNOFArray} with actual valid elements set/updated by API. It doesn't allocate or deallocate m\_\-items so API consumer should free it. 
+
+The returned achievements will contain unlock information for the local user. 
+\begin{DoxyCode}
+   const unsigned int max_achievements = 20; // whatever we think is max we need
+   void* data = s3eMalloc(sizeof(s3eNOFAchievement) * max_achievements);
+   if (data == NULL) {
+     AppendMessageColour(RED, ("Couldn't allocate data"));
+     return false;
+   }
+  
+   s3eNOFArray achArray;
+   achArray.m_items = data;
+   achArray.m_count = max_achievements;
+   s3eNOFachievements(&achArray);
+   for (uint i=0; i < achArray.m_count && i < max_achievements; i++) {
+     AppendMessage("Acheivement title %s", ((s3eNOFAchievement*)achArray.m_items)
+      [i].title);
+   }
+   s3eFree(data);
+\end{DoxyCode}
+ 
+\end{DoxyNote}
+\hypertarget{group___n_open_feint_api_group_ga007858ccc16ba9fddaa18af73d68f399}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFachievementUnlock@{s3eNOFachievementUnlock}}
+\index{s3eNOFachievementUnlock@{s3eNOFachievementUnlock}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFachievementUnlock}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFachievementUnlock (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{achievementId}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga007858ccc16ba9fddaa18af73d68f399}
+s3eNOFachievementUnlock Unlocks the achievement identified by achievementId 
+\begin{DoxyParams}{Parameters}
+{\em achievementId} & the achievement id to unlock. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga58e6c378a40420b5dd124a518571d477}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFachievementUnlockAndDefer@{s3eNOFachievementUnlockAndDefer}}
+\index{s3eNOFachievementUnlockAndDefer@{s3eNOFachievementUnlockAndDefer}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFachievementUnlockAndDefer}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFachievementUnlockAndDefer (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{achievementId}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga58e6c378a40420b5dd124a518571d477}
+s3eNOFachievementUnlockAndDefer Retrieves the achievement identified by achievementId 
+\begin{DoxyParams}{Parameters}
+{\em achievementId} & the achievement id to unlock. Unlocks an achievement for the current user, but defers the submission of this information to the server until \char`\"{}submitDeferredAchievements\char`\"{} is called in your app. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If you defer achievements, the user will still see the achievement unlock immediately and it will be stored locally that it is unlocked. If the user quits the app before you have a chance to submit the deferred achievements, the next time the app is started up online and logged into OpenFeint, we will sync to the server automatically all deferred achievements from previous games. 
+\end{DoxyNote}
+\hypertarget{group___n_open_feint_api_group_gaf34d456ca65c4496ff0aca60484a5e50}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke@{s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke}}
+\index{s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke@{s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{deviceToken}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gaf34d456ca65c4496ff0aca60484a5e50}
+s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke If OpenFeintSettingEnablePushNotifications is set to true, these functions MUST be called from the application delegates 
+\begin{DoxyParams}{Parameters}
+{\em deviceToken} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_gac0bbac15d2f5955c47e4b1c97de9041d}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFchallengeCompleteWithResult@{s3eNOFchallengeCompleteWithResult}}
+\index{s3eNOFchallengeCompleteWithResult@{s3eNOFchallengeCompleteWithResult}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFchallengeCompleteWithResult}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFchallengeCompleteWithResult (
+\begin{DoxyParamCaption}
+\item[{{\bf s3eNOFChallengeResult}}]{challengeResult, }
+\item[{const char $\ast$}]{challengePeristentId}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gac0bbac15d2f5955c47e4b1c97de9041d}
+completeWithResult send when the challenge is complete 
+\begin{DoxyParams}{Parameters}
+{\em challengeResult} & s3eNOFChallengeResult enum with either win, lose or tie 
+\begin{DoxyCode}
+ s3eNOFchallengeCompleteWithResult(kNOFChallengeResultRecipientLost, persistentCh
+      allengeId);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga5d1d6b1cc48e419f5b2c70008ebb7a27}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFchallengeDisplayCompletionWithData@{s3eNOFchallengeDisplayCompletionWithData}}
+\index{s3eNOFchallengeDisplayCompletionWithData@{s3eNOFchallengeDisplayCompletionWithData}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFchallengeDisplayCompletionWithData}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFchallengeDisplayCompletionWithData (
+\begin{DoxyParamCaption}
+\item[{{\bf s3eNOFChallengeData} $\ast$}]{challengeData, }
+\item[{const char $\ast$}]{reChallengeDescription, }
+\item[{const char $\ast$}]{challengePeristentId}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga5d1d6b1cc48e419f5b2c70008ebb7a27}
+displayCompletionWithData Displays the default OpenFeint View for completing Challenges. If the user submits this view the challenger will be sent a message about the challenge result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resultData} & Only used for multiAttempt challenges. The data needed to send the challenge result out as a new challenge \\
+\hline
+{\em reChallengeDescription} & If the challenge result is sent out as a new challenge (multi attempt only), this will be the description for the new challenge. Should be formatted the same way as challengeText in sendChallenge  Call completeWithResult before calling this. It stores nessiary data for this view. If the user turns off the game during the challenge you must serialize the OFChallengeToUser as its used to display the completion modal. Serialize it to and from disc by calling writeChallengeToUserToFile or readChallengeToUserFromFile. 
+\begin{DoxyCode}
+ s3eNOFChallengeData chalData;
+ const char *dd = "SCORE=5"; 
+ chalData.data = (void*)dd;
+ chalData.length = strlen(dd);
+ s3eNOFchallengeDisplayCompletionWithData(&chalData, 
+                                "Challenge Lost", 
+                                persistentChallengeId);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_gafd2b02b161f2ebc709b52fd25c13bd85}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFdismissDashboard@{s3eNOFdismissDashboard}}
+\index{s3eNOFdismissDashboard@{s3eNOFdismissDashboard}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFdismissDashboard}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFdismissDashboard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gafd2b02b161f2ebc709b52fd25c13bd85}
+s3eNOFdismissDashboard Removes the OpenFeint Dashboard from your application's keyed window. \hypertarget{group___n_open_feint_api_group_ga396467328a4a70b44493263ceffec609}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFdisplayAndSendChallenge@{s3eNOFdisplayAndSendChallenge}}
+\index{s3eNOFdisplayAndSendChallenge@{s3eNOFdisplayAndSendChallenge}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFdisplayAndSendChallenge}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFdisplayAndSendChallenge (
+\begin{DoxyParamCaption}
+\item[{{\bf s3eNOFChallengeDefinition} $\ast$}]{challengeDefinition, }
+\item[{const char $\ast$}]{challengeDescription, }
+\item[{const {\bf s3eNOFChallengeData} $\ast$}]{challengeData}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga396467328a4a70b44493263ceffec609}
+s3eNOFdisplayAndSendChallenge is a bit of modification of original displayAndSendChallenge of OpenFeint. The original function takes no parameter but expects the INSTANCE to hold ChallengeDefinition. We will just pass challenge definition to function itself thus reducing the need to pass around OFChallenge object instance. 
+\begin{DoxyParams}{Parameters}
+{\em challengeDefinition} & One of Challenge Definitions that is earlier retrieved using s3eNOFdownloadAllChallengeDefinitions \\
+\hline
+{\em challengeData} & the data that is stored on server for this challenge post 
+\begin{DoxyCode}
+ s3eNOFdisplayAndSendChallenge(&g_nofChallengeDefinitions[1]);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga3b6050107c6b8a85bbc40a99efdc0bbb}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFdownloadAllChallengeDefinitions@{s3eNOFdownloadAllChallengeDefinitions}}
+\index{s3eNOFdownloadAllChallengeDefinitions@{s3eNOFdownloadAllChallengeDefinitions}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFdownloadAllChallengeDefinitions}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFdownloadAllChallengeDefinitions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga3b6050107c6b8a85bbc40a99efdc0bbb}
+s3eNOFdownloadAllChallengeDefinitions Download all challenge definitions. \begin{DoxySeeAlso}{See also}
+S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-DOWNLOAD\_\-ALL\_\-CHALLENGE\_\-DEFINITIONS 
+
+S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-FAIL\_\-DOWNLOAD\_\-CHALLENGE\_\-DEFINITIONS 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+The challenge definitions are returned in callback. 
+\end{DoxyRemark}
+\hypertarget{group___n_open_feint_api_group_gabf380208ac3cbb38d7b2a6e097ccaac5}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFdownloadChallengeDefinitionWithId@{s3eNOFdownloadChallengeDefinitionWithId}}
+\index{s3eNOFdownloadChallengeDefinitionWithId@{s3eNOFdownloadChallengeDefinitionWithId}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFdownloadChallengeDefinitionWithId}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFdownloadChallengeDefinitionWithId (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{challengeDefinitionId}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gabf380208ac3cbb38d7b2a6e097ccaac5}
+downloadChallengeDefinitionWithId Get a specific challenge definition from the server. 
+\begin{DoxyParams}{Parameters}
+{\em challengeDefinitionId} & the challengeResourceId. This is the number(digits) on challenges section of OpenFeint developer portal \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-DOWNLOAD\_\-CHALLENGE\_\-DEFINITION 
+
+S3E\_\-NOPENFEINT\_\-CALLBACK\_\-DID\_\-FAIL\_\-DOWNLOAD\_\-CHALLENGE\_\-DEFINITION 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+The challenge definition are returned in callback. 
+\end{DoxyRemark}
+\hypertarget{group___n_open_feint_api_group_gaffce9d737cb62d66c7cf64873b1c2aee}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFhasUserApprovedFeint@{s3eNOFhasUserApprovedFeint}}
+\index{s3eNOFhasUserApprovedFeint@{s3eNOFhasUserApprovedFeint}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFhasUserApprovedFeint}]{\setlength{\rightskip}{0pt plus 5cm}ushort s3eNOFhasUserApprovedFeint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gaffce9d737cb62d66c7cf64873b1c2aee}
+s3eNOFhasUserApprovedFeint Returns whether or not the user has enabled OpenFeint for this game. \hypertarget{group___n_open_feint_api_group_gab565578b04e0056a8ce477a9b848a94c}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFinitializeWithProductKey@{s3eNOFinitializeWithProductKey}}
+\index{s3eNOFinitializeWithProductKey@{s3eNOFinitializeWithProductKey}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFinitializeWithProductKey}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFinitializeWithProductKey (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{productKey, }
+\item[{const char $\ast$}]{secret, }
+\item[{const char $\ast$}]{displayName, }
+\item[{const {\bf s3eNOFArray} $\ast$}]{settings}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gab565578b04e0056a8ce477a9b848a94c}
+s3eNOFinitializeWithProductKey
+
+
+\begin{DoxyParams}{Parameters}
+{\em productKey} & is copied. This is your unique product key you received when registering your application. \\
+\hline
+{\em secret} & is copied. This is your unique product secret you received when registering your application. \\
+\hline
+{\em displayName} & is copied. \\
+\hline
+{\em settings} & is copied. The available settings are defined as OpenFeintSettingXXXXXXXXXXXX. \\
+\hline
+{\em delegatesContainer} & is retained but none of the delegates in the container are retained. 
+\begin{DoxyCode}
+ s3eNOFSettingVal *settings = (s3eNOFSettingVal*)s3eMalloc(sizeof(
+      s3eNOFSettingVal) * 6);
+ // Fill settings
+ // UIOrientation value
+ strncpy(settings[0].m_varName,
+              "OpenFeintSettingDashboardOrientation",
+                      S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ settings[0].m_intVal = s3eNOFUIInterfaceOrientationPortrait;
+              
+              
+ // Shortdisplay name
+ strncpy(settings[1].m_varName, 
+              "OpenFeintSettingShortDisplayName", 
+              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ strncpy(settings[1].m_stringVal, 
+              "FunkyRacers",  
+              S3E_NOPENFEINT_STRING_MAX);
+              
+ // Push Notification Setting
+ strncpy(settings[2].m_varName,
+              "OpenFeintSettingEnablePushNotifications",
+              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ settings[2].m_intVal = 1; // TRUE/YES
+              
+              
+ // Sandbox Notification Mode
+ strncpy(settings[3].m_varName,
+              "OpenFeintSettingUseSandboxPushNotificationServer",
+              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ settings[3].m_intVal = 1;
+              
+
+ // Disable User generated content
+ strncpy(settings[4].m_varName,
+              "OpenFeintSettingDisableUserGeneratedContent",
+              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ settings[4].m_intVal = 0;
+              
+ // Disable ask for approval in debug mode
+ strncpy(settings[5].m_varName,
+              "OpenFeintSettingAlwaysAskForApprovalInDebug",
+              S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+ settings[5].m_intVal = 0;
+              
+              
+              
+ s3eNOFArray array;
+ array.m_count = 6;
+ array.m_items = settings;
+ s3eNOFinitializeWithProductKey("produkeyhere",
+                                                         "secrethere",
+                                                         "GameName",   
+                                                         &array);        
+ s3eFree(settings);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga90b0d5b1df4a437f8c337a61ae7c4678}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFisOnline@{s3eNOFisOnline}}
+\index{s3eNOFisOnline@{s3eNOFisOnline}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFisOnline}]{\setlength{\rightskip}{0pt plus 5cm}ushort s3eNOFisOnline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga90b0d5b1df4a437f8c337a61ae7c4678}
+s3eNOFisOnline Returns whether or not the game is connected to the OpenFeint server \hypertarget{group___n_open_feint_api_group_gad5908d8a536ccc2304a9844bc63f71e6}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboard@{s3eNOFlaunchDashboard}}
+\index{s3eNOFlaunchDashboard@{s3eNOFlaunchDashboard}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboard}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gad5908d8a536ccc2304a9844bc63f71e6}
+s3eNOFlaunchDashboard Launches the OpenFeint Dashboard view at the top of your application's keyed window. \begin{DoxyNote}{Note}
+If the player has not yet authorized your app, they will be prompted to setup an account or authorize your application before accessing the OpenFeint dashboard 
+\end{DoxyNote}
+\hypertarget{group___n_open_feint_api_group_ga10d29137246b18a6b0aa0f14190eafc8}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithAchievementsPage@{s3eNOFlaunchDashboardWithAchievementsPage}}
+\index{s3eNOFlaunchDashboardWithAchievementsPage@{s3eNOFlaunchDashboardWithAchievementsPage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithAchievementsPage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithAchievementsPage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga10d29137246b18a6b0aa0f14190eafc8}
+s3eNOFlaunchDashboardWithAchievementsPage directly launches to Achievements page \hypertarget{group___n_open_feint_api_group_ga298064bb113bc28f0f11dfa88f261ffe}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithChallengesPage@{s3eNOFlaunchDashboardWithChallengesPage}}
+\index{s3eNOFlaunchDashboardWithChallengesPage@{s3eNOFlaunchDashboardWithChallengesPage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithChallengesPage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithChallengesPage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga298064bb113bc28f0f11dfa88f261ffe}
+s3eNOFlaunchDashboardWithChallengesPage directly launches to Challenges page \hypertarget{group___n_open_feint_api_group_gac88efb584c9cbff3820ceb68266bfede}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithFindFriendsPage@{s3eNOFlaunchDashboardWithFindFriendsPage}}
+\index{s3eNOFlaunchDashboardWithFindFriendsPage@{s3eNOFlaunchDashboardWithFindFriendsPage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithFindFriendsPage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithFindFriendsPage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gac88efb584c9cbff3820ceb68266bfede}
+s3eNOFlaunchDashboardWithFindFriendsPage directly launches to FindFriends page \hypertarget{group___n_open_feint_api_group_gaa5e3ca8365d1b0134f24cc6da139549f}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithForumsPage@{s3eNOFlaunchDashboardWithForumsPage}}
+\index{s3eNOFlaunchDashboardWithForumsPage@{s3eNOFlaunchDashboardWithForumsPage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithForumsPage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithForumsPage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gaa5e3ca8365d1b0134f24cc6da139549f}
+s3eNOFlaunchDashboardWithForumsPage directly launches to Forums page \hypertarget{group___n_open_feint_api_group_ga3084c8f351d1545f33bad15e0bfce0d8}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithHighscorePage@{s3eNOFlaunchDashboardWithHighscorePage}}
+\index{s3eNOFlaunchDashboardWithHighscorePage@{s3eNOFlaunchDashboardWithHighscorePage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithHighscorePage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithHighscorePage (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{leaderboardId}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga3084c8f351d1545f33bad15e0bfce0d8}
+launchDashboardWithListLeaderboardsPage directly launches to LeaderBoards page s3eNOFlaunchDashboardWithHighscorePage directly launches to HighScore page 
+\begin{DoxyParams}{Parameters}
+{\em leaderboardId} & leaderboard id to load page \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga48e776364d044acddf01da986f54e10c}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithInvitePage@{s3eNOFlaunchDashboardWithInvitePage}}
+\index{s3eNOFlaunchDashboardWithInvitePage@{s3eNOFlaunchDashboardWithInvitePage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithInvitePage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithInvitePage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga48e776364d044acddf01da986f54e10c}
+s3eNOFlaunchDashboardWithInvitePage directly launches to InvitePage page \hypertarget{group___n_open_feint_api_group_gacad353c4535c5a9c31335d8ea9ad97c1}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithiPurchasePage@{s3eNOFlaunchDashboardWithiPurchasePage}}
+\index{s3eNOFlaunchDashboardWithiPurchasePage@{s3eNOFlaunchDashboardWithiPurchasePage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithiPurchasePage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithiPurchasePage (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{clientApplicationId}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gacad353c4535c5a9c31335d8ea9ad97c1}
+s3eNOFlaunchDashboardWithiPurchasePage directly launches to PurchasePage page \hypertarget{group___n_open_feint_api_group_ga4ddf5011370c7b48c0916d23f6130c8e}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithListGlobalChatRoomsPage@{s3eNOFlaunchDashboardWithListGlobalChatRoomsPage}}
+\index{s3eNOFlaunchDashboardWithListGlobalChatRoomsPage@{s3eNOFlaunchDashboardWithListGlobalChatRoomsPage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithListGlobalChatRoomsPage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithListGlobalChatRoomsPage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga4ddf5011370c7b48c0916d23f6130c8e}
+s3eNOFlaunchDashboardWithListGlobalChatRoomsPage directly launches to ChatRooms page \hypertarget{group___n_open_feint_api_group_gada3870ef5d4c830ba79ba371b5aa660e}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText@{s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText}}
+\index{s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText@{s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{prepopulatedText, }
+\item[{const char $\ast$}]{originialMessage, }
+\item[{const char $\ast$}]{imageName, }
+\item[{const char $\ast$}]{linkedUrl}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gada3870ef5d4c830ba79ba371b5aa660e}
+s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText directly launches to Socialpost page 
+\begin{DoxyParams}{Parameters}
+{\em prepopulatedText} & text to send to social media/site \\
+\hline
+{\em originalMessage} & no idea about this one \\
+\hline
+{\em imageName} & image to embed in post \\
+\hline
+{\em linkedUrl} & link to embed in post \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga2641001b84dec4536780102caae1e196}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithSpecificInvite@{s3eNOFlaunchDashboardWithSpecificInvite}}
+\index{s3eNOFlaunchDashboardWithSpecificInvite@{s3eNOFlaunchDashboardWithSpecificInvite}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithSpecificInvite}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithSpecificInvite (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{inviteIdentifier}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga2641001b84dec4536780102caae1e196}
+s3eNOFlaunchDashboardWithSpecificInvite directly launches to SpecificInvite page \hypertarget{group___n_open_feint_api_group_ga5c6a69c27fe03d703274b626b712c68b}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithSwitchUserPage@{s3eNOFlaunchDashboardWithSwitchUserPage}}
+\index{s3eNOFlaunchDashboardWithSwitchUserPage@{s3eNOFlaunchDashboardWithSwitchUserPage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithSwitchUserPage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithSwitchUserPage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga5c6a69c27fe03d703274b626b712c68b}
+s3eNOFlaunchDashboardWithSwitchUserPage directly launches to SwitchUser page \hypertarget{group___n_open_feint_api_group_ga0eb2d1ae58ac7f05315dd0d4166e9793}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFlaunchDashboardWithWhosPlayingPage@{s3eNOFlaunchDashboardWithWhosPlayingPage}}
+\index{s3eNOFlaunchDashboardWithWhosPlayingPage@{s3eNOFlaunchDashboardWithWhosPlayingPage}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFlaunchDashboardWithWhosPlayingPage}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFlaunchDashboardWithWhosPlayingPage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga0eb2d1ae58ac7f05315dd0d4166e9793}
+s3eNOFlaunchDashboardWithWhosPlayingPage directly launches to WhosPlaying page \hypertarget{group___n_open_feint_api_group_ga91a4fc5b95812435df330746b1d5ded1}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFsetDashboardOrientation@{s3eNOFsetDashboardOrientation}}
+\index{s3eNOFsetDashboardOrientation@{s3eNOFsetDashboardOrientation}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFsetDashboardOrientation}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFsetDashboardOrientation (
+\begin{DoxyParamCaption}
+\item[{{\bf s3eNOFUIInterfaceOrientation}}]{orientation}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga91a4fc5b95812435df330746b1d5ded1}
+s3eNOFsetDashboardOrientation Sets what orientation the dashboard and notifications will show in. \hypertarget{group___n_open_feint_api_group_ga37c6bdeb3d9684f58aa59ef29b08fb9b}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFshutdown@{s3eNOFshutdown}}
+\index{s3eNOFshutdown@{s3eNOFshutdown}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFshutdown}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFshutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga37c6bdeb3d9684f58aa59ef29b08fb9b}
+s3eNOFshutdown Shuts down OpenFeint \hypertarget{group___n_open_feint_api_group_ga4186be6c56b04643cb06fcc09f1fede6}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFsubmitDeferredAchievements@{s3eNOFsubmitDeferredAchievements}}
+\index{s3eNOFsubmitDeferredAchievements@{s3eNOFsubmitDeferredAchievements}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFsubmitDeferredAchievements}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFsubmitDeferredAchievements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga4186be6c56b04643cb06fcc09f1fede6}
+s3eNOFsubmitDeferredAchievements Submits all deferred achievement unlocks to the server \hypertarget{group___n_open_feint_api_group_gab867b2aef6d359907508f9db15dc46b1}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFsubmitHighScore@{s3eNOFsubmitHighScore}}
+\index{s3eNOFsubmitHighScore@{s3eNOFsubmitHighScore}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFsubmitHighScore}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFsubmitHighScore (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{leaderBoadId, }
+\item[{const char $\ast$}]{score, }
+\item[{const char $\ast$}]{displayText, }
+\item[{const char $\ast$}]{customData}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gab867b2aef6d359907508f9db15dc46b1}
+s3eNOFsubmitHighScore submits high score for current user to leaderboard identified by ID 
+\begin{DoxyParams}{Parameters}
+{\em leaderBoardId} & string based leaderboard ID \\
+\hline
+{\em highScore} & 64 bit integer provided as string that holds the highscore \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Looks like if you give description it is used for posting rather than the score. 
+\begin{DoxyCode}
+ s3eNOFsubmitHighScore("123456","10",NULL,NULL);
+\end{DoxyCode}
+ 
+\end{DoxyNote}
+\hypertarget{group___n_open_feint_api_group_ga08d7542b314ea594515cffa2dd86374d}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOFupdateAcheivementProgressionComplete@{s3eNOFupdateAcheivementProgressionComplete}}
+\index{s3eNOFupdateAcheivementProgressionComplete@{s3eNOFupdateAcheivementProgressionComplete}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOFupdateAcheivementProgressionComplete}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOFupdateAcheivementProgressionComplete (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{achievementId, }
+\item[{double}]{updatePercentComplete, }
+\item[{bool}]{showUpdateNotification}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga08d7542b314ea594515cffa2dd86374d}
+s3eNOFupdateAcheivementProgressionComplete submits to server the progress on achievement. 
+\begin{DoxyParams}{Parameters}
+{\em achievementId} & Achievement ID as shown on developer dashboard \\
+\hline
+{\em updatePercentComplete} & 0.0f updatePercentComplete. Number between 0.0f and 100.0f for which you would like to update the progression of this achievement. \\
+\hline
+{\em showUpdateNotification} & whether to show or not show the unlock notification \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___n_open_feint_api_group_ga6b912a16b413186f3387e8e9a95bcb21}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOpenFeintAvailable@{s3eNOpenFeintAvailable}}
+\index{s3eNOpenFeintAvailable@{s3eNOpenFeintAvailable}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOpenFeintAvailable}]{\setlength{\rightskip}{0pt plus 5cm}s3eBool s3eNOpenFeintAvailable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga6b912a16b413186f3387e8e9a95bcb21}
+Returns S3E\_\-TRUE if the NOpenFeint extension is available. \hypertarget{group___n_open_feint_api_group_ga1547aacf4dfcb626c1d5515d91916106}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOpenFeintGetError@{s3eNOpenFeintGetError}}
+\index{s3eNOpenFeintGetError@{s3eNOpenFeintGetError}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOpenFeintGetError}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s3eNOpenFeintError} s3eNOpenFeintGetError (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga1547aacf4dfcb626c1d5515d91916106}
+Retrieves the last error, if any, for this subdevice. \begin{DoxySeeAlso}{See also}
+\hyperlink{group___n_open_feint_api_group_gabc6fcbf5fbde609504975831ecb9e801}{s3eNOpenFeintGetErrorString}
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+Calling this function will retrieve the last error and then remove it from memory; therefore, any further calls to this function will not return an error unless a subsequent error has occurred.
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Required Header Files}
+\hyperlink{s3e_n_open_feint_8h_source}{s3eNOpenFeint.h} 
+\end{DoxyParagraph}
+\hypertarget{group___n_open_feint_api_group_gabc6fcbf5fbde609504975831ecb9e801}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOpenFeintGetErrorString@{s3eNOpenFeintGetErrorString}}
+\index{s3eNOpenFeintGetErrorString@{s3eNOpenFeintGetErrorString}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOpenFeintGetErrorString}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ s3eNOpenFeintGetErrorString (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_gabc6fcbf5fbde609504975831ecb9e801}
+Retrieves the last error as a string, if any, for this subdevice. This function is only available in debug builds. \begin{DoxySeeAlso}{See also}
+\hyperlink{group___n_open_feint_api_group_ga1547aacf4dfcb626c1d5515d91916106}{s3eNOpenFeintGetError}
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+This function, as opposed to \hyperlink{group___n_open_feint_api_group_ga1547aacf4dfcb626c1d5515d91916106}{s3eNOpenFeintGetError()}, will always return the last error no matter how many times it is called. This function should not be relied upon to indicate whether an error has just occurred.
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Required Header Files}
+\hyperlink{s3e_n_open_feint_8h_source}{s3eNOpenFeint.h} 
+\end{DoxyParagraph}
+\hypertarget{group___n_open_feint_api_group_ga15c3278f021ef1cdbc4f2b522444cc90}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOpenFeintRegister@{s3eNOpenFeintRegister}}
+\index{s3eNOpenFeintRegister@{s3eNOpenFeintRegister}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOpenFeintRegister}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOpenFeintRegister (
+\begin{DoxyParamCaption}
+\item[{s3eNOpenFeintCallback}]{cbid, }
+\item[{s3eCallback}]{fn, }
+\item[{void $\ast$}]{userData}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga15c3278f021ef1cdbc4f2b522444cc90}
+Registers a callback to be called for an operating system event.
+
+The available callback types are listed in s3eNOpenFeintCallback. 
+\begin{DoxyParams}{Parameters}
+{\em cbid} & ID of the event for which to register. \\
+\hline
+{\em fn} & callback function. \\
+\hline
+{\em userdata} & Value to pass to the {\itshape userdata\/} parameter of {\itshape NotifyFunc\/}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item S3E\_\-RESULT\_\-SUCCESS if no error occurred. 
+\item S3E\_\-RESULT\_\-ERROR if the operation failed.\par
+ Call \hyperlink{group___n_open_feint_api_group_ga1547aacf4dfcb626c1d5515d91916106}{s3eNOpenFeintGetError()} to retrieve an error code. This will return one of: 
+\begin{DoxyItemize}
+\item S3E\_\-DEVICE\_\-ERR\_\-PARAM if {\itshape cbid\/} is not a valid member of s3eNOpenFeintCallback or {\itshape NotifyFunc\/} is NULL. 
+\item S3E\_\-DEVICE\_\-ERR\_\-TOO\_\-MANY If the maximum number of callbacks for this device has been exceeded. 
+\item S3E\_\-DEVICE\_\-ERR\_\-ALREADY\_\-REG If ({\itshape cbid\/}, {\itshape NotifyFunc\/}) has already been registered. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___n_open_feint_api_group_ga622ceda63aaf8c2c0765ee8a086dfe60}{s3eNOpenFeintUnRegister} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+For more information on the system data passed as a parameter to the callback registered using this function, see the s3eNOpenFeintCallback enum. 
+\end{DoxyNote}
+\hypertarget{group___n_open_feint_api_group_ga622ceda63aaf8c2c0765ee8a086dfe60}{
+\index{S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}!s3eNOpenFeintUnRegister@{s3eNOpenFeintUnRegister}}
+\index{s3eNOpenFeintUnRegister@{s3eNOpenFeintUnRegister}!S3E Nerdiacs OpenFeint Extension API Reference@{S3E Nerdiacs OpenFeint Extension API Reference}}
+\subsubsection[{s3eNOpenFeintUnRegister}]{\setlength{\rightskip}{0pt plus 5cm}s3eResult s3eNOpenFeintUnRegister (
+\begin{DoxyParamCaption}
+\item[{s3eNOpenFeintCallback}]{cbid, }
+\item[{s3eCallback}]{fn}
+\end{DoxyParamCaption}
+)}}
+\label{group___n_open_feint_api_group_ga622ceda63aaf8c2c0765ee8a086dfe60}
+Unregister a callback for a given event. 
+\begin{DoxyParams}{Parameters}
+{\em cbid} & ID of the callback for which to register. \\
+\hline
+{\em fn} & Callback Function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item S3E\_\-RESULT\_\-SUCCESS if no error occurred.
+\item S3E\_\-RESULT\_\-ERROR if the operation failed.\par
+ Call \hyperlink{group___n_open_feint_api_group_ga1547aacf4dfcb626c1d5515d91916106}{s3eNOpenFeintGetError()} to retrieve an error code. This will return one of:
+\begin{DoxyItemize}
+\item S3E\_\-FILE\_\-ERR\_\-PARAM if {\itshape cbid\/} is not a valid member of s3eNOpenFeintCallback.
+\item S3E\_\-FILE\_\-ERR\_\-NOT\_\-FOUND if {\itshape fn\/} is not registered for callback {\itshape cbid\/}. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+For more information on the systemData passed as a parameter to the callback registered using this function, see the s3eNOpenFeintCallback enum. 
+
+It is not necessary to define a return value for any registered callback. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___n_open_feint_api_group_ga15c3278f021ef1cdbc4f2b522444cc90}{s3eNOpenFeintRegister} 
+\end{DoxySeeAlso}
