@@ -2,11 +2,26 @@ option strict
 
 files
 {
+	examples.defines.txt
+
 	(src)
 	ExamplesMain.cpp
 	ExamplesMain.h
-	Logo.cpp
-	Logo.h
+	Buttons.cpp
+}
+
+if {{ not defined EXAMPLE_OVERRIDE_MAIN }}
+{
+	files
+	{
+		(src)
+		main.cpp
+	}
+}
+
+deployments
+{
+    splashscreen="$MARMALADE_ROOT/s3e/deploy/resources/splashscreens/"
 }
 
 includepath src

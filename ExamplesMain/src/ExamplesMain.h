@@ -1,7 +1,7 @@
 /*
- * This file is part of the Airplay SDK Code Samples.
+ * This file is part of the Marmalade SDK Code Samples.
  *
- * Copyright (C) 2001-2010 Ideaworks3D Ltd.
+ * Copyright (C) 2001-2011 Ideaworks3D Ltd.
  * All Rights Reserved.
  *
  * This source code is intended only as a supplement to Ideaworks Labs
@@ -16,6 +16,8 @@
 #include "s3e.h"
 #include <string.h>
 #include <stdio.h>
+
+
 
 /**
  * Prints a text message on the current surface.
@@ -36,6 +38,8 @@ typedef void (*ButtonCallback)(struct Button* button);
 /**
  * Structure to represent an on-screen button which can be
  * "pressed" using either touch or keyboard controls.
+ * Position values are updated each time the button
+ * is rendered.
  */
 struct Button
 {
@@ -45,15 +49,24 @@ struct Button
     bool    m_Display;
     s3eKey  m_Key;
     int     m_Index;
-	ButtonCallback m_Callback;
+    int     m_XPos;
+    int     m_YPos;
+    int     m_Width;
+    int     m_Height;
+    ButtonCallback m_Callback;
 };
 
 extern bool g_DeviceHasKeyboard;
 extern bool g_HideDisabledButtons;
+extern bool g_doRender1;
+
+void ExamplesMainInit();
+bool ExamplesMainUpdate();
+void ExamplesMainTerm();
 
 // Functions which examples must implement
 void ExampleInit();
-void ExampleShutDown();
+void ExampleTerm();
 void ExampleRender();
 bool ExampleUpdate();
 bool ExampleCheckQuit();
@@ -87,11 +100,16 @@ int GetYBelowButtons();
  */
 void SetButtonScale(uint scale);
 
-
 /**
  * Get the scale factor for the display of all buttons.
  */
 uint GetButtonScale();
+
+/**
+ * Set button name safely.
+ * Frees old string and re-allocates memory for the new one.
+ */
+void SetButtonName(Button* button, const char *name);
 
 /**
  * Returns true if the touch-screen version of buttons is being used.
@@ -118,11 +136,11 @@ void AppendMessage(const char* src, ...);
 
 typedef enum Colour
 {
-	WHITE,
-	BLACK,
-	BLUE,
-	GREEN,
-	RED,
+    WHITE,
+    BLACK,
+    BLUE,
+    GREEN,
+    RED,
 } Colour;
 
 void AppendMessageColour(Colour colour, const char* src, ...);
@@ -143,4 +161,3 @@ void TerminateMessages();
  * Draw a rectangle on the screen.
  */
 void DrawRect(int x, int y, int width, int height, uint8 r, uint8 g, uint8 b);
-
