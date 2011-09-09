@@ -6,13 +6,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript">
-$(document).ready(initResizable);
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
@@ -27,7 +20,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">s3eNOpenFeint&#160;<span id="projectnumber">1.0</span></div>
-   <div id="projectbrief">OpenFeint Marmalade Extension by Nerdiacs</div>
+   <div id="projectbrief">OpenFeint extension for Marmalade by Nerdiacs</div>
   </td>
  </tr>
  </tbody>
@@ -58,19 +51,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div>
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-  initNavTree('group___n_open_feint_api_group.html','');
-</script>
-<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -141,24 +121,30 @@ Enumerations</h2></td></tr>
 <b>s3eNOFUIInterfaceOrientationLandscapeLeft</b> =  4, 
 <b>s3eNOFUIInterfaceOrientationLandscapeRight</b> =  3
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>s3eNOpenFeintCallback</b> { <b>S3E_NOPENFEINT_CALLBACK_PLAYER_LOGGEDIN</b>, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>s3eNOpenFeintCallback</b> { <br/>
+&#160;&#160;<b>S3E_NOPENFEINT_CALLBACK_PLAYER_LOGGEDIN</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_DASHBOARD_WILL_APPEAR</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_DASHBOARD_DID_APPEAR</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_DASHBOARD_WILL_DISAPPEAR</b>, 
-<b>S3E_NOPENFEINT_CALLBACK_DASHBOARD_DID_DISAPPEAR</b>, 
+<br/>
+&#160;&#160;<b>S3E_NOPENFEINT_CALLBACK_DASHBOARD_DID_DISAPPEAR</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_IS_OPENFEINT_NOTIFICATION_ALLOWED</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_HANDLE_DISALLOWED_NOTIFICATION</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_NOTIFICATION_WILL_SHOW</b>, 
-<b>S3E_NOPENFEINT_CALLBACK_DID_DOWNLOAD_ALL_CHALLENGE_DEFINITIONS</b>, 
+<br/>
+&#160;&#160;<b>S3E_NOPENFEINT_CALLBACK_DID_DOWNLOAD_ALL_CHALLENGE_DEFINITIONS</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_DID_FAIL_DOWNLOAD_CHALLENGE_DEFINITIONS</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_DID_DOWNLOAD_CHALLENGE_DEFINITION</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_DID_FAIL_DOWNLOAD_CHALLENGE_DEFINITION</b>, 
-<b>S3E_NOPENFEINT_CALLBACK_USER_LAUNCHED_CHALLENGE</b>, 
+<br/>
+&#160;&#160;<b>S3E_NOPENFEINT_CALLBACK_USER_LAUNCHED_CHALLENGE</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_USER_RESTARTED_CHALLENGE</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_COMPLETED_CHALLENGE_SCREEN_CLOSED</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_USER_BOOTED_WITH_UNVIEWED_CHALLENGES</b>, 
-<b>S3E_NOPENFEINT_CALLBACK_USER_SENT_CHALLENGES</b>, 
+<br/>
+&#160;&#160;<b>S3E_NOPENFEINT_CALLBACK_USER_SENT_CHALLENGES</b>, 
 <b>S3E_NOPENFEINT_CALLBACK_MAX</b>
+<br/>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -315,8 +301,6 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>s3eNOFAchievement::ic
 <p>TODO 1-- Give proper error responses 2-- Check for compliance with Google Code Style</p>
 <p>Max string size </p>
 
-<p>Definition at line <a class="el" href="s3e_n_open_feint_8h_source.html#l00058">58</a> of file <a class="el" href="s3e_n_open_feint_8h_source.html">s3eNOpenFeint.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ga714d35726c88b507a262d4164daf54d6"></a><!-- doxytag: member="s3eNOpenFeint.h::S3E_NOPENFEINT_STRING_MAX_1" ref="ga714d35726c88b507a262d4164daf54d6" args="" -->
@@ -331,8 +315,6 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>s3eNOFAchievement::ic
 <div class="memdoc">
 <p>Max settings string size </p>
 
-<p>Definition at line <a class="el" href="s3e_n_open_feint_8h_source.html#l00068">68</a> of file <a class="el" href="s3e_n_open_feint_8h_source.html">s3eNOpenFeint.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="gafb2f974aafabe744d8384a8ff582cd56"></a><!-- doxytag: member="s3eNOpenFeint.h::S3E_NOPENFEINT_STRING_SMALL" ref="gafb2f974aafabe744d8384a8ff582cd56" args="" -->
@@ -346,8 +328,6 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>s3eNOFAchievement::ic
 </div>
 <div class="memdoc">
 <p>Small string size </p>
-
-<p>Definition at line <a class="el" href="s3e_n_open_feint_8h_source.html#l00064">64</a> of file <a class="el" href="s3e_n_open_feint_8h_source.html">s3eNOpenFeint.h</a>.</p>
 
 </div>
 </div>
@@ -600,8 +580,6 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>s3eNOFAchievement::ic
 <div class="memdoc">
 <p>Challenge Result enum OFChallengeResult </p>
 
-<p>Definition at line <a class="el" href="s3e_n_open_feint_8h_source.html#l00087">87</a> of file <a class="el" href="s3e_n_open_feint_8h_source.html">s3eNOpenFeint.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="gac32b01451990bbfa1b6e2fe38e01262b"></a><!-- doxytag: member="s3eNOpenFeint.h::s3eNOFUIInterfaceOrientation" ref="gac32b01451990bbfa1b6e2fe38e01262b" args="" -->
@@ -615,8 +593,6 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>s3eNOFAchievement::ic
 </div>
 <div class="memdoc">
 <p>enum to define UI orientation Note that UIInterfaceOrientationLandscapeLeft is equal to UIDeviceOrientationLandscapeRight (and vice versa). This is because rotating the device to the left requires rotating the content to the right. </p>
-
-<p>Definition at line <a class="el" href="s3e_n_open_feint_8h_source.html#l00099">99</a> of file <a class="el" href="s3e_n_open_feint_8h_source.html">s3eNOpenFeint.h</a>.</p>
 
 </div>
 </div>
@@ -640,8 +616,6 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>s3eNOFAchievement::ic
 </table>
 </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="s3e_n_open_feint_8h_source.html#l00074">74</a> of file <a class="el" href="s3e_n_open_feint_8h_source.html">s3eNOpenFeint.h</a>.</p>
 
 </div>
 </div>
@@ -1733,14 +1707,6 @@ It is not necessary to define a return value for any registered callback. </dd><
 </div>
 </div>
 </div>
-</div>
-  <div id="nav-path" class="navpath">
-    <ul>
-      <li class="footer">Generated on Fri Sep 9 2011 02:23:36 for s3eNOpenFeint by&#160;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
-    </ul>
-  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -1755,6 +1721,8 @@ It is not necessary to define a return value for any registered callback. </dd><
 </iframe>
 </div>
 
-
+<hr class="footer"/><address class="footer"><small>Generated on Sat Sep 10 2011 01:39:27 for s3eNOpenFeint by&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
 </html>

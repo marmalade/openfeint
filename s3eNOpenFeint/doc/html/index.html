@@ -6,13 +6,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript">
-$(document).ready(initResizable);
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
@@ -27,7 +20,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">s3eNOpenFeint&#160;<span id="projectnumber">1.0</span></div>
-   <div id="projectbrief">OpenFeint Marmalade Extension by Nerdiacs</div>
+   <div id="projectbrief">OpenFeint extension for Marmalade by Nerdiacs</div>
   </td>
  </tr>
  </tbody>
@@ -58,26 +51,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div>
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-  initNavTree('index.html','');
-</script>
-<div id="doc-content">
 <div class="header">
   <div class="headertitle">
 <div class="title">s3eNOpenFeint - OpenFeint extension for Marmalade by Nerdiacs </div>  </div>
 </div>
 <div class="contents">
 <div class="textblock"><p>The OpenFeint Marmalade Extension project. </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Copyright (C) 2011 Nerdiacs Pte Limited</dd>
+<dl class="note"><dt><b>Note:</b></dt><dd>Copyright (C) 2011 Nerdiacs Pte Limited <a class="el" href=""><a href="http://www.Nerdiacs.com">http://www.Nerdiacs.com</a> </a></dd>
 <dd>
 This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.</dd>
 <dd>
@@ -87,10 +67,10 @@ You should have received a copy of the GNU Lesser General Public License along w
 <h2><a class="anchor" id="sec_1"></a>
 Supported Platforms</h2>
 <p>This extension currently only supports iOS SDK.</p>
-<p><a class="el" href="main.html#sec_2">Compiling the extension</a></p>
-<p><a class="el" href="main.html#sec_3">Compiling your App with Extension</a></p>
-<p><a class="el" href="main.html#sec_4">Using extension in your code</a></p>
-<p><a class="el" href="main.html#sec_5">Changelog</a></p>
+<p><a class="el" href="index.html#sec_2">Compiling the extension</a></p>
+<p><a class="el" href="index.html#sec_3">Compiling your App with Extension</a></p>
+<p><a class="el" href="index.html#sec_4">Using extension in your code</a></p>
+<p><a class="el" href="index.html#sec_5">Changelog</a></p>
 <h2><a class="anchor" id="sec_2"></a>
 Compiling the extension</h2>
 <p>Run the mkb file to generate the xcode project etc. Open xcode project settings. Add new group(drag and drop) openfeint source code directory as shown in screenshot. </p>
@@ -113,13 +93,13 @@ Compiling your App with Extension</h2>
 <h2><a class="anchor" id="sec_4"></a>
 Using extension in your code</h2>
 <p>The API functions as close to OpenFeint's own API as possible. It is highly recommended to also keep original OpenFeint documentation open to understand how OpenFeint works.</p>
-<p><a class="el" href="main.html#sec_4_1">Initialisation</a></p>
-<p><a class="el" href="main.html#sec_4_2">Checking if user is logged in and has approved OpenFeint</a></p>
-<p><a class="el" href="main.html#sec_4_3">Invoking Dashboard(s)</a></p>
-<p><a class="el" href="main.html#sec_4_4">Creating challenges</a></p>
-<p><a class="el" href="main.html#sec_4_5">Playing a challenge</a></p>
-<p><a class="el" href="main.html#sec_4_6">Using Leaderboards</a></p>
-<p><a class="el" href="main.html#sec_4_7">Using Achievements</a></p>
+<p><a class="el" href="index.html#sec_4_1">Initialisation</a></p>
+<p><a class="el" href="index.html#sec_4_2">Checking if user is logged in and has approved OpenFeint</a></p>
+<p><a class="el" href="index.html#sec_4_3">Invoking Dashboard(s)</a></p>
+<p><a class="el" href="index.html#sec_4_4">Creating challenges</a></p>
+<p><a class="el" href="index.html#sec_4_5">Playing a challenge</a></p>
+<p><a class="el" href="index.html#sec_4_6">Using Leaderboards</a></p>
+<p><a class="el" href="index.html#sec_4_7">Using Achievements</a></p>
 <dl class="note"><dt><b>Note:</b></dt><dd>The API never shares any of its allocated memory with API consumer for the life of Application. The API will deallocate portion of memory allocated by it after callbacks to API Consumer. So, always make a shallow copy of data if you need to refer to it later. Usually this is needed for challenge Definitions.</dd></dl>
 <h3><a class="anchor" id="sec_4_1"></a>
 Initialisation</h3>
@@ -144,7 +124,7 @@ Checking if user is logged in and has approved OpenFeint</h3>
 Invoking Dashboard(s)</h3>
 <p>Calling s3eNOFlaunchDashboard simply invokes the main dashboard of OpenFeint </p>
 <div class="fragment"><pre class="fragment">                <a class="code" href="group___n_open_feint_api_group.html#gad5908d8a536ccc2304a9844bc63f71e6">s3eNOFlaunchDashboard</a>();
-</pre></div><p> if you want to open to a specific page no dashboard then use its respective API call. for example <a class="el" href="group___n_open_feint_api_group.html#ga10d29137246b18a6b0aa0f14190eafc8">s3eNOFlaunchDashboardWithAchievementsPage</a> for achievements page <a class="el" href="group___n_open_feint_api_group.html#ga298064bb113bc28f0f11dfa88f261ffe">s3eNOFlaunchDashboardWithChallengesPage</a> for challenges</p>
+</pre></div><p> if you want to open to a specific page on dashboard then use its respective API call. for example <a class="el" href="group___n_open_feint_api_group.html#ga10d29137246b18a6b0aa0f14190eafc8">s3eNOFlaunchDashboardWithAchievementsPage</a> for achievements page <a class="el" href="group___n_open_feint_api_group.html#ga298064bb113bc28f0f11dfa88f261ffe">s3eNOFlaunchDashboardWithChallengesPage</a> for challenges</p>
 <p>There are a lot more of such API. Refer to documentation of API.</p>
 <h3><a class="anchor" id="sec_4_4"></a>
 Creating challenges</h3>
@@ -206,14 +186,6 @@ Changelog</h2>
 <li>Different types of dashboards </li>
 </ul>
 </div></div>
-</div>
-  <div id="nav-path" class="navpath">
-    <ul>
-      <li class="footer">Generated on Fri Sep 9 2011 02:23:36 for s3eNOpenFeint by&#160;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
-    </ul>
-  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -228,6 +200,8 @@ Changelog</h2>
 </iframe>
 </div>
 
-
+<hr class="footer"/><address class="footer"><small>Generated on Sat Sep 10 2011 01:39:27 for s3eNOpenFeint by&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
 </html>

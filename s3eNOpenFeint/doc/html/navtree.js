@@ -21,8 +21,7 @@ var NAVTREE =
     ] ],
     [ "Class Index", "classes.html", null ],
     [ "File List", "files.html", [
-      [ "/Volumes/mac_hd_2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/s3eNOpenFeint/h/s3eNOFinitializeWithProductKey_snippet.cpp", null, null ],
-      [ "/Volumes/mac_hd_2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/s3eNOpenFeint/h/s3eNOpenFeint.h", null, null ]
+      [ "/Volumes/mac_hd_2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/community/openfeint/s3eNOpenFeint/h/s3eNOpenFeint.h", null, null ]
     ] ]
   ] ]
 ];
