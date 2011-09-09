@@ -1,12 +1,19 @@
-/*
- * Copyright (C) 2001-2011 Ideaworks3D Ltd.
- * All Rights Reserved.
- *
- * This document is protected by copyright, and contains information
- * proprietary to Ideaworks Labs.
- * This file consists of source code released by Ideaworks Labs under
- * the terms of the accompanying End User License Agreement (EULA).
- * Please do not use this program/source code before you have read the
- * EULA and have agreed to be bound by its terms.
- */
-/*
+The OpenFeint Marmalade Extension project.
+Copyright (C) 2011 Nerdiacs Pte Limited  http://www.Nerdiacs.com
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 3.0 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+Have a look at doc/index.html for usage of this extension
