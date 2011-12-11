@@ -286,9 +286,26 @@ bool ExampleUpdate()
 		 //g_doRender1 = false;	
       // Lets try to give the API the token
     const char* deviceToken = s3eIOSNotificationsGetRemoteNotificationToken();
+    char tmp[40];
+    const char *tmp1 = deviceToken;
+    memset(tmp,'\0', sizeof(tmp));
+    
+      // need to get rid of spaces in middle
+    int i =0;
+    while(*tmp1)
+    {
+      if(*tmp1!=' ') 
+      {
+          // not a space. we can copy
+        tmp[i] = *tmp1;
+        i++;
+      }
+      tmp1++;
+    }
+    
     if (deviceToken) {
-      AppendMessageColour(BLUE,("Device token is %s", deviceToken));
-      s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(deviceToken);
+      AppendMessageColour(BLUE,"Device token is %s",tmp);
+      s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(tmp);
     }
 
 	}
@@ -299,8 +316,9 @@ bool ExampleUpdate()
 	}
 	else if (pressed && pressed == g_NOFLaunchDashboard)
 	{
-		s3eNOFlaunchDashboard();
-		AppendMessageColour(GREEN, "Called s3eNOFlaunchDashboard");
+      //	s3eNOFlaunchDashboard();
+    s3eNOFlaunchDashboardWithListLeaderboardsPage();
+		AppendMessageColour(GREEN, "Called s3eNOFlaunchDashboardWithListLeaderboardsPage");
 
 	}
 	else if (pressed && pressed == g_NOFTestButton1)
@@ -342,17 +360,18 @@ bool ExampleUpdate()
 		AppendMessageColour(GREEN, "Called s3eNOFchallengeDisplayCompletionWithData");
 */
     
-    
+    /*
     s3eNOFAchievement *ach = (s3eNOFAchievement*)s3eMalloc(sizeof(s3eNOFAchievement));
     AppendMessageColour(GREEN,"Calling s3eNOFachievement");
     s3eNOFachievement(ach, "1117662");
     AppendMessage("Achievement title %s", ach->title);
       //    AppendMessage("Achievement description %s", ach->description);
     s3eFree(ach);
-  
+  */
+    
       //    s3eNOFachievementUnlock("1117662");
 
-    
+      
      
 	}
     return true;

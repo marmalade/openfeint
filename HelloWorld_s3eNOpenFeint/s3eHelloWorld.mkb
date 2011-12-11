@@ -14,8 +14,7 @@ subprojects
 deployments
 {
 	["Default"]
-	iphone-appid='com.nerdiacs.funkyracing'
 	iphone-link-opts='-weak_framework Security -weak_framework AddressBook -weak_framework AddressBookUI -weak_framework MapKit -lsqlite3.0'
-	iphone-nosign='1'
+	iphone-nosign=0
 	iphone-signing-identity='iPhone Developer'
 }

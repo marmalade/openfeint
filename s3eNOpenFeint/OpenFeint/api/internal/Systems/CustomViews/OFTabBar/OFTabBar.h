@@ -155,7 +155,7 @@ typedef enum {
 
 - (void)updateZOrder;
 
-- (void)updateBadges;
+  //- (void)updateBadges;
 - (void)setBadgeValue:(NSInteger)value forItemNamed:(NSString*)name;
 - (void)setOnlineStatus:(BOOL) onlineStatus;
 

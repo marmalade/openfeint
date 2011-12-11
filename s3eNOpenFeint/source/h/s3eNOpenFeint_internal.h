@@ -94,7 +94,7 @@ s3eResult s3eNOFchallengeDisplayCompletionWithData_platform(s3eNOFChallengeData*
 
 s3eResult s3eNOFsubmitHighScore_platform(const char* leaderBoadId, const char* score, const char* displayText, const char* customData);
 
-s3eResult s3eNOFupdateAcheivementProgressionComplete_platform(const char* achievementId, double updatePercentComplete, bool showUpdateNotification);
+s3eResult s3eNOFupdateAcheivementProgressionComplete_platform(const char* achievementId, const char* updatePercentComplete, bool showUpdateNotification);
 
 s3eResult s3eNOFachievements_platform(s3eNOFArray* achArray);
 
@@ -107,6 +107,8 @@ s3eResult s3eNOFachievementUnlockAndDefer_platform(const char* achievementId);
 s3eResult s3eNOFsubmitDeferredAchievements_platform();
 
 s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platform(const char* deviceToken);
+
+s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage_platform();
 
 
 #endif /* S3ENOPENFEINT_H_INTERNAL */

@@ -41,13 +41,14 @@ typedef  s3eResult(*s3eNOFdownloadChallengeDefinitionWithId_t)(const char* chall
 typedef  s3eResult(*s3eNOFchallengeCompleteWithResult_t)(s3eNOFChallengeResult challengeResult, const char* challengePeristentId);
 typedef  s3eResult(*s3eNOFchallengeDisplayCompletionWithData_t)(s3eNOFChallengeData* challengeData, const char* reChallengeDescription, const char* challengePeristentId);
 typedef  s3eResult(*s3eNOFsubmitHighScore_t)(const char* leaderBoadId, const char* score, const char* displayText, const char* customData);
-typedef  s3eResult(*s3eNOFupdateAcheivementProgressionComplete_t)(const char* achievementId, double updatePercentComplete, bool showUpdateNotification);
+typedef  s3eResult(*s3eNOFupdateAcheivementProgressionComplete_t)(const char* achievementId, const char* updatePercentComplete, bool showUpdateNotification);
 typedef  s3eResult(*s3eNOFachievements_t)(s3eNOFArray* achArray);
 typedef  s3eResult(*s3eNOFachievement_t)(s3eNOFAchievement* achievement, const char* achievementId);
 typedef  s3eResult(*s3eNOFachievementUnlock_t)(const char* achievementId);
 typedef  s3eResult(*s3eNOFachievementUnlockAndDefer_t)(const char* achievementId);
 typedef  s3eResult(*s3eNOFsubmitDeferredAchievements_t)();
 typedef  s3eResult(*s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_t)(const char* deviceToken);
+typedef  s3eResult(*s3eNOFlaunchDashboardWithListLeaderboardsPage_t)();
 
 /**
  * struct that gets filled in by s3eNOpenFeintRegister
@@ -91,6 +92,7 @@ typedef struct s3eNOpenFeintFuncs
     s3eNOFachievementUnlockAndDefer_t m_s3eNOFachievementUnlockAndDefer;
     s3eNOFsubmitDeferredAchievements_t m_s3eNOFsubmitDeferredAchievements;
     s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_t m_s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke;
+    s3eNOFlaunchDashboardWithListLeaderboardsPage_t m_s3eNOFlaunchDashboardWithListLeaderboardsPage;
 } s3eNOpenFeintFuncs;
 
 static s3eNOpenFeintFuncs g_Ext;
@@ -435,7 +437,7 @@ s3eResult s3eNOFsubmitHighScore(const char* leaderBoadId, const char* score, con
     return g_Ext.m_s3eNOFsubmitHighScore(leaderBoadId, score, displayText, customData);
 }
 
-s3eResult s3eNOFupdateAcheivementProgressionComplete(const char* achievementId, double updatePercentComplete, bool showUpdateNotification)
+s3eResult s3eNOFupdateAcheivementProgressionComplete(const char* achievementId, const char* updatePercentComplete, bool showUpdateNotification)
 {
     IwTrace(NOPENFEINT_VERBOSE, ("calling s3eNOpenFeint[30] func: s3eNOFupdateAcheivementProgressionComplete"));
 
@@ -503,4 +505,14 @@ s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(const
         return S3E_RESULT_SUCCESS;
 
     return g_Ext.m_s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(deviceToken);
+}
+
+s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage()
+{
+    IwTrace(NOPENFEINT_VERBOSE, ("calling s3eNOpenFeint[37] func: s3eNOFlaunchDashboardWithListLeaderboardsPage"));
+
+    if (!_extLoad())
+        return S3E_RESULT_SUCCESS;
+
+    return g_Ext.m_s3eNOFlaunchDashboardWithListLeaderboardsPage();
 }

@@ -1062,7 +1062,7 @@ s3eResult s3eNOFsubmitHighScore_platform(
 }
 
 
-s3eResult s3eNOFupdateAcheivementProgressionComplete_platform(const char* achievementId, double updatePercentComplete, bool showUpdateNotification)
+s3eResult s3eNOFupdateAcheivementProgressionComplete_platform(const char* achievementId, const char* updatePercentComplete, bool showUpdateNotification)
 {
   if (!achievementId) {
     return S3E_RESULT_ERROR;
@@ -1070,8 +1070,9 @@ s3eResult s3eNOFupdateAcheivementProgressionComplete_platform(const char* achiev
   
   NSString *strAchId = [[[NSString alloc] initWithUTF8String:achievementId]  autorelease];
   OFAchievement *ach = [OFAchievement achievement:strAchId];
+  double dblPercent = atof(updatePercentComplete);
   if (ach) { 
-    [ach updateProgressionComplete:updatePercentComplete andShowNotification:showUpdateNotification];
+    [ach updateProgressionComplete:dblPercent andShowNotification:showUpdateNotification];
   }
 
   return S3E_RESULT_SUCCESS;
@@ -1351,5 +1352,12 @@ s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platf
   NSData *data = [NSData dataWithBytes:deviceToken length:strlen(deviceToken)];
 
   [OpenFeint applicationDidRegisterForRemoteNotificationsWithDeviceToken:data];
+  return S3E_RESULT_SUCCESS;
+}
+
+
+s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage_platform()
+{
+  [OpenFeint launchDashboardWithListLeaderboardsPage];
   return S3E_RESULT_SUCCESS;
 }

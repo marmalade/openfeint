@@ -432,10 +432,12 @@
 	self.hidden = [animationID isEqualToString:@"hideOFTabBar"];
 }
 
+/*
 - (void)updateBadges
 {
 	[items makeObjectsPerformSelector:@selector(updateBadge)];
 }
+ */
 
 - (void)setOnlineStatus:(BOOL)onlineStatus {
 	for (OFTabBarItem* item in items)

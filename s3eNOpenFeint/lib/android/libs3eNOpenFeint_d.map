@@ -1,0 +1,678 @@
+Archive member included because of file (symbol)
+
+/Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                              debug/s3eNOpenFeint_platform.os (IwDebugTraceSetTraceChannel)
+
+Discarded input sections
+
+ _ZN7_JNIEnv9FindClassEPKc
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv17ExceptionOccurredEv
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv17ExceptionDescribeEv
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv14ExceptionClearEv
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv12NewGlobalRefEP8_jobject
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv14DeleteLocalRefEP8_jobject
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JNIEnv12NewStringUTFEPKc
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ _ZN7_JavaVM6GetEnvEPPvi
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ .note.GNU-stack
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ .note.GNU-stack
+                0x00000000        0x0 debug/s3eNOpenFeint.os
+ .note.GNU-stack
+                0x00000000        0x0 debug/s3eNOpenFeint_register.os
+ .note.GNU-stack
+                0x00000000        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD debug/s3eNOpenFeint_platform.os
+LOAD debug/s3eNOpenFeint.os
+LOAD debug/s3eNOpenFeint_register.os
+LOAD /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a
+LOAD /Developer/Marmalade/5.1/s3e/edk/lib/android/libplaceholderplaceholderplaceholderplaceholderplaceholder.so
+LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/libc.so
+LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/libm.so
+LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/liblog.so
+LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/libstdc++.so
+                0x000000d4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000d4      0x13c
+ *(.hash)
+ .hash          0x000000d4      0x13c debug/s3eNOpenFeint_platform.os
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000210      0x280
+ *(.dynsym)
+ .dynsym        0x00000210      0x280 debug/s3eNOpenFeint_platform.os
+
+.dynstr         0x00000490      0x241
+ *(.dynstr)
+ .dynstr        0x00000490      0x241 debug/s3eNOpenFeint_platform.os
+
+.gnu.version    0x000006d2        0x0 load address 0x000006d1
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+
+.gnu.version_d  0x000006d4        0x0 load address 0x000006d1
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+
+.gnu.version_r  0x000006d4        0x0 load address 0x000006d1
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+
+.rel.dyn        0x000006d4      0x248
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text.IwAssertRegisterTextCallback
+                0x000006d4        0x8 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwAssertRegisterCallback
+                0x000006dc        0x8 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugTraceSetTraceChannel
+                0x000006e4        0x8 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugErrorRegisterCallback
+                0x000006ec        0x8 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugAssertSetUID
+                0x000006f4        0x8 debug/s3eNOpenFeint_platform.os
+ .rel.text._GLOBAL__I_g_DebugGlobals
+                0x000006fc        0x8 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugClearConfigCache
+                0x00000704        0x8 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugErrorShow
+                0x0000070c       0x10 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugTraceLineVPrintf
+                0x0000071c       0x20 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugTraceIsChannelOn
+                0x0000073c       0x18 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugAssertIsChannelOn
+                0x00000754       0x10 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugAssertSetMessage
+                0x00000764       0x20 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugAssertSetSolution
+                0x00000784       0x18 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugAssertShow
+                0x0000079c       0x48 debug/s3eNOpenFeint_platform.os
+ .rel.text.IwDebugTraceChannelSwitch
+                0x000007e4       0x18 debug/s3eNOpenFeint_platform.os
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000007fc      0x118 debug/s3eNOpenFeint_platform.os
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.init_array
+                0x00000914        0x8 debug/s3eNOpenFeint_platform.os
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt        0x0000091c       0xc0
+ *(.rel.plt)
+ .rel.plt       0x0000091c       0xc0 debug/s3eNOpenFeint_platform.os
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(.init)
+
+.plt            0x000009dc      0x134
+ *(.plt)
+ .plt           0x000009dc      0x134 debug/s3eNOpenFeint_platform.os
+
+.text           0x00000b10     0x3988
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000b10     0x1d20 debug/s3eNOpenFeint_platform.os
+                0x00002148                _Z35s3eNOFhasUserApprovedFeint_platformv
+                0x00002764                _Z41s3eNOFsubmitDeferredAchievements_platformv
+                0x00001fe4                _Z23s3eNOFshutdown_platformv
+                0x00001e44                _Z44s3eNOFlaunchDashboardWithInvitePage_platformv
+                0x00001d94                _Z48s3eNOFlaunchDashboardWithSwitchUserPage_platformv
+                0x00002604                _Z26s3eNOFachievement_platformP17s3eNOFAchievementPKc
+                0x000020ec                _Z38s3eNOFsetDashboardOrientation_platform28s3eNOFUIInterfaceOrientation
+                0x000019a4                _Z31s3eNOpenFeintTerminate_platformv
+                0x00001e9c                _Z48s3eNOFlaunchDashboardWithSpecificInvite_platformPKc
+                0x0000203c                _Z30s3eNOFlaunchDashboard_platformv
+                0x00000bcc                _Z26s3eNOpenFeintInit_platformv
+                0x00001f10                _Z72s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText_platformPKcS0_S0_S0_
+                0x000027bc                _Z73s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platformPKc
+                0x00002450                _Z30s3eNOFsubmitHighScore_platformPKcS0_S0_S0_
+                0x00001bc0                _Z48s3eNOFlaunchDashboardWithChallengesPage_platformv
+                0x000026f0                _Z40s3eNOFachievementUnlockAndDefer_platformPKc
+                0x00002094                _Z31s3eNOFdismissDashboard_platformv
+                0x000019a8                _Z25s3eNewMessageBox_platformPKcS0_
+                0x000025a8                _Z27s3eNOFachievements_platformP11s3eNOFArray
+                0x0000267c                _Z32s3eNOFachievementUnlock_platformPKc
+                0x00002274                _Z46s3eNOFdownloadAllChallengeDefinitions_platformv
+                0x000022cc                _Z48s3eNOFdownloadChallengeDefinitionWithId_platformPKc
+                0x000021f8                _Z38s3eNOFdisplayAndSendChallenge_platformP25s3eNOFChallengeDefinitionPKcPK19s3eNOFChallengeData
+                0x00001af4                _Z47s3eNOFlaunchDashboardWithHighscorePage_platformPKc
+                0x00001d20                _Z47s3eNOFlaunchDashboardWithiPurchasePage_platformPKc
+                0x00001c18                _Z49s3eNOFlaunchDashboardWithFindFriendsPage_platformv
+                0x00001cc8                _Z57s3eNOFlaunchDashboardWithListGlobalChatRoomsPage_platformv
+                0x00002524                _Z51s3eNOFupdateAcheivementProgressionComplete_platformPKcdb
+                0x000023b8                _Z49s3eNOFchallengeDisplayCompletionWithData_platformP19s3eNOFChallengeDataPKcS2_
+                0x00002340                _Z42s3eNOFchallengeCompleteWithResult_platform21s3eNOFChallengeResultPKc
+                0x00001c70                _Z49s3eNOFlaunchDashboardWithWhosPlayingPage_platformv
+                0x00001a3c                _Z39s3eNOFinitializeWithProductKey_platformPKcS0_S0_PK11s3eNOFArray
+                0x00001b68                _Z50s3eNOFlaunchDashboardWithAchievementsPage_platformv
+                0x00001dec                _Z44s3eNOFlaunchDashboardWithForumsPage_platformv
+                0x000021a0                _Z23s3eNOFisOnline_platformv
+ .text._ZN7_JNIEnv9FindClassEPKc
+                0x00002830       0x40 debug/s3eNOpenFeint_platform.os
+                0x00002830                _ZN7_JNIEnv9FindClassEPKc
+ .text._ZN7_JNIEnv17ExceptionOccurredEv
+                0x00002870       0x38 debug/s3eNOpenFeint_platform.os
+                0x00002870                _ZN7_JNIEnv17ExceptionOccurredEv
+ .text._ZN7_JNIEnv17ExceptionDescribeEv
+                0x000028a8       0x30 debug/s3eNOpenFeint_platform.os
+                0x000028a8                _ZN7_JNIEnv17ExceptionDescribeEv
+ .text._ZN7_JNIEnv14ExceptionClearEv
+                0x000028d8       0x30 debug/s3eNOpenFeint_platform.os
+                0x000028d8                _ZN7_JNIEnv14ExceptionClearEv
+ .text._ZN7_JNIEnv12NewGlobalRefEP8_jobject
+                0x00002908       0x40 debug/s3eNOpenFeint_platform.os
+                0x00002908                _ZN7_JNIEnv12NewGlobalRefEP8_jobject
+ .text._ZN7_JNIEnv14DeleteLocalRefEP8_jobject
+                0x00002948       0x38 debug/s3eNOpenFeint_platform.os
+                0x00002948                _ZN7_JNIEnv14DeleteLocalRefEP8_jobject
+ .text._ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+                0x00002980       0x60 debug/s3eNOpenFeint_platform.os
+                0x00002980                _ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+ .text._ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
+                0x000029e0       0x50 debug/s3eNOpenFeint_platform.os
+                0x000029e0                _ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
+ .text._ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
+                0x00002a30       0x60 debug/s3eNOpenFeint_platform.os
+                0x00002a30                _ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
+ .text._ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+                0x00002a90       0x50 debug/s3eNOpenFeint_platform.os
+                0x00002a90                _ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+ .text._ZN7_JNIEnv12NewStringUTFEPKc
+                0x00002ae0       0x40 debug/s3eNOpenFeint_platform.os
+                0x00002ae0                _ZN7_JNIEnv12NewStringUTFEPKc
+ .text._ZN7_JavaVM6GetEnvEPPvi
+                0x00002b20       0x48 debug/s3eNOpenFeint_platform.os
+                0x00002b20                _ZN7_JavaVM6GetEnvEPPvi
+ .text          0x00002b68      0x4f8 debug/s3eNOpenFeint.os
+                0x00003020                s3eNOFsubmitDeferredAchievements
+                0x00002fd0                s3eNOFachievementUnlock
+                0x00002c70                s3eNOFlaunchDashboardWithWhosPlayingPage
+                0x00002cc8                s3eNOFlaunchDashboardWithSwitchUserPage
+                0x00003038                s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke
+                0x00002c40                s3eNOFlaunchDashboardWithChallengesPage
+                0x00002f78                s3eNOFachievements
+                0x00002ff8                s3eNOFachievementUnlockAndDefer
+                0x00002ec0                s3eNOFchallengeDisplayCompletionWithData
+                0x00002ef8                s3eNOFsubmitHighScore
+                0x00002b90                s3eNewMessageBox
+                0x00002c00                s3eNOFlaunchDashboardWithHighscorePage
+                0x00002cf8                s3eNOFlaunchDashboardWithInvitePage
+                0x00002bc0                s3eNOFinitializeWithProductKey
+                0x00002e50                s3eNOFdownloadAllChallengeDefinitions
+                0x00002b80                _Z22s3eNOpenFeintTerminatev
+                0x00002e68                s3eNOFdownloadChallengeDefinitionWithId
+                0x00002dc0                s3eNOFsetDashboardOrientation
+                0x00002da8                s3eNOFdismissDashboard
+                0x00002d78                s3eNOFshutdown
+                0x00002e00                s3eNOFisOnline
+                0x00002b68                _Z17s3eNOpenFeintInitv
+                0x00002e18                s3eNOFdisplayAndSendChallenge
+                0x00002d10                s3eNOFlaunchDashboardWithSpecificInvite
+                0x00002de8                s3eNOFhasUserApprovedFeint
+                0x00002d90                s3eNOFlaunchDashboard
+                0x00002c58                s3eNOFlaunchDashboardWithFindFriendsPage
+                0x00002f38                s3eNOFupdateAcheivementProgressionComplete
+                0x00002c28                s3eNOFlaunchDashboardWithAchievementsPage
+                0x00002ce0                s3eNOFlaunchDashboardWithForumsPage
+                0x00002fa0                s3eNOFachievement
+                0x00002d38                s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText
+                0x00002e90                s3eNOFchallengeCompleteWithResult
+                0x00002c88                s3eNOFlaunchDashboardWithListGlobalChatRoomsPage
+                0x00002ca0                s3eNOFlaunchDashboardWithiPurchasePage
+ .text          0x00003060      0x3b0 debug/s3eNOpenFeint_register.os
+                0x000030e0                s3eNOpenFeintUnRegister
+                0x0000308c                s3eNOpenFeintRegister
+                0x00003060                s3eNOpenFeintGetErrorString
+                0x00003128                _Z24s3eNOpenFeintRegisterExtv
+                0x0000306c                s3eNOpenFeintGetError
+                0x00003400                RegisterExt
+ .text          0x00003410        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .text.IwAssertRegisterTextCallback
+                0x00003410       0x18 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003410                IwAssertRegisterTextCallback
+ .text.IwAssertRegisterCallback
+                0x00003428       0x18 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003428                IwAssertRegisterCallback
+ .text.IwDebugTraceSetTraceChannel
+                0x00003440       0x18 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003440                IwDebugTraceSetTraceChannel
+ .text.IwDebugErrorRegisterCallback
+                0x00003458       0x18 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003458                IwDebugErrorRegisterCallback
+ .text.IwDebugAssertSetUID
+                0x00003470       0x10 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003470                IwDebugAssertSetUID
+ .text._GLOBAL__I_g_DebugGlobals
+                0x00003480       0x8c /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .text.IwDebugClearConfigCache
+                0x0000350c       0x80 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x0000350c                IwDebugClearConfigCache
+ .text.IwDebugErrorShow
+                0x0000358c       0xdc /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x0000358c                IwDebugErrorShow
+ .text.IwDebugTraceLineVPrintf
+                0x00003668       0xe8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003668                IwDebugTraceLineVPrintf
+ .text.IwDebugTraceLinePrintf
+                0x00003750       0x30 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003750                IwDebugTraceLinePrintf
+ .text.IwDebugTraceIsChannelOn
+                0x00003780      0x278 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003780                IwDebugTraceIsChannelOn
+ .text.IwDebugAssertIsChannelOn
+                0x000039f8      0x1d0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x000039f8                IwDebugAssertIsChannelOn
+ .text.IwDebugTraceDisable
+                0x00003bc8       0x1c /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003bc8                IwDebugTraceDisable
+ .text.IwDebugAssertSetMessage
+                0x00003be4       0xe4 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003be4                IwDebugAssertSetMessage
+ .text.IwDebugAssertSetSolution
+                0x00003cc8       0x90 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003cc8                IwDebugAssertSetSolution
+ .text.IwDebugAssertShow
+                0x00003d58      0x2e8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00003d58                IwDebugAssertShow
+ .text.IwDebugTraceChannelSwitch
+                0x00004040      0x458 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00004040                IwDebugTraceChannelSwitch
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini
+ *(.fini)
+                0x00004498                PROVIDE (__etext, .)
+                0x00004498                PROVIDE (_etext, .)
+                0x00004498                PROVIDE (etext, .)
+
+.rodata         0x00004498      0x710
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00004498      0x5e4 debug/s3eNOpenFeint_platform.os
+ .rodata        0x00004a7c       0x10 debug/s3eNOpenFeint_register.os
+ .rodata.str1.4
+                0x00004a8c      0x11c /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                                0x120 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab      0x00004ba8       0x48
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab.text.IwAssertRegisterTextCallback
+                0x00004ba8        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwAssertRegisterCallback
+                0x00004ba8        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceSetTraceChannel
+                0x00004ba8        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugErrorRegisterCallback
+                0x00004ba8        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertSetUID
+                0x00004ba8        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text._GLOBAL__I_g_DebugGlobals
+                0x00004ba8        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugClearConfigCache
+                0x00004ba8        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugErrorShow
+                0x00004ba8        0xc /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceLineVPrintf
+                0x00004bb4        0xc /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceLinePrintf
+                0x00004bc0        0xc /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceIsChannelOn
+                0x00004bcc        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertIsChannelOn
+                0x00004bcc        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceDisable
+                0x00004bcc        0xc /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertSetMessage
+                0x00004bd8        0xc /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertSetSolution
+                0x00004be4        0xc /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertShow
+                0x00004bf0        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceChannelSwitch
+                0x00004bf0        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00004bf0                __exidx_start = .
+
+.ARM.exidx      0x00004bf0       0x88
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx.text.IwAssertRegisterTextCallback
+                0x00004bf0        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwAssertRegisterCallback
+                0x00004bf8        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceSetTraceChannel
+                0x00004c00        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugErrorRegisterCallback
+                0x00004c08        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertSetUID
+                0x00004c10        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text._GLOBAL__I_g_DebugGlobals
+                0x00004c18        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugClearConfigCache
+                0x00004c20        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugErrorShow
+                0x00004c28        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceLineVPrintf
+                0x00004c30        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceLinePrintf
+                0x00004c38        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceIsChannelOn
+                0x00004c40        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertIsChannelOn
+                0x00004c48        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceDisable
+                0x00004c50        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertSetMessage
+                0x00004c58        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertSetSolution
+                0x00004c60        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertShow
+                0x00004c68        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceChannelSwitch
+                0x00004c70        0x8 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x00004c78                __exidx_end = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x00004c78                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00005000                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array     0x00005000        0x4
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00005000        0x4 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+
+.fini_array
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00005004       0xd8
+ *(.dynamic)
+ .dynamic       0x00005004       0xd8 debug/s3eNOpenFeint_platform.os
+                0x00005004                _DYNAMIC
+                0x000050dc                . = (. DATA_SEGMENT_RELRO_END 0x0)
+
+.got            0x000050dc       0xf8
+ *(.got.plt)
+ .got.plt       0x000050dc       0x6c debug/s3eNOpenFeint_platform.os
+                0x000050dc                _GLOBAL_OFFSET_TABLE_
+ *(.got)
+ .got           0x00005148       0x8c debug/s3eNOpenFeint_platform.os
+
+.data           0x000051d4        0x0
+                0x000051d4                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000051d4        0x0 debug/s3eNOpenFeint_platform.os
+ .data          0x000051d4        0x0 debug/s3eNOpenFeint.os
+ .data          0x000051d4        0x0 debug/s3eNOpenFeint_register.os
+ .data          0x000051d4        0x0 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+
+.data1
+ *(.data1)
+                0x000051d4                _edata = .
+                0x000051d4                PROVIDE (edata, .)
+                0x000051d4                __bss_start = .
+                0x000051d4                __bss_start__ = .
+
+.bss            0x000051d4     0x1ab0
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 debug/s3eNOpenFeint_platform.os
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000051d4       0x88 debug/s3eNOpenFeint_platform.os
+ .bss           0x0000525c        0x0 debug/s3eNOpenFeint.os
+ .bss           0x0000525c        0x0 debug/s3eNOpenFeint_register.os
+ .bss           0x0000525c     0x1a28 /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+                0x0000525c                g_DebugGlobals
+ *(COMMON)
+                0x00006c84                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00006c84                _bss_end__ = .
+                0x00006c84                __bss_end__ = .
+                0x00006c84                . = ALIGN (0x4)
+                0x00006c84                . = ALIGN (0x4)
+                0x00006c84                __end__ = .
+                0x00006c84                _end = .
+                0x00006c84                PROVIDE (end, .)
+                0x00006c84                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x61
+ *(.comment)
+ .comment       0x00000000       0x12 debug/s3eNOpenFeint_platform.os
+ .comment       0x00000012       0x12 debug/s3eNOpenFeint.os
+ .comment       0x00000024       0x12 debug/s3eNOpenFeint_register.os
+ .comment       0x00000036       0x2b /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xc0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x80 debug/s3eNOpenFeint_platform.os
+ .debug_aranges
+                0x00000080       0x20 debug/s3eNOpenFeint.os
+ .debug_aranges
+                0x000000a0       0x20 debug/s3eNOpenFeint_register.os
+
+.debug_pubnames
+                0x00000000      0xd80
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x7a4 debug/s3eNOpenFeint_platform.os
+ .debug_pubnames
+                0x000007a4      0x52d debug/s3eNOpenFeint.os
+ .debug_pubnames
+                0x00000cd1       0xaf debug/s3eNOpenFeint_register.os
+
+.debug_info     0x00000000     0x7539
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x6993 debug/s3eNOpenFeint_platform.os
+ .debug_info    0x00006993      0x8ee debug/s3eNOpenFeint.os
+ .debug_info    0x00007281      0x2b8 debug/s3eNOpenFeint_register.os
+
+.debug_abbrev   0x00000000      0x549
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x2b2 debug/s3eNOpenFeint_platform.os
+ .debug_abbrev  0x000002b2      0x157 debug/s3eNOpenFeint.os
+ .debug_abbrev  0x00000409      0x140 debug/s3eNOpenFeint_register.os
+
+.debug_line     0x00000000      0x8b6
+ *(.debug_line)
+ .debug_line    0x00000000      0x526 debug/s3eNOpenFeint_platform.os
+ .debug_line    0x00000526      0x249 debug/s3eNOpenFeint.os
+ .debug_line    0x0000076f      0x147 debug/s3eNOpenFeint_register.os
+
+.debug_frame    0x00000000      0xa28
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x594 debug/s3eNOpenFeint_platform.os
+ .debug_frame   0x00000594      0x3e4 debug/s3eNOpenFeint.os
+ .debug_frame   0x00000978       0xb0 debug/s3eNOpenFeint_register.os
+
+.debug_str      0x00000000     0x64e6
+ *(.debug_str)
+ .debug_str     0x00000000     0x5eb7 debug/s3eNOpenFeint_platform.os
+                               0x6080 (size before relaxing)
+ .debug_str     0x00005eb7       0xe3 debug/s3eNOpenFeint.os
+                                0xaf3 (size before relaxing)
+ .debug_str     0x00005f9a      0x54c debug/s3eNOpenFeint_register.os
+                                0x6b4 (size before relaxing)
+
+.debug_loc      0x00000000      0xe8f
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x892 debug/s3eNOpenFeint_platform.os
+ .debug_loc     0x00000892      0x538 debug/s3eNOpenFeint.os
+ .debug_loc     0x00000dca       0xc5 debug/s3eNOpenFeint_register.os
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x1a0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x1a0 debug/s3eNOpenFeint_platform.os
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(/Volumes/mac_hd_2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/community/openfeint/s3eNOpenFeint/lib/android/libs3eNOpenFeint_d.so elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2a
+ .ARM.attributes
+                0x00000000       0x28 debug/s3eNOpenFeint_platform.os
+ .ARM.attributes
+                0x00000028       0x28 debug/s3eNOpenFeint.os
+ .ARM.attributes
+                0x00000050       0x28 debug/s3eNOpenFeint_register.os
+ .ARM.attributes
+                0x00000078       0x2c /Developer/Marmalade/5.1/s3e/edk/lib/android/libedkcore.a(IwDebug.o)

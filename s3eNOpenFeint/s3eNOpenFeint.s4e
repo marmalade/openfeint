@@ -631,3 +631,10 @@ s3eResult s3eNOFsubmitDeferredAchievements() S3E_RESULT_SUCCESS run_on_os_thread
  * @param deviceToken 
  */
 s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(const char* deviceToken) S3E_RESULT_SUCCESS run_on_os_thread
+
+
+/**
+ * s3eNOFlaunchDashboardWithListLeaderboardsPage
+ * Opens dashboard with LeaderboardsPage
+ */
+s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage() S3E_RESULT_SUCCESS run_on_os_thread

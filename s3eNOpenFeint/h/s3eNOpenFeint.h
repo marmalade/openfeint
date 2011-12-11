@@ -618,7 +618,7 @@ s3eResult s3eNOFsubmitHighScore(const char* leaderBoadId, const char* score, con
  * @param updatePercentComplete 0.0f updatePercentComplete. Number between 0.0f and 100.0f for which you would like to update the progression of this achievement.
  * @param showUpdateNotification whether to show or not show the unlock notification
  */
-s3eResult s3eNOFupdateAcheivementProgressionComplete(const char* achievementId, double updatePercentComplete, bool showUpdateNotification);
+s3eResult s3eNOFupdateAcheivementProgressionComplete(const char* achievementId, const char* updatePercentComplete, bool showUpdateNotification);
 
 /**
  * s3eNOFachievements Retrieves all of the achievements for this application.
@@ -688,6 +688,12 @@ s3eResult s3eNOFsubmitDeferredAchievements();
  * @param deviceToken 
  */
 s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(const char* deviceToken);
+
+/**
+ * s3eNOFlaunchDashboardWithListLeaderboardsPage
+ * Opens dashboard with LeaderboardsPage
+ */
+s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage();
 
 S3E_END_C_DECL
 

@@ -153,7 +153,7 @@ s3eResult s3eNOFsubmitHighScore(const char* leaderBoadId, const char* score, con
 	return s3eNOFsubmitHighScore_platform(leaderBoadId, score, displayText, customData);
 }
 
-s3eResult s3eNOFupdateAcheivementProgressionComplete(const char* achievementId, double updatePercentComplete, bool showUpdateNotification)
+s3eResult s3eNOFupdateAcheivementProgressionComplete(const char* achievementId, const char* updatePercentComplete, bool showUpdateNotification)
 {
 	return s3eNOFupdateAcheivementProgressionComplete_platform(achievementId, updatePercentComplete, showUpdateNotification);
 }
@@ -186,4 +186,9 @@ s3eResult s3eNOFsubmitDeferredAchievements()
 s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(const char* deviceToken)
 {
 	return s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platform(deviceToken);
+}
+
+s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage()
+{
+	return s3eNOFlaunchDashboardWithListLeaderboardsPage_platform();
 }

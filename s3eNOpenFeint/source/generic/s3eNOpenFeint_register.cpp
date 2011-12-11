@@ -191,7 +191,7 @@ static s3eResult s3eNOFsubmitHighScore_wrap(const char* leaderBoadId, const char
     return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNOFsubmitHighScore, 4, leaderBoadId, score, displayText, customData);
 }
 
-static s3eResult s3eNOFupdateAcheivementProgressionComplete_wrap(const char* achievementId, double updatePercentComplete, bool showUpdateNotification)
+static s3eResult s3eNOFupdateAcheivementProgressionComplete_wrap(const char* achievementId, const char* updatePercentComplete, bool showUpdateNotification)
 {
     IwTrace(NOPENFEINT_VERBOSE, ("calling s3eNOpenFeint func on main thread: s3eNOFupdateAcheivementProgressionComplete"));
     return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNOFupdateAcheivementProgressionComplete, 3, achievementId, updatePercentComplete, showUpdateNotification);
@@ -233,6 +233,12 @@ static s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceTok
     return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke, 1, deviceToken);
 }
 
+static s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage_wrap()
+{
+    IwTrace(NOPENFEINT_VERBOSE, ("calling s3eNOpenFeint func on main thread: s3eNOFlaunchDashboardWithListLeaderboardsPage"));
+    return (s3eResult)(intptr_t)s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNOFlaunchDashboardWithListLeaderboardsPage, 0);
+}
+
 #define s3eNewMessageBox s3eNewMessageBox_wrap
 #define s3eNOFinitializeWithProductKey s3eNOFinitializeWithProductKey_wrap
 #define s3eNOFlaunchDashboardWithHighscorePage s3eNOFlaunchDashboardWithHighscorePage_wrap
@@ -266,6 +272,7 @@ static s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceTok
 #define s3eNOFachievementUnlockAndDefer s3eNOFachievementUnlockAndDefer_wrap
 #define s3eNOFsubmitDeferredAchievements s3eNOFsubmitDeferredAchievements_wrap
 #define s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_wrap
+#define s3eNOFlaunchDashboardWithListLeaderboardsPage s3eNOFlaunchDashboardWithListLeaderboardsPage_wrap
 
 #endif /* I3D_OS_IPHONE */
 
@@ -282,7 +289,7 @@ s3eResult s3eNOpenFeintUnRegister(s3eNOpenFeintCallback cbid, s3eCallback fn)
 void s3eNOpenFeintRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[37];
+    void* funcPtrs[38];
     funcPtrs[0] = (void*)s3eNOpenFeintRegister;
     funcPtrs[1] = (void*)s3eNOpenFeintUnRegister;
     funcPtrs[2] = (void*)s3eNOpenFeintGetErrorString;
@@ -320,11 +327,12 @@ void s3eNOpenFeintRegisterExt()
     funcPtrs[34] = (void*)s3eNOFachievementUnlockAndDefer;
     funcPtrs[35] = (void*)s3eNOFsubmitDeferredAchievements;
     funcPtrs[36] = (void*)s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke;
+    funcPtrs[37] = (void*)s3eNOFlaunchDashboardWithListLeaderboardsPage;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[37] = { 0 };
+    int flags[38] = { 0 };
 
     /*
      * Register the extension
