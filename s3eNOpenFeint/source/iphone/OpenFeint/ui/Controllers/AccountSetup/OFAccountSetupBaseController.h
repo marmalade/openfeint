@@ -1,0 +1,52 @@
+//  Copyright 2009-2010 Aurora Feint, Inc.
+// 
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//  
+//  	http://www.apache.org/licenses/LICENSE-2.0
+//  	
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+
+#import "OFFormControllerHelper.h"
+
+@class OFShowMessageAndReturnController;
+@protocol OFISerializer;
+
+
+@interface OFAccountSetupBaseController : OFFormControllerHelper
+{
+@private
+	UILabel* privacyDisclosure;
+	BOOL mAddingAdditionalCredential;
+	
+@protected
+    OFInvocation* onCompletionInvocation;
+    OFInvocation* onCancelInvocation;
+}
+
++ (OFShowMessageAndReturnController*)getStandardLoggedInController;
+
+@property (nonatomic, retain) IBOutlet UILabel* privacyDisclosure;
+@property (assign) BOOL addingAdditionalCredential;
+@property (nonatomic, retain) OFInvocation* onCompletionInvocation;
+@property (nonatomic, retain) OFInvocation* onCancelInvocation;
+
+- (void)cancelSetup;
+- (void)addHiddenParameters:(NSObject<OFISerializer>*)parameterStream;
+- (UIViewController*)getControllerToPopTo;
+- (OFShowMessageAndReturnController*)getStandardLoggedInController;
+
+//- (void)setCancelDelegate:(OFDelegate const&)delegate;
+//- (void)setCompletionDelegate:(OFDelegate const&)delegate;
+
+- (BOOL)isComplete; //Override this is you have multiple things to do before you push a new controller.
+
+// [adill] i'm going to hell for this
+- (NSString*)overrideUserIdToBootstrapWith;
+
+@end

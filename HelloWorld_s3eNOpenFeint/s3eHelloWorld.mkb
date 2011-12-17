@@ -2,19 +2,33 @@
 files
 {
 	s3eHelloWorld.cpp
+	
+}
+
+assets
+{
+	(data)
+	OFResources_Universal.bundle
+	openfeint_offline_config.xml
 }
 
 subprojects
 {
     ExamplesMain
     s3eNOpenFeint
-    s3eIOSNotifications
+    s3eFacebook
+#    s3eIOSNotifications
 }
 #### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
 deployments
 {
 	["Default"]
-	iphone-link-opts='-weak_framework Security -weak_framework AddressBook -weak_framework AddressBookUI -weak_framework MapKit -lsqlite3.0'
+	assets='Default'
+	iphone-appid='com.nerdiacs.funkyracing'
+	iphone-link-libs='s3eFacebook'
+	iphone-link-opts='-weak_framework CoreText -weak_framework UIKit -weak_framework Security -weak_framework AddressBook -weak_framework AddressBookUI -weak_framework MapKit -lsqlite3.0'
+	iphone-no-splash=1
 	iphone-nosign=0
 	iphone-signing-identity='iPhone Developer'
+	splashscreen-auto-onblack=1
 }

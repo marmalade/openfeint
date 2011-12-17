@@ -8,7 +8,7 @@
  */
 #include "s3eNOpenFeint_internal.h"
 #include "s3e.h"
-#import "OpenFeint.h"
+#import "OpenFeint/OpenFeint.h"
 #import "OFChallenge.h"
 #import "OpenFeint+Dashboard.h"
 #import "OFChallengeDefinition.h"
@@ -773,14 +773,20 @@ s3eResult s3eNOFinitializeWithProductKey_platform(
 							   [NSNumber numberWithInt:useSandboxNotification], OpenFeintSettingUseSandboxPushNotificationServer,
 							   [NSNumber numberWithInt:disableUserGenContent], OpenFeintSettingDisableUserGeneratedContent,
 							   [NSNumber numberWithInt:alwaysAskForApprovalInDbg], OpenFeintSettingAlwaysAskForApprovalInDebug,
+#ifdef DEBUG 
+                 [NSNumber numberWithInt:OFDevelopmentMode_DEVELOPMENT], OpenFeintSettingDevelopmentMode, 
+#else
+                 [NSNumber numberWithInt:OFDevelopmentMode_RELEASE], OpenFeintSettingDevelopmentMode, 
+#endif 
+                 [NSNumber numberWithInt:0], OpenFeintSettingDevelopmentMode,
 							   mainwindow, OpenFeintSettingPresentationWindow,
 							   nil
 							   ];
-	//	ofDelegate = [NOFDelegate new];
+    //	ofDelegate = [NOFDelegate new];
 	
-	OFDelegatesContainer* delegates = [OFDelegatesContainer containerWithOpenFeintDelegate:g_ofDelegate
+	OFDelegatesContainer* delegates = nil; /*[OFDelegatesContainer containerWithOpenFeintDelegate:g_ofDelegate
 																	  andChallengeDelegate:g_ofChallengeDelegate
-																   andNotificationDelegate:nil];
+																   andNotificationDelegate:nil];*/
 	//IwTrace(GAMECENTER,"Initializing OpenFeint");
 	// TODO: Use parameters sent from application (API Consumer)
 	

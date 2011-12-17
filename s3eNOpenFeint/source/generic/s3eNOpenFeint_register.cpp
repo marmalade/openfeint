@@ -33,7 +33,10 @@ s3eNOpenFeintError s3eNOpenFeintGetError()
     return (s3eNOpenFeintError) s3eEdkErrorGet(S3E_EXT_NOPENFEINT_HASH);
 }
 
-#if defined I3D_OS_IPHONE || defined I3D_OS_OSX
+// On platforms that use a seperate UI/OS thread we can autowrap functions
+// here.   Note that we can't use the S3E_USE_OS_THREAD define since this
+// code is oftern build standalone, outside the main loader build.
+#if defined I3D_OS_IPHONE || defined I3D_OS_OSX || defined I3D_OS_LINUX || defined I3D_OS_WINDOWS
 
 static s3eResult s3eNewMessageBox_wrap(const char* title, const char* text)
 {
@@ -274,7 +277,7 @@ static s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage_wrap()
 #define s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_wrap
 #define s3eNOFlaunchDashboardWithListLeaderboardsPage s3eNOFlaunchDashboardWithListLeaderboardsPage_wrap
 
-#endif /* I3D_OS_IPHONE */
+#endif
 
 s3eResult s3eNOpenFeintRegister(s3eNOpenFeintCallback cbid, s3eCallback fn, void* pData)
 {

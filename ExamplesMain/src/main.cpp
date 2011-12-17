@@ -12,7 +12,6 @@
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
  * PARTICULAR PURPOSE.
  */
-
 #include "ExamplesMain.h"
 
 //-----------------------------------------------------------------------------

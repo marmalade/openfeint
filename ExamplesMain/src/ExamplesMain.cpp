@@ -15,7 +15,6 @@
 #include "ExamplesMain.h"
 #include <malloc.h>
 
-
 #define FRAMETIME  30
 
 static void CursorRender();
@@ -26,15 +25,12 @@ bool            g_DeviceHasKeyboard = false;
 static bool     g_ClearScreen = true;
 static bool     g_DrawCursor = true;
 bool            g_HideDisabledButtons = false;
-bool g_doRender1 = false;
 
 bool ExamplesMainUpdate()
 {
     s3eKeyboardUpdate();
     s3ePointerUpdate();
 
-	if (g_doRender1)
-	{
     if (!ExampleUpdate())
     {
         s3eDebugTracePrintf("ExampleUpdate returned false, exiting..");
@@ -52,8 +48,6 @@ bool ExamplesMainUpdate()
         CursorRender();
 
     s3eSurfaceShow();
-	}
-	
     s3eDeviceYield(FRAMETIME);
     return true;
 }
@@ -68,7 +62,6 @@ void ExamplesMainTerm()
 
 void ExamplesMainInit()
 {
-	g_doRender1 = true;
     // Determine if the device has a keyboard
     if (s3eKeyboardGetInt(S3E_KEYBOARD_HAS_KEYPAD) || s3eKeyboardGetInt(S3E_KEYBOARD_HAS_ALPHA))
         g_DeviceHasKeyboard = true;

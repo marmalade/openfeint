@@ -17,22 +17,6 @@
 #include <string.h>
 #include <stdio.h>
 
-
-
-/**
- * Prints a text message on the current surface.
- * Functions exactly like @ref s3eDebugPrint but takes printf-style
- * arguments.
- */
-S3E_EAPI void s3eDebugPrintf(int x, int y, s3eBool wrap, const char* fmt, ...);
-
-/**
- * Write to the trace output.
- * Functions exactly like @ref s3eDebugTraceLine but takes printf-style
- * arguments.
- */
-S3E_EAPI int s3eDebugTracePrintf(const char* fmt, ...);
-
 typedef void (*ButtonCallback)(struct Button* button);
 
 /**
@@ -58,7 +42,6 @@ struct Button
 
 extern bool g_DeviceHasKeyboard;
 extern bool g_HideDisabledButtons;
-extern bool g_doRender1;
 
 void ExamplesMainInit();
 bool ExamplesMainUpdate();

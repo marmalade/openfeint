@@ -21,7 +21,7 @@ if {{ not defined EXAMPLE_OVERRIDE_MAIN }}
 
 deployments
 {
-    splashscreen="$MARMALADE_ROOT/s3e/deploy/resources/splashscreens/"
+    splashscreen="resources/splashscreens/"
 }
 
 includepath src

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="1.0">
+<dict>
+
+<key>gamefeed/ios/config_is_tweaked</key>
+<string>da39a3ee5e6b4b0d3255bfef95601890afd80709</string>
+<key>gamefeed/test.mdpi.png</key>
+<string>0d8c02cb2e227aa1f013f74d51ac1bffcf6480db</string>
+<key>gamefeed/ios/test.udpi.png</key>
+<string>0d8c02cb2e227aa1f013f74d51ac1bffcf6480db</string>
+<key>gamefeed/test.udpi.png</key>
+<string>0d8c02cb2e227aa1f013f74d51ac1bffcf6480db</string>
+<key>gamefeed/ios/test.mdpi.png</key>
+<string>0d8c02cb2e227aa1f013f74d51ac1bffcf6480db</string>
+<key>gamefeed/ios/config.json.tweaked</key>
+<string>0903212ded9f70119df72b0f8cacbaaa019b155f</string>
+<key>gamefeed/ios/config.json</key>
+<string>0903212ded9f70119df72b0f8cacbaaa019b155f</string>
+</dict>
+</plist>

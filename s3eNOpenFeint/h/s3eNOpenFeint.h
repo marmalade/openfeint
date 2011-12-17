@@ -308,17 +308,14 @@ s3eBool s3eNOpenFeintAvailable();
  * @param fn callback function.
  * @param userdata Value to pass to the @e userdata parameter of @e NotifyFunc.
  * @return
- * <ul>
- *  <li>@ref S3E_RESULT_SUCCESS if no error occurred.
- *  <li>@ref S3E_RESULT_ERROR if the operation failed.\n
+ *  - @ref S3E_RESULT_SUCCESS if no error occurred.
+ *  - @ref S3E_RESULT_ERROR if the operation failed.\n
  *         Call s3eNOpenFeintGetError() to retrieve an error code.
  *         This will return one of:
- *  <ul>
- *      <li>@ref S3E_DEVICE_ERR_PARAM if @e cbid is not a valid member of @ref s3eNOpenFeintCallback or @e NotifyFunc is NULL.
- *      <li>@ref S3E_DEVICE_ERR_TOO_MANY If the maximum number of callbacks for this device has been exceeded.
- *      <li>@ref S3E_DEVICE_ERR_ALREADY_REG If (@e cbid, @e NotifyFunc) has already been registered.
- *  </ul>
- * </ul>
+ *      - @ref S3E_DEVICE_ERR_PARAM if @e cbid is not a valid member of @ref s3eNOpenFeintCallback or @e NotifyFunc is NULL.
+ *      - @ref S3E_DEVICE_ERR_TOO_MANY If the maximum number of callbacks for this device has been exceeded.
+ *      - @ref S3E_DEVICE_ERR_ALREADY_REG If (@e cbid, @e NotifyFunc) has already been registered.
+ *
  * @see s3eNOpenFeintUnRegister
  * @note For more information on the system data passed as a parameter to the callback
  * registered using this function, see the @ref s3eNOpenFeintCallback enum.

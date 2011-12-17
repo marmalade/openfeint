@@ -48,7 +48,7 @@
 #include "s3e.h"
 #include "ExamplesMain.h"
 #include "s3eNOpenFeint.h"
-#include "s3eIOSNotifications.h"
+#include "s3eFacebook.h"
 
 static Button* g_MessageBox;
 static Button* g_NOFInitialize;
@@ -128,11 +128,11 @@ static int32 userLaunchedChallenge(void *systemData, void *userData)
 	return 0;
 }
 
-static int32 RemotePushNotificationRecieved(void* systemData, void* userData)
-{
-  AppendMessageColour(BLUE, "PushNotification `xee6666'%s'", (char*)systemData);
-  return 0;
-}
+//static int32 RemotePushNotificationRecieved(void* systemData, void* userData)
+//{
+//  AppendMessageColour(BLUE, "PushNotification `xee6666'%s'", (char*)systemData);
+//  return 0;
+//}
 
 
 static int32 isOpenFeintNotificationAllowed(void *systemData, void *userData) 
@@ -202,18 +202,25 @@ void ExampleInit()
         AppendMessageColour(RED,"Could not load s3eNOpenFeint extension");
       return;
     }
-  if (!s3eIOSNotificationsAvailable())
+  
+  if(s3eFacebookAvailable())
   {
-    AppendMessageColour(RED,"Extension Not Available");
-    return;
+    s3eFBInit("193667878484");
   }
-  else {
-      // Register IOS Notification
-      //     s3eDeviceRegister(S3E_DEVICE_PUSH_NOTIFICATION, RemotePushNotificationRecieved, 0);
-           s3eIOSNotificationsRegister(S3E_IOSNOTIFICATIONS_REMOTE, RemotePushNotificationRecieved, NULL);
-
-      // s3eIOSNotificationsGetLaunchNotification();
-  }
+  else
+    AppendMessageColour(RED,"Could not load s3eFacebook extension");
+//  if (!s3eIOSNotificationsAvailable())
+//  {
+//    AppendMessageColour(RED,"Extension Not Available");
+//    return;
+//  }
+//  else {
+//      // Register IOS Notification
+//      //     s3eDeviceRegister(S3E_DEVICE_PUSH_NOTIFICATION, RemotePushNotificationRecieved, 0);
+//           s3eIOSNotificationsRegister(S3E_IOSNOTIFICATIONS_REMOTE, RemotePushNotificationRecieved, NULL);
+//
+//      // s3eIOSNotificationsGetLaunchNotification();
+//  }
 //	g_is3eNGAvailable = NewButton("IsNGAvailable");
 }
 
@@ -285,28 +292,28 @@ bool ExampleUpdate()
 		AppendMessageColour(GREEN, "Called s3eNOFinitializeWithProductKey");
 		 //g_doRender1 = false;	
       // Lets try to give the API the token
-    const char* deviceToken = s3eIOSNotificationsGetRemoteNotificationToken();
-    char tmp[40];
-    const char *tmp1 = deviceToken;
-    memset(tmp,'\0', sizeof(tmp));
-    
-      // need to get rid of spaces in middle
-    int i =0;
-    while(*tmp1)
-    {
-      if(*tmp1!=' ') 
-      {
-          // not a space. we can copy
-        tmp[i] = *tmp1;
-        i++;
-      }
-      tmp1++;
-    }
-    
-    if (deviceToken) {
-      AppendMessageColour(BLUE,"Device token is %s",tmp);
-      s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(tmp);
-    }
+//    const char* deviceToken = s3eIOSNotificationsGetRemoteNotificationToken();
+//    char tmp[40];
+//    const char *tmp1 = deviceToken;
+//    memset(tmp,'\0', sizeof(tmp));
+//    
+//      // need to get rid of spaces in middle
+//    int i =0;
+//    while(*tmp1)
+//    {
+//      if(*tmp1!=' ') 
+//      {
+//          // not a space. we can copy
+//        tmp[i] = *tmp1;
+//        i++;
+//      }
+//      tmp1++;
+//    }
+//    
+//    if (deviceToken) {
+//      AppendMessageColour(BLUE,"Device token is %s",tmp);
+//      s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke(tmp);
+//    }
 
 	}
 	else if (pressed && pressed == g_NOFShutdown)

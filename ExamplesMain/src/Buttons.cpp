@@ -41,13 +41,14 @@ Button* NewButton(const char *name, ButtonCallback callback)
     button->m_Width = 0;
     button->m_Height = 0;
 
-    if (g_NumButtons <= 10)
+    if (g_NumButtons < 10)
     {
         if (s3eKeyboardGetInt(S3E_KEYBOARD_HAS_NUMPAD))
-            button->m_Key = (s3eKey)((int)s3eKey1 + g_NumButtons++);
+            button->m_Key = (s3eKey)((int)s3eKey1 + (g_NumButtons==9?-1:g_NumButtons));
         else if (!s3ePointerGetInt(S3E_POINTER_AVAILABLE))
-            button->m_Key = (s3eKey)((int)s3eKeyAbsGameA + g_NumButtons++);
+            button->m_Key = (s3eKey)((int)s3eKeyAbsGameA + g_NumButtons);        
     }
+    g_NumButtons++;
 
     if (g_ButtonsTail)
         g_ButtonsTail->m_Next = button;
