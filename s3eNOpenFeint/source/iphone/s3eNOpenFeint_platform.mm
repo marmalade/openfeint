@@ -778,7 +778,6 @@ s3eResult s3eNOFinitializeWithProductKey_platform(
 #else
                  [NSNumber numberWithInt:OFDevelopmentMode_RELEASE], OpenFeintSettingDevelopmentMode, 
 #endif 
-                 [NSNumber numberWithInt:0], OpenFeintSettingDevelopmentMode,
 							   mainwindow, OpenFeintSettingPresentationWindow,
 							   nil
 							   ];
