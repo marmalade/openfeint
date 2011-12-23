@@ -1,10 +1,10 @@
 /*
-Internal header for the s3eNOpenFeint extension.
-
-This file should be used for any common function definitions etc that need to
-be shared between the platform-dependent and platform-indepdendent parts of
-this extension.
-*/
+ * Internal header for the s3eNOpenFeint extension.
+ *
+ * This file should be used for any common function definitions etc that need to
+ * be shared between the platform-dependent and platform-indepdendent parts of
+ * this extension.
+ */
 
 /*
  * NOTE: This file was originally written by the extension builder, but will not
@@ -12,8 +12,8 @@ this extension.
  */
 
 
-#ifndef S3ENOPENFEINT_H_INTERNAL
-#define S3ENOPENFEINT_H_INTERNAL
+#ifndef S3ENOPENFEINT_INTERNAL_H
+#define S3ENOPENFEINT_INTERNAL_H
 
 #include "s3eTypes.h"
 #include "s3eNOpenFeint.h"
@@ -111,4 +111,4 @@ s3eResult s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platf
 s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage_platform();
 
 
-#endif /* S3ENOPENFEINT_H_INTERNAL */
+#endif /* !S3ENOPENFEINT_INTERNAL_H */

@@ -59,6 +59,28 @@ if {{defined S3E_ANDROID}}
     }
 }
 
+if {{defined I3D_OS_OSX}}
+{
+    files
+    {
+        ["source"]
+        (use_first_found, source/osx, source/generic)
+        s3eNOpenFeint_platform.mm
+        #Add any osx-specific files here
+    }
+}
+
+if {{defined I3D_OS_LINUX and not defined S3E_ANDROID}}
+{
+    files
+    {
+        ["source"]
+        (use_first_found, source/linux, source/generic)
+        s3eNOpenFeint_platform.cpp
+        #Add any linux-specific files here
+    }
+}
+
 files
 {
 
