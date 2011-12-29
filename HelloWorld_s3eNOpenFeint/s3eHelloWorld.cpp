@@ -324,13 +324,13 @@ bool ExampleUpdate()
 	else if (pressed && pressed == g_NOFLaunchDashboard)
 	{
       //	s3eNOFlaunchDashboard();
-    s3eNOFlaunchDashboardWithListLeaderboardsPage();
+    s3eNOFlaunchDashboard();
 		AppendMessageColour(GREEN, "Called s3eNOFlaunchDashboardWithListLeaderboardsPage");
 
 	}
 	else if (pressed && pressed == g_NOFTestButton1)
 	{
-    const unsigned int max_achievements = 20; // whatever we think is max we need
+    /*const unsigned int max_achievements = 20; // whatever we think is max we need
     void* data = s3eMalloc(sizeof(s3eNOFAchievement) * max_achievements);
     if (data == NULL) {
       AppendMessageColour(RED, ("Couldn't allocate data"));
@@ -349,7 +349,9 @@ bool ExampleUpdate()
         //      AppendMessage("Ach at %p", &((s3eNOFAchievement*)achArray.m_items)[i]);
       AppendMessage("Acheivement title %s", ((s3eNOFAchievement*)achArray.m_items)[i].title);
     }
-    s3eFree(data);
+    s3eFree(data);*/
+    AppendMessage("Updating achievement 1205572");
+    s3eNOFupdateAcheivementProgressionComplete("1205572", "77", true); // last param is ignored for android 
 	}
 	else if (pressed && pressed == g_NOFTestButton2)
 	{
@@ -376,9 +378,12 @@ bool ExampleUpdate()
     s3eFree(ach);
   */
     
-      //    s3eNOFachievementUnlock("1117662");
+    AppendMessage("Unlocking achievement 1117662");
+    s3eNOFachievementUnlock("1117662");
 
-      
+      //    AppendMessage("User approved %d", s3eNOFhasUserApprovedFeint());
+      //    AppendMessage("User is Online %d", s3eNOFisOnline());
+      //    s3eNOFsubmitHighScore("844216", "50", "Beaten by Android", NULL);
      
 	}
     return true;

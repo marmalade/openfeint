@@ -5,11 +5,14 @@ files
 	
 }
 
-assets
+if {{defined I3D_OS_IPHONE}}
 {
-	(data)
-	OFResources_Universal.bundle
-	openfeint_offline_config.xml
+	assets
+	{
+		(data)
+		OFResources_Universal.bundle
+		openfeint_offline_config.xml
+	}
 }
 
 subprojects
@@ -23,6 +26,10 @@ subprojects
 deployments
 {
 	["Default"]
+	android-extra-application-manifest='android/AndroidAppManifest.xml'
+	android-extra-manifest='android/AndroidManifest.xml'
+	android-external-res='android/res'
+#	android-external-res='android/res/values'
 	assets='Default'
 	iphone-appid='com.nerdiacs.funkyracing'
 	iphone-link-libs='s3eFacebook'

@@ -38,5 +38,6 @@ if {{ not defined IW_MKF_IWCRT}}
 deployments
 {
     android-external-jars="lib/android/s3eNOpenFeint.jar"
+    android-external-jars="source/android/OpenFeint.jar"
     android-so="lib/android/libs3eNOpenFeint.so"
 }

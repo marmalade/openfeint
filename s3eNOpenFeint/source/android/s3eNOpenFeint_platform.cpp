@@ -144,11 +144,11 @@ s3eResult s3eNOpenFeintInit_platform()
     if (!g_s3eNOFsetDashboardOrientation)
         goto fail;
 
-    g_s3eNOFhasUserApprovedFeint = env->GetMethodID(cls, "s3eNOFhasUserApprovedFeint", "()V");
+    g_s3eNOFhasUserApprovedFeint = env->GetMethodID(cls, "s3eNOFhasUserApprovedFeint", "()Z");
     if (!g_s3eNOFhasUserApprovedFeint)
         goto fail;
 
-    g_s3eNOFisOnline = env->GetMethodID(cls, "s3eNOFisOnline", "()V");
+    g_s3eNOFisOnline = env->GetMethodID(cls, "s3eNOFisOnline", "()Z");
     if (!g_s3eNOFisOnline)
         goto fail;
 
@@ -358,15 +358,16 @@ s3eResult s3eNOFsetDashboardOrientation_platform(s3eNOFUIInterfaceOrientation or
 ushort s3eNOFhasUserApprovedFeint_platform()
 {
     JNIEnv* env = s3eEdkJNIGetEnv();
-    env->CallVoidMethod(g_Obj, g_s3eNOFhasUserApprovedFeint);
-    return S3E_RESULT_SUCCESS;
+    //    env->CallVoidMethod(g_Obj, g_s3eNOFhasUserApprovedFeint);
+    return env->CallBooleanMethod(g_Obj, g_s3eNOFhasUserApprovedFeint);
+    //return S3E_RESULT_SUCCESS;
 }
 
 ushort s3eNOFisOnline_platform()
 {
     JNIEnv* env = s3eEdkJNIGetEnv();
-    env->CallVoidMethod(g_Obj, g_s3eNOFisOnline);
-    return S3E_RESULT_SUCCESS;
+    return env->CallBooleanMethod(g_Obj, g_s3eNOFisOnline);
+    //    return S3E_RESULT_SUCCESS;
 }
 
 s3eResult s3eNOFdisplayAndSendChallenge_platform(s3eNOFChallengeDefinition* challengeDefinition, const char* challengeDescription, const s3eNOFChallengeData* challengeData)

@@ -13,6 +13,7 @@
 		<javac destdir="${dir.classes}" srcdir="${dir.src}">
 			<classpath path="${dir.s3e}/deploy/plugins/android/android.jar"/>
 			<classpath path="${dir.s3e}/loader/android/s3e_release.jar"/>
+			<classpath path="${dir.src}/OpenFeint.jar"/>
 		</javac>			
 		
 		<jar destfile="lib/android/s3eNOpenFeint.jar">	
