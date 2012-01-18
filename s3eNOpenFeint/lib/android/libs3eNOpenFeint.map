@@ -44,48 +44,50 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 .note.gnu.build-id
  *(.note.gnu.build-id)
 
-.hash           0x000000d4       0xac
+.hash           0x000000d4       0xcc
  *(.hash)
- .hash          0x000000d4       0xac release/s3eNOpenFeint_platform.os
+ .hash          0x000000d4       0xcc release/s3eNOpenFeint_platform.os
 
 .gnu.hash
  *(.gnu.hash)
 
-.dynsym         0x00000180      0x180
+.dynsym         0x000001a0      0x200
  *(.dynsym)
- .dynsym        0x00000180      0x180 release/s3eNOpenFeint_platform.os
+ .dynsym        0x000001a0      0x200 release/s3eNOpenFeint_platform.os
 
-.dynstr         0x00000300      0x183
+.dynstr         0x000003a0      0x1fc
  *(.dynstr)
- .dynstr        0x00000300      0x183 release/s3eNOpenFeint_platform.os
+ .dynstr        0x000003a0      0x1fc release/s3eNOpenFeint_platform.os
 
-.gnu.version    0x00000484        0x0 load address 0x00000483
+.gnu.version    0x0000059c        0x0
  *(.gnu.version)
  .gnu.version   0x00000000        0x0 release/s3eNOpenFeint_platform.os
 
-.gnu.version_d  0x00000484        0x0 load address 0x00000483
+.gnu.version_d  0x0000059c        0x0
  *(.gnu.version_d)
  .gnu.version_d
                 0x00000000        0x0 release/s3eNOpenFeint_platform.os
 
-.gnu.version_r  0x00000484        0x0 load address 0x00000483
+.gnu.version_r  0x0000059c        0x0
  *(.gnu.version_r)
  .gnu.version_r
                 0x00000000        0x0 release/s3eNOpenFeint_platform.os
 
-.rel.dyn        0x00000484      0x120
+.rel.dyn        0x0000059c      0x138
  *(.rel.init)
  *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
  *(.rel.fini)
  *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
  *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro.local
+                0x0000059c       0x18 release/s3eNOpenFeint_platform.os
  *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
  *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
  *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
  *(.rel.ctors)
  *(.rel.dtors)
  *(.rel.got)
- .rel.got       0x00000484      0x120 release/s3eNOpenFeint_platform.os
+ .rel.got       0x000005b4      0x120 release/s3eNOpenFeint_platform.os
  *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
 
 .rela.dyn
@@ -101,9 +103,9 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
  *(.rela.got)
  *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
 
-.rel.plt        0x000005a4       0x48
+.rel.plt        0x000006d4       0x88
  *(.rel.plt)
- .rel.plt       0x000005a4       0x48 release/s3eNOpenFeint_platform.os
+ .rel.plt       0x000006d4       0x88 release/s3eNOpenFeint_platform.os
 
 .rela.plt
  *(.rela.plt)
@@ -111,115 +113,116 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 .init
  *(.init)
 
-.plt            0x000005ec       0x80
+.plt            0x0000075c       0xe0
  *(.plt)
- .plt           0x000005ec       0x80 release/s3eNOpenFeint_platform.os
+ .plt           0x0000075c       0xe0 release/s3eNOpenFeint_platform.os
 
-.text           0x0000066c     0x2a18
+.text           0x0000083c     0x2d00
  *(.text .stub .text.* .gnu.linkonce.t.*)
- .text          0x0000066c     0x17d0 release/s3eNOpenFeint_platform.os
-                0x00001188                _Z51s3eNOFupdateAcheivementProgressionComplete_platformPKcS0_b
-                0x00000938                _Z35s3eNOFhasUserApprovedFeint_platformv
-                0x000008e0                _Z41s3eNOFsubmitDeferredAchievements_platformv
-                0x000009f0                _Z23s3eNOFshutdown_platformv
-                0x00000aa0                _Z44s3eNOFlaunchDashboardWithInvitePage_platformv
-                0x00000b50                _Z48s3eNOFlaunchDashboardWithSwitchUserPage_platformv
-                0x00000cb0                _Z26s3eNOFachievement_platformP17s3eNOFAchievementPKc
-                0x00000830                _Z38s3eNOFsetDashboardOrientation_platform28s3eNOFUIInterfaceOrientation
-                0x0000066c                _Z31s3eNOpenFeintTerminate_platformv
-                0x00000f98                _Z48s3eNOFlaunchDashboardWithSpecificInvite_platformPKc
-                0x00000a48                _Z30s3eNOFlaunchDashboard_platformv
-                0x000016a4                _Z26s3eNOpenFeintInit_platformv
-                0x000015bc                _Z72s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText_platformPKcS0_S0_S0_
-                0x00000d2c                _Z73s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platformPKc
-                0x000014d4                _Z30s3eNOFsubmitHighScore_platformPKcS0_S0_S0_
-                0x00000670                _Z48s3eNOFlaunchDashboardWithChallengesPage_platformv
-                0x00001014                _Z40s3eNOFachievementUnlockAndDefer_platformPKc
-                0x00000998                _Z31s3eNOFdismissDashboard_platformv
-                0x00001230                _Z25s3eNewMessageBox_platformPKcS0_
-                0x00000780                _Z27s3eNOFachievements_platformP11s3eNOFArray
-                0x00000e24                _Z32s3eNOFachievementUnlock_platformPKc
-                0x000007d8                _Z46s3eNOFdownloadAllChallengeDefinitions_platformv
-                0x00000f1c                _Z48s3eNOFdownloadChallengeDefinitionWithId_platformPKc
-                0x00000da8                _Z38s3eNOFdisplayAndSendChallenge_platformP25s3eNOFChallengeDefinitionPKcPK19s3eNOFChallengeData
-                0x0000110c                _Z47s3eNOFlaunchDashboardWithHighscorePage_platformPKc
-                0x00001090                _Z47s3eNOFlaunchDashboardWithiPurchasePage_platformPKc
-                0x00000c58                _Z49s3eNOFlaunchDashboardWithFindFriendsPage_platformv
-                0x00000ba8                _Z57s3eNOFlaunchDashboardWithListGlobalChatRoomsPage_platformv
-                0x000012d0                _Z49s3eNOFchallengeDisplayCompletionWithData_platformP19s3eNOFChallengeDataPKcS2_
-                0x00000ea0                _Z42s3eNOFchallengeCompleteWithResult_platform21s3eNOFChallengeResultPKc
-                0x00000c00                _Z49s3eNOFlaunchDashboardWithWhosPlayingPage_platformv
-                0x00001410                _Z39s3eNOFinitializeWithProductKey_platformPKcS0_S0_PK11s3eNOFArray
-                0x00000888                _Z54s3eNOFlaunchDashboardWithListLeaderboardsPage_platformv
-                0x000006c8                _Z50s3eNOFlaunchDashboardWithAchievementsPage_platformv
-                0x00000af8                _Z44s3eNOFlaunchDashboardWithForumsPage_platformv
-                0x00000720                _Z23s3eNOFisOnline_platformv
+ .text          0x0000083c     0x1ab8 release/s3eNOpenFeint_platform.os
+                0x0000141c                _Z51s3eNOFupdateAcheivementProgressionComplete_platformPKcS0_b
+                0x00000a7c                _Z35s3eNOFhasUserApprovedFeint_platformv
+                0x00000b8c                _Z41s3eNOFsubmitDeferredAchievements_platformv
+                0x000008bc                _Z23s3eNOFshutdown_platformv
+                0x00000914                _Z44s3eNOFlaunchDashboardWithInvitePage_platformv
+                0x00000cec                _Z48s3eNOFlaunchDashboardWithSwitchUserPage_platformv
+                0x00000ea4                _Z26s3eNOFachievement_platformP17s3eNOFAchievementPKc
+                0x00000864                _Z38s3eNOFsetDashboardOrientation_platform28s3eNOFUIInterfaceOrientation
+                0x0000083c                _Z31s3eNOpenFeintTerminate_platformv
+                0x00001110                _Z48s3eNOFlaunchDashboardWithSpecificInvite_platformPKc
+                0x000009c4                _Z30s3eNOFlaunchDashboard_platformv
+                0x000019e8                _Z26s3eNOpenFeintInit_platformv
+                0x000016ec                _Z72s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText_platformPKcS0_S0_S0_
+                0x000017d4                _Z10getCStringP8_jstring
+                0x00000f9c                _Z73s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platformPKc
+                0x00001604                _Z30s3eNOFsubmitHighScore_platformPKcS0_S0_S0_
+                0x00000df4                _Z48s3eNOFlaunchDashboardWithChallengesPage_platformv
+                0x00001300                _Z40s3eNOFachievementUnlockAndDefer_platformPKc
+                0x0000096c                _Z31s3eNOFdismissDashboard_platformv
+                0x0000137c                _Z25s3eNewMessageBox_platformPKcS0_
+                0x00000b34                _Z27s3eNOFachievements_platformP11s3eNOFArray
+                0x00001284                _Z32s3eNOFachievementUnlock_platformPKc
+                0x00000adc                _Z46s3eNOFdownloadAllChallengeDefinitions_platformv
+                0x00001094                _Z48s3eNOFdownloadChallengeDefinitionWithId_platformPKc
+                0x00000f20                _Z38s3eNOFdisplayAndSendChallenge_platformP25s3eNOFChallengeDefinitionPKcPK19s3eNOFChallengeData
+                0x0000118c                _Z47s3eNOFlaunchDashboardWithHighscorePage_platformPKc
+                0x00001208                _Z47s3eNOFlaunchDashboardWithiPurchasePage_platformPKc
+                0x00000d9c                _Z49s3eNOFlaunchDashboardWithFindFriendsPage_platformv
+                0x00000c94                _Z57s3eNOFlaunchDashboardWithListGlobalChatRoomsPage_platformv
+                0x000014c4                _Z49s3eNOFchallengeDisplayCompletionWithData_platformP19s3eNOFChallengeDataPKcS2_
+                0x00001018                _Z42s3eNOFchallengeCompleteWithResult_platform21s3eNOFChallengeResultPKc
+                0x00000d44                _Z49s3eNOFlaunchDashboardWithWhosPlayingPage_platformv
+                0x000018b8                _Z39s3eNOFinitializeWithProductKey_platformPKcS0_S0_PK11s3eNOFArray
+                0x00000be4                _Z54s3eNOFlaunchDashboardWithListLeaderboardsPage_platformv
+                0x00000e4c                _Z50s3eNOFlaunchDashboardWithAchievementsPage_platformv
+                0x00000c3c                _Z44s3eNOFlaunchDashboardWithForumsPage_platformv
+                0x00000a1c                _Z23s3eNOFisOnline_platformv
  .text._ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
-                0x00001e3c       0x1c release/s3eNOpenFeint_platform.os
-                0x00001e3c                _ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
+                0x000022f4       0x1c release/s3eNOpenFeint_platform.os
+                0x000022f4                _ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
  .text._ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
-                0x00001e58       0x38 release/s3eNOpenFeint_platform.os
-                0x00001e58                _ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
+                0x00002310       0x38 release/s3eNOpenFeint_platform.os
+                0x00002310                _ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
  .text._ZN7_JNIEnv17CallBooleanMethodEP8_jobjectP10_jmethodIDz
-                0x00001e90       0x38 release/s3eNOpenFeint_platform.os
-                0x00001e90                _ZN7_JNIEnv17CallBooleanMethodEP8_jobjectP10_jmethodIDz
+                0x00002348       0x38 release/s3eNOpenFeint_platform.os
+                0x00002348                _ZN7_JNIEnv17CallBooleanMethodEP8_jobjectP10_jmethodIDz
  .text._ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
-                0x00001ec8       0x38 release/s3eNOpenFeint_platform.os
-                0x00001ec8                _ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
- .text          0x00001f00      0x240 release/s3eNOpenFeint.os
-                0x00001f20                s3eNOFsubmitDeferredAchievements
-                0x00001f40                s3eNOFachievementUnlock
-                0x000020b0                s3eNOFlaunchDashboardWithWhosPlayingPage
-                0x00002080                s3eNOFlaunchDashboardWithSwitchUserPage
-                0x00001f10                s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke
-                0x000020d0                s3eNOFlaunchDashboardWithChallengesPage
-                0x00001f60                s3eNOFachievements
-                0x00001f30                s3eNOFachievementUnlockAndDefer
-                0x00001f90                s3eNOFchallengeDisplayCompletionWithData
-                0x00001f80                s3eNOFsubmitHighScore
-                0x00002110                s3eNewMessageBox
-                0x000020f0                s3eNOFlaunchDashboardWithHighscorePage
-                0x00002060                s3eNOFlaunchDashboardWithInvitePage
-                0x00002100                s3eNOFinitializeWithProductKey
-                0x00001fc0                s3eNOFdownloadAllChallengeDefinitions
-                0x00002120                _Z22s3eNOpenFeintTerminatev
-                0x00001fb0                s3eNOFdownloadChallengeDefinitionWithId
-                0x00002000                s3eNOFsetDashboardOrientation
-                0x00002010                s3eNOFdismissDashboard
-                0x00002030                s3eNOFshutdown
-                0x00001fe0                s3eNOFisOnline
-                0x00002130                _Z17s3eNOpenFeintInitv
-                0x00001fd0                s3eNOFdisplayAndSendChallenge
-                0x00001f00                s3eNOFlaunchDashboardWithListLeaderboardsPage
-                0x00002050                s3eNOFlaunchDashboardWithSpecificInvite
-                0x00001ff0                s3eNOFhasUserApprovedFeint
-                0x00002020                s3eNOFlaunchDashboard
-                0x000020c0                s3eNOFlaunchDashboardWithFindFriendsPage
-                0x00001f70                s3eNOFupdateAcheivementProgressionComplete
-                0x000020e0                s3eNOFlaunchDashboardWithAchievementsPage
-                0x00002070                s3eNOFlaunchDashboardWithForumsPage
-                0x00001f50                s3eNOFachievement
-                0x00002040                s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText
-                0x00001fa0                s3eNOFchallengeCompleteWithResult
-                0x000020a0                s3eNOFlaunchDashboardWithListGlobalChatRoomsPage
-                0x00002090                s3eNOFlaunchDashboardWithiPurchasePage
- .text          0x00002140      0xeb4 release/s3eNOpenFeint_register.os
-                0x00002af0                s3eNOpenFeintUnRegister
-                0x00002b24                s3eNOpenFeintRegister
-                0x00002140                s3eNOpenFeintGetErrorString
-                0x00002148                _Z24s3eNOpenFeintRegisterExtv
-                0x00002b5c                s3eNOpenFeintGetError
-                0x00002b74                RegisterExt
- .text          0x00002ff4        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00002380       0x38 release/s3eNOpenFeint_platform.os
+                0x00002380                _ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+ .text          0x000023b8      0x240 release/s3eNOpenFeint.os
+                0x000023d8                s3eNOFsubmitDeferredAchievements
+                0x000023f8                s3eNOFachievementUnlock
+                0x00002568                s3eNOFlaunchDashboardWithWhosPlayingPage
+                0x00002538                s3eNOFlaunchDashboardWithSwitchUserPage
+                0x000023c8                s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke
+                0x00002588                s3eNOFlaunchDashboardWithChallengesPage
+                0x00002418                s3eNOFachievements
+                0x000023e8                s3eNOFachievementUnlockAndDefer
+                0x00002448                s3eNOFchallengeDisplayCompletionWithData
+                0x00002438                s3eNOFsubmitHighScore
+                0x000025c8                s3eNewMessageBox
+                0x000025a8                s3eNOFlaunchDashboardWithHighscorePage
+                0x00002518                s3eNOFlaunchDashboardWithInvitePage
+                0x000025b8                s3eNOFinitializeWithProductKey
+                0x00002478                s3eNOFdownloadAllChallengeDefinitions
+                0x000025d8                _Z22s3eNOpenFeintTerminatev
+                0x00002468                s3eNOFdownloadChallengeDefinitionWithId
+                0x000024b8                s3eNOFsetDashboardOrientation
+                0x000024c8                s3eNOFdismissDashboard
+                0x000024e8                s3eNOFshutdown
+                0x00002498                s3eNOFisOnline
+                0x000025e8                _Z17s3eNOpenFeintInitv
+                0x00002488                s3eNOFdisplayAndSendChallenge
+                0x000023b8                s3eNOFlaunchDashboardWithListLeaderboardsPage
+                0x00002508                s3eNOFlaunchDashboardWithSpecificInvite
+                0x000024a8                s3eNOFhasUserApprovedFeint
+                0x000024d8                s3eNOFlaunchDashboard
+                0x00002578                s3eNOFlaunchDashboardWithFindFriendsPage
+                0x00002428                s3eNOFupdateAcheivementProgressionComplete
+                0x00002598                s3eNOFlaunchDashboardWithAchievementsPage
+                0x00002528                s3eNOFlaunchDashboardWithForumsPage
+                0x00002408                s3eNOFachievement
+                0x000024f8                s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText
+                0x00002458                s3eNOFchallengeCompleteWithResult
+                0x00002558                s3eNOFlaunchDashboardWithListGlobalChatRoomsPage
+                0x00002548                s3eNOFlaunchDashboardWithiPurchasePage
+ .text          0x000025f8      0xeb4 release/s3eNOpenFeint_register.os
+                0x00002fa8                s3eNOpenFeintUnRegister
+                0x00002fdc                s3eNOpenFeintRegister
+                0x000025f8                s3eNOpenFeintGetErrorString
+                0x00002600                _Z24s3eNOpenFeintRegisterExtv
+                0x00003014                s3eNOpenFeintGetError
+                0x0000302c                RegisterExt
+ .text          0x000034ac        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .text.s3eEdkThreadRunOnOSAsync
-                0x00002ff4       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00002ff4                s3eEdkThreadRunOnOSAsync
+                0x000034ac       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x000034ac                s3eEdkThreadRunOnOSAsync
  .text.s3eEdkThreadRunOnOS
-                0x00003024       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00003024                s3eEdkThreadRunOnOS
+                0x000034dc       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x000034dc                s3eEdkThreadRunOnOS
  .text.s3eEdkErrorSetString
-                0x00003054       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00003054                s3eEdkErrorSetString
+                0x0000350c       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x0000350c                s3eEdkErrorSetString
  *(.gnu.warning)
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
@@ -232,39 +235,39 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 
 .fini
  *(.fini)
-                0x00003084                PROVIDE (__etext, .)
-                0x00003084                PROVIDE (_etext, .)
-                0x00003084                PROVIDE (etext, .)
+                0x0000353c                PROVIDE (__etext, .)
+                0x0000353c                PROVIDE (_etext, .)
+                0x0000353c                PROVIDE (etext, .)
 
-.rodata         0x00003084      0x5dc
+.rodata         0x0000353c      0x5d4
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.str1.4
-                0x00003084      0x5dc release/s3eNOpenFeint_platform.os
+                0x0000353c      0x5d4 release/s3eNOpenFeint_platform.os
  .rodata.str1.4
                 0x00000000       0x10 release/s3eNOpenFeint_register.os
 
 .rodata1
  *(.rodata1)
 
-.ARM.extab      0x00003660       0x24
+.ARM.extab      0x00003b10       0x24
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.text.s3eEdkThreadRunOnOSAsync
-                0x00003660        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003b10        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .ARM.extab.text.s3eEdkThreadRunOnOS
-                0x0000366c        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003b1c        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .ARM.extab.text.s3eEdkErrorSetString
-                0x00003678        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00003684                __exidx_start = .
+                0x00003b28        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003b34                __exidx_start = .
 
-.ARM.exidx      0x00003684       0x18
+.ARM.exidx      0x00003b34       0x18
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
  .ARM.exidx.text.s3eEdkThreadRunOnOSAsync
-                0x00003684        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003b34        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .ARM.exidx.text.s3eEdkThreadRunOnOS
-                0x0000368c        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003b3c        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .ARM.exidx.text.s3eEdkErrorSetString
-                0x00003694        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x0000369c                __exidx_end = .
+                0x00003b44        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003b4c                __exidx_end = .
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -274,8 +277,8 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
-                0x0000369c                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
-                0x0000469c                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+                0x00003b4c                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00004b4c                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
 
 .eh_frame
  *(.eh_frame)
@@ -318,56 +321,58 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 .jcr
  *(.jcr)
 
-.data.rel.ro
+.data.rel.ro    0x00004b4c        0xc
  *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x00004b4c        0xc release/s3eNOpenFeint_platform.os
  *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
 
-.dynamic        0x0000469c       0xb8
+.dynamic        0x00004b58       0xb8
  *(.dynamic)
- .dynamic       0x0000469c       0xb8 release/s3eNOpenFeint_platform.os
-                0x0000469c                _DYNAMIC
-                0x00004754                . = (. DATA_SEGMENT_RELRO_END 0x0)
+ .dynamic       0x00004b58       0xb8 release/s3eNOpenFeint_platform.os
+                0x00004b58                _DYNAMIC
+                0x00004c10                . = (. DATA_SEGMENT_RELRO_END 0x0)
 
-.got            0x00004754       0xc0
+.got            0x00004c10       0xe0
  *(.got.plt)
- .got.plt       0x00004754       0x30 release/s3eNOpenFeint_platform.os
-                0x00004754                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x00004c10       0x50 release/s3eNOpenFeint_platform.os
+                0x00004c10                _GLOBAL_OFFSET_TABLE_
  *(.got)
- .got           0x00004784       0x90 release/s3eNOpenFeint_platform.os
+ .got           0x00004c60       0x90 release/s3eNOpenFeint_platform.os
 
-.data           0x00004814        0x0
-                0x00004814                __data_start = .
+.data           0x00004cf0        0x4
+                0x00004cf0                __data_start = .
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x00004814        0x0 release/s3eNOpenFeint_platform.os
- .data          0x00004814        0x0 release/s3eNOpenFeint.os
- .data          0x00004814        0x0 release/s3eNOpenFeint_register.os
- .data          0x00004814        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+ .data          0x00004cf0        0x4 release/s3eNOpenFeint_platform.os
+ .data          0x00004cf4        0x0 release/s3eNOpenFeint.os
+ .data          0x00004cf4        0x0 release/s3eNOpenFeint_register.os
+ .data          0x00004cf4        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
 
 .data1
  *(.data1)
-                0x00004814                _edata = .
-                0x00004814                PROVIDE (edata, .)
-                0x00004814                __bss_start = .
-                0x00004814                __bss_start__ = .
+                0x00004cf4                _edata = .
+                0x00004cf4                PROVIDE (edata, .)
+                0x00004cf4                __bss_start = .
+                0x00004cf4                __bss_start__ = .
 
-.bss            0x00004814       0x8c
+.bss            0x00004cf4       0x90
  *(.dynbss)
  .dynbss        0x00000000        0x0 release/s3eNOpenFeint_platform.os
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x00004814       0x8c release/s3eNOpenFeint_platform.os
- .bss           0x000048a0        0x0 release/s3eNOpenFeint.os
- .bss           0x000048a0        0x0 release/s3eNOpenFeint_register.os
- .bss           0x000048a0        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+ .bss           0x00004cf4       0x90 release/s3eNOpenFeint_platform.os
+ .bss           0x00004d84        0x0 release/s3eNOpenFeint.os
+ .bss           0x00004d84        0x0 release/s3eNOpenFeint_register.os
+ .bss           0x00004d84        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  *(COMMON)
-                0x000048a0                . = ALIGN ((. != 0x0)?0x4:0x1)
-                0x000048a0                _bss_end__ = .
-                0x000048a0                __bss_end__ = .
-                0x000048a0                . = ALIGN (0x4)
-                0x000048a0                . = ALIGN (0x4)
-                0x000048a0                __end__ = .
-                0x000048a0                _end = .
-                0x000048a0                PROVIDE (end, .)
-                0x000048a0                . = DATA_SEGMENT_END (.)
+                0x00004d84                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00004d84                _bss_end__ = .
+                0x00004d84                __bss_end__ = .
+                0x00004d84                . = ALIGN (0x4)
+                0x00004d84                . = ALIGN (0x4)
+                0x00004d84                __end__ = .
+                0x00004d84                _end = .
+                0x00004d84                PROVIDE (end, .)
+                0x00004d84                . = DATA_SEGMENT_END (.)
 
 .stab
  *(.stab)

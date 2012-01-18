@@ -19,17 +19,16 @@ subprojects
 {
     ExamplesMain
     s3eNOpenFeint
-    s3eFacebook
-#    s3eIOSNotifications
 }
+
 #### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
 deployments
 {
-	["Default"]
+	["Android"]
+	android-external-res='android/res'
 	android-extra-application-manifest='android/AndroidAppManifest.xml'
 	android-extra-manifest='android/AndroidManifest.xml'
-	android-external-res='android/res'
-#	android-external-res='android/res/values'
+	["Default"]
 	assets='Default'
 	iphone-appid='com.nerdiacs.funkyracing'
 	iphone-link-libs='s3eFacebook'

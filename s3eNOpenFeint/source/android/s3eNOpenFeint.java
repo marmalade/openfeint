@@ -35,10 +35,10 @@ class s3eNOpenFeint implements DialogInterface.OnClickListener
     private String m_MessageTitle;
 	private Handler m_Handler = null;
 		
-	static final String gameName = "FunkyRacing";
-	static final String gameID = "330603";
-	static final String gameKey = "TD5741bq5dsEWStKk3rdMA";
-	static final String gameSecret = "HgjtDJBBRW8sBfASq9Iv6hDAfchXAHMYJvNU5gQ0";
+	static String gameName = "FunkyRacing";
+	static String gameID = "123456"; // dummy ID that is never overwritten
+	static String gameKey = "123456"; // dummy key overwritten by real call.
+	static String gameSecret = "123456"; // dummy secret overwritten by real func call
 	
 
     public int s3eNewMessageBox(String title, String text)
@@ -78,8 +78,12 @@ class s3eNOpenFeint implements DialogInterface.OnClickListener
     }
 	
 
-    public int s3eNOFinitializeWithProductKey(String productKey, String secret, String displayName)
+    public int s3eNOFinitializeWithProductKey(String productKey, String secret, String displayName, String productID)
     {
+	    	gameName = displayName;
+		gameKey = productKey;
+		gameSecret = secret;
+		gameID = productID;
 		LoaderAPI.getActivity().LoaderThread().runOnOSThread(m_s3eNOFinitializeWithProductKey);
 //		LoaderActivity.m_Activity.runOnUiThread(m_s3eNOFinitializeWithProductKey);
 
@@ -94,13 +98,27 @@ class s3eNOpenFeint implements DialogInterface.OnClickListener
 		public void run()
 		{
 				OpenFeintSettings settings = new OpenFeintSettings(gameName, gameKey, gameSecret, gameID);
-				OpenFeint.initialize(LoaderAPI.getActivity(), settings, new OpenFeintDelegate() {});
+				OpenFeint.initialize(LoaderAPI.getActivity(), settings, new OpenFeintDelegate() {
+					 // **** OpenFeintDelegate functions
+					    public void userLoggedIn(CurrentUser user)
+					    {
+						    NOFLoginCallback(user.userID(),true);
+
+					    }
+
+					    public void userLoggedOut(User user)
+					    {
+						    NOFLoginCallback(user.userID(),false);
+					    }
+					
+					});
 		}
 	};
 
     public int s3eNOFlaunchDashboardWithHighscorePage(String leaderboardId)
     {
-        return -1; // not supported
+	Dashboard.openLeaderboard(leaderboardId);
+        return 0; 
     }
     public int s3eNOFlaunchDashboardWithAchievementsPage()
     {
@@ -263,22 +281,12 @@ class s3eNOpenFeint implements DialogInterface.OnClickListener
     }
     public int s3eNOFlaunchDashboardWithListLeaderboardsPage()
     {
-        return -1;
+	Dashboard.openLeaderboards();
+        return 0;
     }
 
-    // **** OpenFeintDelegate functions
-    public void userLoggedIn(CurrentUser user)
-    {
-
-    }
-
-    public void userLoggedOut(User user)
-    {
-
-    }
-
-    // *** Native Callbacks
-   // public native void NOFLoginCallback();
+       // *** Native Callbacks
+    public native void NOFLoginCallback(String userId, boolean result);
 }
 
 /* vi: set ts=4 sw=4 background=dark*/

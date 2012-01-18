@@ -236,7 +236,7 @@ bool ExampleUpdate()
 	else if (pressed && pressed == g_NOFInitialize)
 	{
     
-   		s3eNOFSettingVal *settings = (s3eNOFSettingVal*)s3eMalloc(sizeof(s3eNOFSettingVal) * 6);
+   		s3eNOFSettingVal *settings = (s3eNOFSettingVal*)s3eMalloc(sizeof(s3eNOFSettingVal) * 7);
 		// Fill settings
 		// UIOrientation value
 		strncpy(settings[0].m_varName,
@@ -279,10 +279,17 @@ bool ExampleUpdate()
 				S3E_NOPENFEINT_SETTINGS_STRING_MAX);
 		settings[5].m_intVal = 0;
 		
+      // Add GameId in settings as well as Android needs it
+    strncpy(settings[1].m_varName, 
+            "GameID", 
+            S3E_NOPENFEINT_SETTINGS_STRING_MAX);
+		strncpy(settings[1].m_stringVal, 
+            "330603", 
+            S3E_NOPENFEINT_STRING_MAX);
 		
 		
 		s3eNOFArray array;
-		array.m_count = 6;
+		array.m_count = 7;
 		array.m_items = settings;
 		s3eNOFinitializeWithProductKey("TD5741bq5dsEWStKk3rdMA",
 									   "HgjtDJBBRW8sBfASq9Iv6hDAfchXAHMYJvNU5gQ0",
@@ -350,8 +357,9 @@ bool ExampleUpdate()
       AppendMessage("Acheivement title %s", ((s3eNOFAchievement*)achArray.m_items)[i].title);
     }
     s3eFree(data);*/
-    AppendMessage("Updating achievement 1205572");
-    s3eNOFupdateAcheivementProgressionComplete("1205572", "77", true); // last param is ignored for android 
+      //AppendMessage("Updating achievement 1205572");
+      //    s3eNOFupdateAcheivementProgressionComplete("1205572", "77", true); // last param is ignored for android 
+    s3eNOFlaunchDashboardWithListLeaderboardsPage();
 	}
 	else if (pressed && pressed == g_NOFTestButton2)
 	{
@@ -378,12 +386,14 @@ bool ExampleUpdate()
     s3eFree(ach);
   */
     
-    AppendMessage("Unlocking achievement 1117662");
-    s3eNOFachievementUnlock("1117662");
+      //AppendMessage("Unlocking achievement 1117662");
+      //    s3eNOFachievementUnlock("1117662");
+    
 
       //    AppendMessage("User approved %d", s3eNOFhasUserApprovedFeint());
       //    AppendMessage("User is Online %d", s3eNOFisOnline());
       //    s3eNOFsubmitHighScore("844216", "50", "Beaten by Android", NULL);
+    s3eNOFlaunchDashboardWithHighscorePage("844216");
      
 	}
     return true;

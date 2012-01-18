@@ -49,13 +49,49 @@ static jmethodID g_s3eNOFsubmitDeferredAchievements;
 static jmethodID g_s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke;
 static jmethodID g_s3eNOFlaunchDashboardWithListLeaderboardsPage;
 
+static void s3eNOpenFeint_NOFLoginCallback(JNIEnv *env, jobject _this, jstring userId, bool loginResult);
+
+  // Utility function
+
+static char* g_RetStr;
+static int g_RetStrLen = 16384;
+
+const char* getCString(jstring str)
+{
+  JNIEnv* env = s3eEdkJNIGetEnv();
+  if (!str)
+    return NULL;
+  jboolean free;
+  const char* res = env->GetStringUTFChars(str, &free);
+  g_RetStrLen = strlen(res);
+  s3eEdkReallocOS(g_RetStr, g_RetStrLen);
+  memset(g_RetStr,0,g_RetStrLen);
+  strncpy(g_RetStr, res, g_RetStrLen);
+  env->ReleaseStringUTFChars(str, res);
+  return g_RetStr;
+}
+
+
 s3eResult s3eNOpenFeintInit_platform()
 {
+
+  
+    //Alloc buffer for returning strings
+    g_RetStr = (char*)s3eEdkMallocOS(g_RetStrLen);
+  
     // Get the environment from the pointer
     JNIEnv* env = s3eEdkJNIGetEnv();
     jobject obj = NULL;
     jmethodID cons = NULL;
 
+  
+    const JNINativeMethod nativeMethodDefs[] =
+    {
+      {"NOFLoginCallback",        "(Ljava/lang/String;Z)V",        (void *)&s3eNOpenFeint_NOFLoginCallback},
+        //      {"DialogCallback",        "(Ljava/lang/Object;Z)V",        (void *)&s3eFacebook_DialogCallback},
+        //      {"RequestCallback",        "(Ljava/lang/Object;Z)V",        (void *)&s3eFacebook_RequestCallback},
+    };
+    
     // Get the extension class
     jclass cls = s3eEdkAndroidFindClass("s3eNOpenFeint");
     if (!cls)
@@ -76,7 +112,7 @@ s3eResult s3eNOpenFeintInit_platform()
     if (!g_s3eNewMessageBox)
         goto fail;
 
-    g_s3eNOFinitializeWithProductKey = env->GetMethodID(cls, "s3eNOFinitializeWithProductKey", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I");
+    g_s3eNOFinitializeWithProductKey = env->GetMethodID(cls, "s3eNOFinitializeWithProductKey", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I");
     if (!g_s3eNOFinitializeWithProductKey)
         goto fail;
 
@@ -208,8 +244,10 @@ s3eResult s3eNOpenFeintInit_platform()
     if (!g_s3eNOFlaunchDashboardWithListLeaderboardsPage)
         goto fail;
 
+  
 
-
+    env->RegisterNatives(cls, nativeMethodDefs, sizeof(nativeMethodDefs)/sizeof(nativeMethodDefs[0]));
+    
     IwTrace(NOPENFEINT, ("NOPENFEINT init success"));
     g_Obj = env->NewGlobalRef(obj);
     env->DeleteLocalRef(obj);
@@ -233,6 +271,8 @@ fail:
 void s3eNOpenFeintTerminate_platform()
 {
     // Add any platform-specific termination code here
+  s3eEdkFreeOS(g_RetStr);
+  g_RetStr = NULL;
 }
 
 s3eResult s3eNewMessageBox_platform(const char* title, const char* text)
@@ -249,7 +289,18 @@ s3eResult s3eNOFinitializeWithProductKey_platform(const char* productKey, const 
     jstring productKey_jstr = env->NewStringUTF(productKey);
     jstring secret_jstr = env->NewStringUTF(secret);
     jstring displayName_jstr = env->NewStringUTF(displayName);
-    return (s3eResult)env->CallIntMethod(g_Obj, g_s3eNOFinitializeWithProductKey, productKey_jstr, secret_jstr, displayName_jstr);
+    
+    // Get gameid from settings
+    jstring gameId;
+  	s3eNOFSettingVal *items = (s3eNOFSettingVal*)settings->m_items;
+    for (uint i=0; i< settings->m_count; i++) {
+      if(!strcasecmp(items[i].m_varName,"GameId")) {
+        gameId = env->NewStringUTF(items[i].m_stringVal);
+        break;
+      }
+    }
+  
+    return (s3eResult)env->CallIntMethod(g_Obj, g_s3eNOFinitializeWithProductKey, productKey_jstr, secret_jstr, displayName_jstr,gameId);
 }
 
 s3eResult s3eNOFlaunchDashboardWithHighscorePage_platform(const char* leaderboardId)
@@ -467,4 +518,36 @@ s3eResult s3eNOFlaunchDashboardWithListLeaderboardsPage_platform()
 {
     JNIEnv* env = s3eEdkJNIGetEnv();
     return (s3eResult)env->CallIntMethod(g_Obj, g_s3eNOFlaunchDashboardWithListLeaderboardsPage);
+}
+
+  //Native functions called by java
+void s3eNOpenFeint_NOFLoginCallback(JNIEnv *env, jobject _this, jstring userId, bool loginResult)
+{
+    //loginResult is really s3eResult
+  bool bInIsCopy = true;
+  
+  const char *tmpUserId = getCString(userId);
+  if(loginResult)
+    IwTrace(NOPENFEINT, ("User logged in %s",tmpUserId));
+  else
+    IwTrace(NOPENFEINT, ("User logged out %s",tmpUserId));  
+  
+  if(s3eEdkCallbacksIsRegistered(S3E_EXT_NOPENFEINT_HASH, 
+                                 S3E_NOPENFEINT_CALLBACK_PLAYER_LOGGEDIN)
+     == false)
+		return; // no callback registered for this one
+	
+	
+	s3eNOFPlayerInfo info;
+	
+  info.playerId = (char*)tmpUserId; // lets just hope our consumer doesn't change it. not that it matters much
+  
+	s3eEdkCallbacksEnqueue(S3E_EXT_NOPENFEINT_HASH,
+                         S3E_NOPENFEINT_CALLBACK_PLAYER_LOGGEDIN,
+                         (void*)&info,
+                         sizeof(info),
+                         NULL,
+                         S3E_FALSE,
+                         NULL,
+                         NULL);	
 }
